@@ -26,6 +26,10 @@ eval_results.json
 citation_audit.txt
 highlight-debug.txt
 
+# Generated index — track only the split parts, not the reassembled full file
+ild_index/default__vector_store.json
+parsed_jsons/
+
 # Old guideline drafts (not part of active index)
 guidelines_old/
 guidelines_old2/

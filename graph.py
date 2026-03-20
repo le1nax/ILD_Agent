@@ -349,6 +349,27 @@ def _index_is_stale() -> bool:
     return False
 
 
+def _reassemble_vector_store():
+    """If the vector store was split into parts for git, reassemble it before loading."""
+    target = os.path.join(INDEX_DIR, "default__vector_store.json")
+    part1 = target + ".part1"
+    if not os.path.exists(part1):
+        return  # nothing to reassemble
+    if os.path.exists(target):
+        return  # already assembled
+    print("Reassembling vector store from parts...")
+    i = 1
+    with open(target, "wb") as out:
+        while True:
+            part_path = target + f".part{i}"
+            if not os.path.exists(part_path):
+                break
+            with open(part_path, "rb") as part:
+                out.write(part.read())
+            i += 1
+    print(f"  Assembled {i - 1} parts → {os.path.getsize(target) / 1024 / 1024:.1f} MB")
+
+
 def load_or_build_index() -> VectorStoreIndex:
     """Load existing index or rebuild if PDFs have changed."""
     if os.path.exists(INDEX_DIR) and not _index_is_stale():
@@ -368,7 +389,8 @@ def load_or_build_index() -> VectorStoreIndex:
             print("Building new index from PDFs...")
         return build_index_from_pdfs()
 
-# Initialize index
+# Reassemble split vector store (if deployed via git parts), then load
+_reassemble_vector_store()
 vectorstore = load_or_build_index()
 
 # ---------------------------
