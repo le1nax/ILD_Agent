@@ -1,0 +1,1612 @@
+{
+  "pages": [
+    {
+      "page": 1,
+      "text": "                           Check for updates\n\nReceived: 14 October 2023  Revised: 26 March 2024  Accepted: 3 April 2024\nDOI: 10.1002/pds.5797\n\nB R I E F R E P O R T\n\n\nRising cases of drug-induced pulmonary fibrosis: Analysis of\nthe Food and Drug Administration Adverse Event Reporting\nSystem (FAERS) database, 2000\u20132022\n\n\nKenneth L. McCall\u00b9     |  Kelsey R. Hennig 2                                |  Zachary T. Abe 3  |\nDanielle N. Dattler 3  |  Karyssa L. Hurd 3  |                              Sophie L. Portnoy 3  |  Zoey J. Zagoria\u00b3\n\n1Department of Pharmacy Practice, Binghamton University School of Pharmacy & Pharmaceutical Sciences, Johnson City, New York, USA\n\n2Specialty Pharmacy, Shields Health Solutions, Stoughton, Massachusetts, USA\n\n3School of Pharmacy & Pharmaceutical Sciences, Binghamton University, Johnson City, New York, USA\n\n\nCorrespondence                                 Abstract\nKenneth L. McCall, Department of Pharmacy\nPractice, Binghamton University School of      Purpose:  Pulmonary fibrosis (PF) is a severe, progressive disease, which may be\nPharmacy & Pharmaceutical Sciences,\n96 Corliss Avenue, Johnson City, NY 13790,     caused by exposure to certain medications.\nUSA.                                           Methods: We queried the U.S. FDA Adverse Event Reporting System (FAERS) from\nEmail: kmccall@binghamton.edu\n                                               2000 to 2022, using the search terms \u201cpulmonary fibrosis\u201d and \u201cidiopathic pulmonary\n                                               fibrosis\u201d and excluded reports with patients under the age of 18 years, and patients\n                                               with unknown sex or age. Reports were sorted by generic drug names, counted, and\n                                               plotted over time using a best-fit trendline based on an exponential function.\n                                               Results: From 2000 to 2022, there were 24 095 935 adverse drug events reported\n                                               in FAERS, of which 17 520 (0.07%) were reported as PF. After excluding reports con-\n                                               taining patients with unknown age (5255, 30%), sex (122, 0.7%), and age below\n                                               18 years old (155, 0.9%), our study included 11 988 reports. The mean age of the\n                                               study sample was 66.5 \u00b1 13.1 years, and 6248 patients (52.1%) were male. Plotting\n                                               the 11 988 reports by year revealed an exponential best fit line (R\u00b2 = 0.88) with a\n                                               positive slope over time. The top five drug classes associated with PF were disease\n                                               modifying antirheumatic drugs (DMARDs, 39.4%), antineoplastic agents (26.4%),\n                                               cardiovascular agents (12.6%),  corticosteroids (4.6%),  and immunosuppressive\n                                               agents (4.0%).\n                                               Conclusion: A 23-year analysis  of the FAERS    database revealed exponentially\n                                               increasing adverse event reports of PF. Significant annual increases in reporting of PF\n                                               suspected with DMARDs and       antineoplastic agents were identified. Our    study\n                                               highlights important trends, which should be used to guide PF research related to\n                                               drugs of potential importance.\n\n\n\n\nThe study was approved by the Binghamton University Institutional Review Board. IRB ID# STUDY00004072 February 3, 2023.\n\nThis is an open access article under the terms of the Creative Commons Attribution License, which permits use, distribution and reproduction in any medium,\nprovided the original work is properly cited.\n\u00a9 2024 The Authors. Pharmacoepidemiology and Drug Safety published by John Wiley & Sons Ltd.\n\nPharmacoepidemiol Drug Saf. 2024;33:e5797.                                                                             wileyonlinelibrary.com/journal/pds  1 of 5\nhttps://doi.org/10.1002/pds.5797",
+      "md": "\nCheck for updates\n\nReceived: 14 October 2023  Revised: 26 March 2024  Accepted: 3 April 2024\n\nDOI: 10.1002/pds.5797\n\n# B R I E F R E P O R T\n\n# Rising cases of drug-induced pulmonary fibrosis: Analysis of the Food and Drug Administration Adverse Event Reporting System (FAERS) database, 2000\u20132022\n\nKenneth L. McCall\u00b9 \u00a0 | \u00a0 Kelsey R. Hennig 2 \u00a0 | \u00a0 Zachary T. Abe 3 \u00a0 |\n\nDanielle N. Dattler 3 \u00a0 | \u00a0 Karyssa L. Hurd 3 \u00a0 | \u00a0 Sophie L. Portnoy 3 \u00a0 | \u00a0 Zoey J. Zagoria\u00b3\n\n\u00b9Department of Pharmacy Practice, Binghamton University School of Pharmacy &#x26; Pharmaceutical Sciences, Johnson City, New York, USA\n\n\u00b2Specialty Pharmacy, Shields Health Solutions, Stoughton, Massachusetts, USA\n\n\u00b3School of Pharmacy &#x26; Pharmaceutical Sciences, Binghamton University, Johnson City, New York, USA\n\n# Correspondence\n\nKenneth L. McCall, Department of Pharmacy Practice, Binghamton University School of Pharmacy &#x26; Pharmaceutical Sciences, 96 Corliss Avenue, Johnson City, NY 13790, USA.\n\nEmail: kmccall@binghamton.edu\n\n# Abstract\n\nPurpose: Pulmonary fibrosis (PF) is a severe, progressive disease, which may be caused by exposure to certain medications.\n\nMethods: We queried the U.S. FDA Adverse Event Reporting System (FAERS) from 2000 to 2022, using the search terms \u201cpulmonary fibrosis\u201d and \u201cidiopathic pulmonary fibrosis\u201d and excluded reports with patients under the age of 18 years, and patients with unknown sex or age. Reports were sorted by generic drug names, counted, and plotted over time using a best-fit trendline based on an exponential function.\n\nResults: From 2000 to 2022, there were 24 095 935 adverse drug events reported in FAERS, of which 17 520 (0.07%) were reported as PF. After excluding reports containing patients with unknown age (5255, 30%), sex (122, 0.7%), and age below 18 years old (155, 0.9%), our study included 11 988 reports. The mean age of the study sample was 66.5 \u00b1 13.1 years, and 6248 patients (52.1%) were male. Plotting the 11 988 reports by year revealed an exponential best fit line (R\u00b2 = 0.88) with a positive slope over time. The top five drug classes associated with PF were disease modifying antirheumatic drugs (DMARDs, 39.4%), antineoplastic agents (26.4%), cardiovascular agents (12.6%), corticosteroids (4.6%), and immunosuppressive agents (4.0%).\n\nConclusion: A 23-year analysis of the FAERS database revealed exponentially increasing adverse event reports of PF. Significant annual increases in reporting of PF suspected with DMARDs and antineoplastic agents were identified. Our study highlights important trends, which should be used to guide PF research related to drugs of potential importance.\n\nThe study was approved by the Binghamton University Institutional Review Board. IRB ID# STUDY00004072 February 3, 2023.\n\nThis is an open access article under the terms of the Creative Commons Attribution License, which permits use, distribution and reproduction in any medium, provided the original work is properly cited.\n\n\u00a9 2024 The Authors. Pharmacoepidemiology and Drug Safety published by John Wiley &#x26; Sons Ltd.\n\nPharmacoepidemiol Drug Saf. 2024;33:e5797. wileyonlinelibrary.com/journal/pds  1 of 5\n\n",
+      "images": [
+        {
+          "name": "img_p0_1.png",
+          "height": 15,
+          "width": 76,
+          "x": 519.28,
+          "y": 0.002,
+          "original_width": 155,
+          "original_height": 30,
+          "rotation": 0,
+          "ocr": [
+            {
+              "x": 35,
+              "y": 7,
+              "w": 117,
+              "h": 15,
+              "confidence": 0.999,
+              "text": "Check for updates"
+            }
+          ]
+        },
+        {
+          "name": "page_1.jpg",
+          "height": 782.362,
+          "width": 595.276,
+          "x": 0,
+          "y": 0,
+          "original_width": 1217,
+          "original_height": 1600,
+          "rotation": 0,
+          "type": "full_page_screenshot"
+        }
+      ],
+      "charts": [],
+      "items": [
+        {
+          "type": "text",
+          "md": "Check for updates",
+          "value": "Check for updates",
+          "bBox": {
+            "x": 536.44,
+            "y": 3.5,
+            "w": 57.37,
+            "h": 7.5,
+            "confidence": 0.7,
+            "label": "text"
+          }
+        },
+        {
+          "type": "text",
+          "md": "Received: 14 October 2023  Revised: 26 March 2024  Accepted: 3 April 2024",
+          "value": "Received: 14 October 2023  Revised: 26 March 2024  Accepted: 3 April 2024",
+          "bBox": {
+            "x": 45.64,
+            "y": 29.51,
+            "w": 263.03,
+            "h": 7,
+            "confidence": 0.7,
+            "label": "text"
+          }
+        },
+        {
+          "type": "text",
+          "md": "DOI: 10.1002/pds.5797",
+          "value": "DOI: 10.1002/pds.5797",
+          "bBox": {
+            "x": 45.64,
+            "y": 43,
+            "w": 74.11,
+            "h": 7,
+            "confidence": 0.7,
+            "label": "text"
+          }
+        },
+        {
+          "type": "heading",
+          "md": "# B R I E F R E P O R T",
+          "value": "B R I E F R E P O R T",
+          "lvl": 1,
+          "bBox": {
+            "x": 45.64,
+            "y": 68.73,
+            "w": 80.34,
+            "h": 9,
+            "confidence": 0.7,
+            "label": "heading"
+          }
+        },
+        {
+          "type": "heading",
+          "md": "# Rising cases of drug-induced pulmonary fibrosis: Analysis of the Food and Drug Administration Adverse Event Reporting System (FAERS) database, 2000\u20132022",
+          "value": "Rising cases of drug-induced pulmonary fibrosis: Analysis of the Food and Drug Administration Adverse Event Reporting System (FAERS) database, 2000\u20132022",
+          "lvl": 1,
+          "bBox": {
+            "x": 45.64,
+            "y": 106.72,
+            "w": 477.19,
+            "h": 63.98,
+            "confidence": 0.7,
+            "label": "heading"
+          }
+        },
+        {
+          "type": "text",
+          "md": "Kenneth L. McCall\u00b9 \u00a0 | \u00a0 Kelsey R. Hennig 2 \u00a0 | \u00a0 Zachary T. Abe 3 \u00a0 |",
+          "value": "Kenneth L. McCall\u00b9 \u00a0 | \u00a0 Kelsey R. Hennig 2 \u00a0 | \u00a0 Zachary T. Abe 3 \u00a0 |",
+          "bBox": {
+            "x": 45.64,
+            "y": 196.38,
+            "w": 351.2,
+            "h": 13.33,
+            "confidence": 0.7,
+            "label": "text"
+          }
+        },
+        {
+          "type": "text",
+          "md": "Danielle N. Dattler 3 \u00a0 | \u00a0 Karyssa L. Hurd 3 \u00a0 | \u00a0 Sophie L. Portnoy 3 \u00a0 | \u00a0 Zoey J. Zagoria\u00b3",
+          "value": "Danielle N. Dattler 3 \u00a0 | \u00a0 Karyssa L. Hurd 3 \u00a0 | \u00a0 Sophie L. Portnoy 3 \u00a0 | \u00a0 Zoey J. Zagoria\u00b3",
+          "bBox": {
+            "x": 45.64,
+            "y": 197.71,
+            "w": 463.68,
+            "h": 29.97,
+            "confidence": 0.7,
+            "label": "text"
+          }
+        },
+        {
+          "type": "text",
+          "md": "\u00b9Department of Pharmacy Practice, Binghamton University School of Pharmacy &#x26; Pharmaceutical Sciences, Johnson City, New York, USA",
+          "value": "\u00b9Department of Pharmacy Practice, Binghamton University School of Pharmacy &#x26; Pharmaceutical Sciences, Johnson City, New York, USA",
+          "bBox": {
+            "x": 45.64,
+            "y": 322.73,
+            "w": 308.56,
+            "h": 266.48,
+            "confidence": 0.7,
+            "label": "text"
+          }
+        },
+        {
+          "type": "text",
+          "md": "\u00b2Specialty Pharmacy, Shields Health Solutions, Stoughton, Massachusetts, USA",
+          "value": "\u00b2Specialty Pharmacy, Shields Health Solutions, Stoughton, Massachusetts, USA"
+        },
+        {
+          "type": "text",
+          "md": "\u00b3School of Pharmacy &#x26; Pharmaceutical Sciences, Binghamton University, Johnson City, New York, USA",
+          "value": "\u00b3School of Pharmacy &#x26; Pharmaceutical Sciences, Binghamton University, Johnson City, New York, USA",
+          "bBox": {
+            "x": 346.05,
+            "y": 580.21,
+            "w": 8.14,
+            "h": 9,
+            "confidence": 0.7,
+            "label": "text"
+          }
+        },
+        {
+          "type": "heading",
+          "md": "# Correspondence",
+          "value": "Correspondence",
+          "lvl": 1,
+          "bBox": {
+            "x": 45.64,
+            "y": 302.71,
+            "w": 51.08,
+            "h": 7,
+            "confidence": 0.7,
+            "label": "heading"
+          }
+        },
+        {
+          "type": "text",
+          "md": "Kenneth L. McCall, Department of Pharmacy Practice, Binghamton University School of Pharmacy &#x26; Pharmaceutical Sciences, 96 Corliss Avenue, Johnson City, NY 13790, USA.",
+          "value": "Kenneth L. McCall, Department of Pharmacy Practice, Binghamton University School of Pharmacy &#x26; Pharmaceutical Sciences, 96 Corliss Avenue, Johnson City, NY 13790, USA.",
+          "bBox": {
+            "x": 45.64,
+            "y": 312.69,
+            "w": 136.19,
+            "h": 47.02,
+            "confidence": 0.7,
+            "label": "text"
+          }
+        },
+        {
+          "type": "text",
+          "md": "Email: kmccall@binghamton.edu",
+          "value": "Email: kmccall@binghamton.edu",
+          "bBox": {
+            "x": 45.64,
+            "y": 362.69,
+            "w": 97.59,
+            "h": 7,
+            "confidence": 0.7,
+            "label": "text"
+          }
+        },
+        {
+          "type": "heading",
+          "md": "# Abstract",
+          "value": "Abstract",
+          "lvl": 1,
+          "bBox": {
+            "x": 210.16,
+            "y": 309.18,
+            "w": 37.57,
+            "h": 10,
+            "confidence": 0.7,
+            "label": "heading"
+          }
+        },
+        {
+          "type": "text",
+          "md": "Purpose: Pulmonary fibrosis (PF) is a severe, progressive disease, which may be caused by exposure to certain medications.",
+          "value": "Purpose: Pulmonary fibrosis (PF) is a severe, progressive disease, which may be caused by exposure to certain medications.",
+          "bBox": {
+            "x": 210.16,
+            "y": 325.2,
+            "w": 332.46,
+            "h": 24.02,
+            "confidence": 0.7,
+            "label": "text"
+          }
+        },
+        {
+          "type": "text",
+          "md": "Methods: We queried the U.S. FDA Adverse Event Reporting System (FAERS) from 2000 to 2022, using the search terms \u201cpulmonary fibrosis\u201d and \u201cidiopathic pulmonary fibrosis\u201d and excluded reports with patients under the age of 18 years, and patients with unknown sex or age. Reports were sorted by generic drug names, counted, and plotted over time using a best-fit trendline based on an exponential function.",
+          "value": "Methods: We queried the U.S. FDA Adverse Event Reporting System (FAERS) from 2000 to 2022, using the search terms \u201cpulmonary fibrosis\u201d and \u201cidiopathic pulmonary fibrosis\u201d and excluded reports with patients under the age of 18 years, and patients with unknown sex or age. Reports were sorted by generic drug names, counted, and plotted over time using a best-fit trendline based on an exponential function.",
+          "bBox": {
+            "x": 210.16,
+            "y": 355.2,
+            "w": 333.47,
+            "h": 69.04,
+            "confidence": 0.7,
+            "label": "text"
+          }
+        },
+        {
+          "type": "text",
+          "md": "Results: From 2000 to 2022, there were 24 095 935 adverse drug events reported in FAERS, of which 17 520 (0.07%) were reported as PF. After excluding reports containing patients with unknown age (5255, 30%), sex (122, 0.7%), and age below 18 years old (155, 0.9%), our study included 11 988 reports. The mean age of the study sample was 66.5 \u00b1 13.1 years, and 6248 patients (52.1%) were male. Plotting the 11 988 reports by year revealed an exponential best fit line (R\u00b2 = 0.88) with a positive slope over time. The top five drug classes associated with PF were disease modifying antirheumatic drugs (DMARDs, 39.4%), antineoplastic agents (26.4%), cardiovascular agents (12.6%), corticosteroids (4.6%), and immunosuppressive agents (4.0%).",
+          "value": "Results: From 2000 to 2022, there were 24 095 935 adverse drug events reported in FAERS, of which 17 520 (0.07%) were reported as PF. After excluding reports containing patients with unknown age (5255, 30%), sex (122, 0.7%), and age below 18 years old (155, 0.9%), our study included 11 988 reports. The mean age of the study sample was 66.5 \u00b1 13.1 years, and 6248 patients (52.1%) were male. Plotting the 11 988 reports by year revealed an exponential best fit line (R\u00b2 = 0.88) with a positive slope over time. The top five drug classes associated with PF were disease modifying antirheumatic drugs (DMARDs, 39.4%), antineoplastic agents (26.4%), cardiovascular agents (12.6%), corticosteroids (4.6%), and immunosuppressive agents (4.0%).",
+          "bBox": {
+            "x": 210.16,
+            "y": 430.2,
+            "w": 333.5,
+            "h": 159.01,
+            "confidence": 0.7,
+            "label": "text"
+          }
+        },
+        {
+          "type": "text",
+          "md": "Conclusion: A 23-year analysis of the FAERS database revealed exponentially increasing adverse event reports of PF. Significant annual increases in reporting of PF suspected with DMARDs and antineoplastic agents were identified. Our study highlights important trends, which should be used to guide PF research related to drugs of potential importance.",
+          "value": "Conclusion: A 23-year analysis of the FAERS database revealed exponentially increasing adverse event reports of PF. Significant annual increases in reporting of PF suspected with DMARDs and antineoplastic agents were identified. Our study highlights important trends, which should be used to guide PF research related to drugs of potential importance.",
+          "bBox": {
+            "x": 210.16,
+            "y": 550.22,
+            "w": 333.49,
+            "h": 98.97,
+            "confidence": 0.7,
+            "label": "text"
+          }
+        },
+        {
+          "type": "text",
+          "md": "The study was approved by the Binghamton University Institutional Review Board. IRB ID# STUDY00004072 February 3, 2023.",
+          "value": "The study was approved by the Binghamton University Institutional Review Board. IRB ID# STUDY00004072 February 3, 2023.",
+          "bBox": {
+            "x": 45.64,
+            "y": 690.25,
+            "w": 333.16,
+            "h": 6,
+            "confidence": 0.7,
+            "label": "text"
+          }
+        },
+        {
+          "type": "text",
+          "md": "This is an open access article under the terms of the Creative Commons Attribution License, which permits use, distribution and reproduction in any medium, provided the original work is properly cited.",
+          "value": "This is an open access article under the terms of the Creative Commons Attribution License, which permits use, distribution and reproduction in any medium, provided the original work is properly cited.",
+          "bBox": {
+            "x": 45.64,
+            "y": 711.19,
+            "w": 476.85,
+            "h": 17.03,
+            "confidence": 0.7,
+            "label": "text"
+          }
+        },
+        {
+          "type": "text",
+          "md": "\u00a9 2024 The Authors. Pharmacoepidemiology and Drug Safety published by John Wiley &#x26; Sons Ltd.",
+          "value": "\u00a9 2024 The Authors. Pharmacoepidemiology and Drug Safety published by John Wiley &#x26; Sons Ltd.",
+          "bBox": {
+            "x": 359.89,
+            "y": 550.22,
+            "w": 98.81,
+            "h": 38.99,
+            "confidence": 0.7,
+            "label": "text"
+          }
+        },
+        {
+          "type": "text",
+          "md": "Pharmacoepidemiol Drug Saf. 2024;33:e5797. wileyonlinelibrary.com/journal/pds  1 of 5",
+          "value": "Pharmacoepidemiol Drug Saf. 2024;33:e5797. wileyonlinelibrary.com/journal/pds  1 of 5",
+          "bBox": {
+            "x": 45.64,
+            "y": 751.38,
+            "w": 503.98,
+            "h": 7,
+            "confidence": 0.7,
+            "label": "text"
+          }
+        }
+      ],
+      "status": "OK",
+      "originalOrientationAngle": 0,
+      "links": [
+        {
+          "url": "https://orcid.org/0000-0003-2061-108X",
+          "unsafeUrl": "https://orcid.org/0000-0003-2061-108X",
+          "text": ""
+        },
+        {
+          "url": "mailto:kmccall@binghamton.edu",
+          "unsafeUrl": "mailto:kmccall@binghamton.edu",
+          "text": "Email:  kmccall@binghamton.edu"
+        },
+        {
+          "url": "http://creativecommons.org/licenses/by/4.0/",
+          "unsafeUrl": "http://creativecommons.org/licenses/by/4.0/",
+          "text": "the  Creative "
+        },
+        {
+          "url": "http://wileyonlinelibrary.com/journal/pds",
+          "unsafeUrl": "http://wileyonlinelibrary.com/journal/pds",
+          "text": "wileyonlinelibrary.com/journal/pds"
+        },
+        {
+          "url": "https://doi.org/10.1002/pds.5797",
+          "unsafeUrl": "https://doi.org/10.1002/pds.5797",
+          "text": "https://doi.org/10.1002/pds.5797"
+        },
+        {
+          "url": "http://crossmark.crossref.org/dialog/?doi=10.1002%2Fpds.5797&domain=pdf&date_stamp=2024-04-29",
+          "unsafeUrl": "http://crossmark.crossref.org/dialog/?doi=10.1002%2Fpds.5797&domain=pdf&date_stamp=2024-04-29",
+          "text": ""
+        }
+      ],
+      "width": 595.276,
+      "height": 782.362,
+      "triggeredAutoMode": false,
+      "parsingMode": "accurate",
+      "structuredData": null,
+      "noStructuredContent": false,
+      "noTextContent": false,
+      "pageHeaderMarkdown": "\nCheck for updates\n",
+      "pageFooterMarkdown": "\n",
+      "printedPageNumber": "",
+      "slideSpeakerNotes": null,
+      "slideSectionName": null,
+      "confidence": 0.981,
+      "costOptimized": false
+    },
+    {
+      "page": 2,
+      "text": "2 of 5    MCCALL ET AL.\n\n\nK E Y W O R D S\nantineoplastic drug, antirheumatic drug, idiopathic pulmonary fibrosis, interstitial lung disease,\npharmacovigilance, pulmonary fibrosis\n\nKey Points\n\u2022  Pulmonary fibrosis (PF) is a severe, progressive disease, which has been associated with\n   exposure to certain medications.\n\u2022  While pneumotoxic drugs such as amiodarone are well documented to be associated with\n   PF, an increasing number of therapeutic agents are associated with drug-induced lung\n   injuries.\n\u2022  Reports of drug-induced pulmonary fibrosis are exponentially increasing.\n\u2022  Disease-modifying antirheumatic drugs are the most common drugs implicated in reports of\n   pulmonary fibrosis.\n\u2022  Antineoplastics are the second most reported drug class involving pulmonary fibrosis.\n\n\n\n1    |   I N T RO DU CT I O N                                                  (MedDRA) terminology.\u2075 MedDRA terminology is an international set\n                                                                               of terms structured into system/organ classes and subdivided into\nPulmonary fibrosis (PF) is a relentlessly progressive lung disease with a      80 262 lowest level terms used to standardize the information in\nmedian survival of 3 to 4 years.\u00b9 PF accounts for up to half of all cases      datasets. All reports are de-identified and available via a public dash-\nof interstitial lung disease and represents the most severe type of inter-     board.\u2076 The study was granted exempt approval by the Binghamton\nstitial pneumonias.\u00b9 There are five main categories of PF that have            University Institutional Review Board.\nidentifiable causes: drug-induced, radiation-induced, environmental,                We queried over 24 million adverse event reports in the FAERS\nautoimmune, and occupational.\u00b9 From 2001 to 2011, the prevalence of            database between 2000 and 2022 using MedDRA search terms \u201cpul-\nPF   increased from  202.2 cases   per     100 000 to 494.5 cases    per       monary fibrosis\u201d and \u201cidiopathic pulmonary fibrosis\u201d. Reports of idio-\n100 000 among US Medicare beneficiaries.\u00b2 The age-adjusted mortality           pathic pulmonary fibrosis were included, as drug-induced interstitial\nfrom PF in men and women was 72.4 deaths/1000000 and 40.1                      lung disease is primarily a diagnosis of exclusion.\u2077 Reports were\ndeaths/1000000, respectively, in 2017.\u00b3                                        extracted from the FAERS database into a Microsoft Excel file and\n          The pathophysiology of PF has many proposed contributors.\u00b9 The       cases were sorted by generic drug names from the National Drug\nirreversible damage to lung tissue and dysfunctional repair mecha-             Code Directory and sorted by drug class using the primary or second-\nnisms result in decreased oxygenation and ultimately death.\u00b9 Though            ary category in the AHFS pharmacologic and therapeutic classification\nthe pathophysiology of PF is not entirely understood, resident macro-          system.8,9 Therapeutic drug classification, however, does not neces-\nphage polarization, interleukin-6 (IL-6), and p53 protein may play a           sarily reflect the intended use. Each adverse event report in the data-\nrole in the progression of pulmonary fibrosis.\u2074                                base codes a drug as either \u201csuspect\u201d or \u201cconcomitant\u201d. A drug was\n     While pneumotoxic drugs such as bleomycin and amiodarone are              considered associated with PF for the purpose of this study when the\nwell documented to be associated with PF, an increasing number of              drug was coded as \u201csuspect\u201d for the adverse event in the report. We\ntherapeutic agents are associated with drug-induced lung injuries.\u00b9            collected the following characteristics for each drug-related PF report:\nThe aim of this research was to investigate the leading drugs reported         patient age, patient sex, reporter type, date of event, and adverse\nin association with PF through an analysis of the US FAERS database.           event outcomes (died, life threatening, hospitalized, disabled, and/or\nIn doing so, we hoped to elucidate the evolving landscape of drug-             other). The data reported by the FAERS database is limited in terms of\ninduced PF by identifying trends over time.                                    death causality, as individual reports do not firmly establish PF as the\n                                                                               cause for the reported outcome, only that it preceded the outcome.\n                                                                               Incomplete reports with missing patient age or sex were removed.\n2    |   METHODS                                                               Cases with missing age or age less than 18 years were removed as PF\n                                                                               is a rare condition in children and none of the clinical or radiologic\n2.1     |    Procedures                                                        findings used for the diagnosis of PF in adults apply to children.\u00b9\u2070\n\nThe U.S. Food and Drug Administration Adverse Event Reporting Sys-\ntem (FAERS) database is a post-marketing safety surveillance program,          2.2  |  Statistics\nwhich contains adverse event and medication error reports voluntarily\nsubmitted to the FDA by healthcare professionals and consumers.                A list of the top 50 drugs associated with PF was created using total\nAdverse events are coded in the informatic structure of the FAERS              counts of adverse event reports with generic drugs. Year over year\ndatabase   using the Medical Dictionary        for Regulatory Activities       trends in the most common drugs, as well as relevant drug classes,\n\n\n\n\n\n\n\n\n\n\n10991557, 2024, 5, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/pds.5797 by Universitatsbibliothek RWTH Aachen University, Wiley Online Library on [05/03/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms\u2011and\u2011conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License",
+      "md": "\nK E Y W O R D S\n\n- antineoplastic drug\n- antirheumatic drug\n- idiopathic pulmonary fibrosis\n- interstitial lung disease\n- pharmacovigilance\n- pulmonary fibrosis\n\nKey Points\n\n- Pulmonary fibrosis (PF) is a severe, progressive disease, which has been associated with exposure to certain medications.\n- While pneumotoxic drugs such as amiodarone are well documented to be associated with PF, an increasing number of therapeutic agents are associated with drug-induced lung injuries.\n- Reports of drug-induced pulmonary fibrosis are exponentially increasing.\n- Disease-modifying antirheumatic drugs are the most common drugs implicated in reports of pulmonary fibrosis.\n- Antineoplastics are the second most reported drug class involving pulmonary fibrosis.\n\n# 1 | I N T RO DU CT I O N\n\nPulmonary fibrosis (PF) is a relentlessly progressive lung disease with a median survival of 3 to 4 years.\u00b9 PF accounts for up to half of all cases of interstitial lung disease and represents the most severe type of interstitial pneumonias.\u00b9 There are five main categories of PF that have identifiable causes: drug-induced, radiation-induced, environmental, autoimmune, and occupational.\u00b9 From 2001 to 2011, the prevalence of PF increased from 202.2 cases per 100,000 to 494.5 cases per 100,000 among US Medicare beneficiaries.\u00b2 The age-adjusted mortality from PF in men and women was 72.4 deaths/1,000,000 and 40.1 deaths/1,000,000, respectively, in 2017.\u00b3\n\nThe pathophysiology of PF has many proposed contributors.\u00b9 The irreversible damage to lung tissue and dysfunctional repair mechanisms result in decreased oxygenation and ultimately death.\u00b9 Though the pathophysiology of PF is not entirely understood, resident macrophage polarization, interleukin-6 (IL-6), and p53 protein may play a role in the progression of pulmonary fibrosis.\u2074\n\nWhile pneumotoxic drugs such as bleomycin and amiodarone are well documented to be associated with PF, an increasing number of therapeutic agents are associated with drug-induced lung injuries.\u00b9 The aim of this research was to investigate the leading drugs reported in association with PF through an analysis of the US FAERS database. In doing so, we hoped to elucidate the evolving landscape of drug-induced PF by identifying trends over time.\n\nThe data reported by the FAERS database is limited in terms of death causality, as individual reports do not firmly establish PF as the cause for the reported outcome, only that it preceded the outcome. Incomplete reports with missing patient age or sex were removed. Cases with missing age or age less than 18 years were removed as PF is a rare condition in children and none of the clinical or radiologic findings used for the diagnosis of PF in adults apply to children.\u00b9\u2070\n\n# 2 | METHODS\n\n# 2.1 | Procedures\n\nThe U.S. Food and Drug Administration Adverse Event Reporting System (FAERS) database is a post-marketing safety surveillance program, which contains adverse event and medication error reports voluntarily submitted to the FDA by healthcare professionals and consumers. Adverse events are coded in the informatic structure of the FAERS database using the Medical Dictionary for Regulatory Activities (MedDRA) terminology.\u2075 MedDRA terminology is an international set of terms structured into system/organ classes and subdivided into 80,262 lowest level terms used to standardize the information in datasets. All reports are de-identified and available via a public dashboard.\u2076 The study was granted exempt approval by the Binghamton University Institutional Review Board.\n\n# 2.2 | Statistics\n\nA list of the top 50 drugs associated with PF was created using total counts of adverse event reports with generic drugs. Year over year trends in the most common drugs, as well as relevant drug classes, were analyzed.\n\n",
+      "images": [
+        {
+          "name": "page_2.jpg",
+          "height": 782.362,
+          "width": 595.276,
+          "x": 0,
+          "y": 0,
+          "original_width": 1217,
+          "original_height": 1600,
+          "rotation": 0,
+          "type": "full_page_screenshot"
+        }
+      ],
+      "charts": [],
+      "items": [
+        {
+          "type": "text",
+          "md": "K E Y W O R D S",
+          "value": "K E Y W O R D S",
+          "bBox": {
+            "x": 210.16,
+            "y": 54.23,
+            "w": 49.54,
+            "h": 7,
+            "confidence": 0.7,
+            "label": "text"
+          }
+        },
+        {
+          "type": "text",
+          "md": "- antineoplastic drug\n- antirheumatic drug\n- idiopathic pulmonary fibrosis\n- interstitial lung disease\n- pharmacovigilance\n- pulmonary fibrosis",
+          "value": "- antineoplastic drug\n- antirheumatic drug\n- idiopathic pulmonary fibrosis\n- interstitial lung disease\n- pharmacovigilance\n- pulmonary fibrosis"
+        },
+        {
+          "type": "text",
+          "md": "Key Points",
+          "value": "Key Points",
+          "bBox": {
+            "x": 210.16,
+            "y": 101.27,
+            "w": 43.42,
+            "h": 9,
+            "confidence": 0.7,
+            "label": "text"
+          }
+        },
+        {
+          "type": "text",
+          "md": "- Pulmonary fibrosis (PF) is a severe, progressive disease, which has been associated with exposure to certain medications.\n- While pneumotoxic drugs such as amiodarone are well documented to be associated with PF, an increasing number of therapeutic agents are associated with drug-induced lung injuries.\n- Reports of drug-induced pulmonary fibrosis are exponentially increasing.\n- Disease-modifying antirheumatic drugs are the most common drugs implicated in reports of pulmonary fibrosis.\n- Antineoplastics are the second most reported drug class involving pulmonary fibrosis.",
+          "value": "- Pulmonary fibrosis (PF) is a severe, progressive disease, which has been associated with exposure to certain medications.\n- While pneumotoxic drugs such as amiodarone are well documented to be associated with PF, an increasing number of therapeutic agents are associated with drug-induced lung injuries.\n- Reports of drug-induced pulmonary fibrosis are exponentially increasing.\n- Disease-modifying antirheumatic drugs are the most common drugs implicated in reports of pulmonary fibrosis.\n- Antineoplastics are the second most reported drug class involving pulmonary fibrosis.",
+          "bBox": {
+            "x": 220.71,
+            "y": 115.25,
+            "w": 321.96,
+            "h": 111.97,
+            "confidence": 0.7,
+            "label": "text"
+          }
+        },
+        {
+          "type": "heading",
+          "md": "# 1 | I N T RO DU CT I O N",
+          "value": "1 | I N T RO DU CT I O N",
+          "lvl": 1,
+          "bBox": {
+            "x": 45.64,
+            "y": 256.97,
+            "w": 119.6,
+            "h": 10,
+            "confidence": 0.7,
+            "label": "heading"
+          }
+        },
+        {
+          "type": "text",
+          "md": "Pulmonary fibrosis (PF) is a relentlessly progressive lung disease with a median survival of 3 to 4 years.\u00b9 PF accounts for up to half of all cases of interstitial lung disease and represents the most severe type of interstitial pneumonias.\u00b9 There are five main categories of PF that have identifiable causes: drug-induced, radiation-induced, environmental, autoimmune, and occupational.\u00b9 From 2001 to 2011, the prevalence of PF increased from 202.2 cases per 100,000 to 494.5 cases per 100,000 among US Medicare beneficiaries.\u00b2 The age-adjusted mortality from PF in men and women was 72.4 deaths/1,000,000 and 40.1 deaths/1,000,000, respectively, in 2017.\u00b3",
+          "value": "Pulmonary fibrosis (PF) is a relentlessly progressive lung disease with a median survival of 3 to 4 years.\u00b9 PF accounts for up to half of all cases of interstitial lung disease and represents the most severe type of interstitial pneumonias.\u00b9 There are five main categories of PF that have identifiable causes: drug-induced, radiation-induced, environmental, autoimmune, and occupational.\u00b9 From 2001 to 2011, the prevalence of PF increased from 202.2 cases per 100,000 to 494.5 cases per 100,000 among US Medicare beneficiaries.\u00b2 The age-adjusted mortality from PF in men and women was 72.4 deaths/1,000,000 and 40.1 deaths/1,000,000, respectively, in 2017.\u00b3",
+          "bBox": {
+            "x": 45.64,
+            "y": 284.93,
+            "w": 242.85,
+            "h": 450.03,
+            "confidence": 0.7,
+            "label": "text"
+          }
+        },
+        {
+          "type": "text",
+          "md": "The pathophysiology of PF has many proposed contributors.\u00b9 The irreversible damage to lung tissue and dysfunctional repair mechanisms result in decreased oxygenation and ultimately death.\u00b9 Though the pathophysiology of PF is not entirely understood, resident macrophage polarization, interleukin-6 (IL-6), and p53 protein may play a role in the progression of pulmonary fibrosis.\u2074",
+          "value": "The pathophysiology of PF has many proposed contributors.\u00b9 The irreversible damage to lung tissue and dysfunctional repair mechanisms result in decreased oxygenation and ultimately death.\u00b9 Though the pathophysiology of PF is not entirely understood, resident macrophage polarization, interleukin-6 (IL-6), and p53 protein may play a role in the progression of pulmonary fibrosis.\u2074",
+          "bBox": {
+            "x": 45.64,
+            "y": 414.08,
+            "w": 242.83,
+            "h": 73.87,
+            "confidence": 0.7,
+            "label": "text"
+          }
+        },
+        {
+          "type": "text",
+          "md": "While pneumotoxic drugs such as bleomycin and amiodarone are well documented to be associated with PF, an increasing number of therapeutic agents are associated with drug-induced lung injuries.\u00b9 The aim of this research was to investigate the leading drugs reported in association with PF through an analysis of the US FAERS database. In doing so, we hoped to elucidate the evolving landscape of drug-induced PF by identifying trends over time.",
+          "value": "While pneumotoxic drugs such as bleomycin and amiodarone are well documented to be associated with PF, an increasing number of therapeutic agents are associated with drug-induced lung injuries.\u00b9 The aim of this research was to investigate the leading drugs reported in association with PF through an analysis of the US FAERS database. In doing so, we hoped to elucidate the evolving landscape of drug-induced PF by identifying trends over time.",
+          "bBox": {
+            "x": 45.64,
+            "y": 154.25,
+            "w": 497.03,
+            "h": 424.69,
+            "confidence": 0.7,
+            "label": "text"
+          }
+        },
+        {
+          "type": "text",
+          "md": "The data reported by the FAERS database is limited in terms of death causality, as individual reports do not firmly establish PF as the cause for the reported outcome, only that it preceded the outcome. Incomplete reports with missing patient age or sex were removed. Cases with missing age or age less than 18 years were removed as PF is a rare condition in children and none of the clinical or radiologic findings used for the diagnosis of PF in adults apply to children.\u00b9\u2070",
+          "value": "The data reported by the FAERS database is limited in terms of death causality, as individual reports do not firmly establish PF as the cause for the reported outcome, only that it preceded the outcome. Incomplete reports with missing patient age or sex were removed. Cases with missing age or age less than 18 years were removed as PF is a rare condition in children and none of the clinical or radiologic findings used for the diagnosis of PF in adults apply to children.\u00b9\u2070",
+          "bBox": {
+            "x": 45.64,
+            "y": 570.94,
+            "w": 504.07,
+            "h": 164.02,
+            "confidence": 0.7,
+            "label": "text"
+          }
+        },
+        {
+          "type": "heading",
+          "md": "# 2 | METHODS",
+          "value": "2 | METHODS",
+          "lvl": 1,
+          "bBox": {
+            "x": 45.64,
+            "y": 256.97,
+            "w": 87.33,
+            "h": 360.99,
+            "confidence": 0.7,
+            "label": "heading"
+          }
+        },
+        {
+          "type": "heading",
+          "md": "# 2.1 | Procedures",
+          "value": "2.1 | Procedures",
+          "lvl": 1,
+          "bBox": {
+            "x": 45.64,
+            "y": 256.97,
+            "w": 90.1,
+            "h": 387.01,
+            "confidence": 0.7,
+            "label": "heading"
+          }
+        },
+        {
+          "type": "text",
+          "md": "The U.S. Food and Drug Administration Adverse Event Reporting System (FAERS) database is a post-marketing safety surveillance program, which contains adverse event and medication error reports voluntarily submitted to the FDA by healthcare professionals and consumers. Adverse events are coded in the informatic structure of the FAERS database using the Medical Dictionary for Regulatory Activities (MedDRA) terminology.\u2075 MedDRA terminology is an international set of terms structured into system/organ classes and subdivided into 80,262 lowest level terms used to standardize the information in datasets. All reports are de-identified and available via a public dashboard.\u2076 The study was granted exempt approval by the Binghamton University Institutional Review Board.",
+          "value": "The U.S. Food and Drug Administration Adverse Event Reporting System (FAERS) database is a post-marketing safety surveillance program, which contains adverse event and medication error reports voluntarily submitted to the FDA by healthcare professionals and consumers. Adverse events are coded in the informatic structure of the FAERS database using the Medical Dictionary for Regulatory Activities (MedDRA) terminology.\u2075 MedDRA terminology is an international set of terms structured into system/organ classes and subdivided into 80,262 lowest level terms used to standardize the information in datasets. All reports are de-identified and available via a public dashboard.\u2076 The study was granted exempt approval by the Binghamton University Institutional Review Board.",
+          "bBox": {
+            "x": 45.64,
+            "y": 258.06,
+            "w": 504.07,
+            "h": 476.9,
+            "confidence": 0.7,
+            "label": "text"
+          }
+        },
+        {
+          "type": "heading",
+          "md": "# 2.2 | Statistics",
+          "value": "2.2 | Statistics",
+          "lvl": 1,
+          "bBox": {
+            "x": 63.1,
+            "y": 256.97,
+            "w": 323.5,
+            "h": 425.96,
+            "confidence": 0.7,
+            "label": "heading"
+          }
+        },
+        {
+          "type": "text",
+          "md": "A list of the top 50 drugs associated with PF was created using total counts of adverse event reports with generic drugs. Year over year trends in the most common drugs, as well as relevant drug classes, were analyzed.",
+          "value": "A list of the top 50 drugs associated with PF was created using total counts of adverse event reports with generic drugs. Year over year trends in the most common drugs, as well as relevant drug classes, were analyzed.",
+          "bBox": {
+            "x": 306.88,
+            "y": 700.94,
+            "w": 242.79,
+            "h": 34.02,
+            "confidence": 0.7,
+            "label": "text"
+          }
+        }
+      ],
+      "status": "OK",
+      "originalOrientationAngle": 0,
+      "links": [],
+      "width": 595.276,
+      "height": 782.362,
+      "triggeredAutoMode": false,
+      "parsingMode": "accurate",
+      "structuredData": null,
+      "noStructuredContent": false,
+      "noTextContent": false,
+      "pageHeaderMarkdown": "",
+      "pageFooterMarkdown": "",
+      "printedPageNumber": "",
+      "slideSpeakerNotes": null,
+      "slideSectionName": null,
+      "confidence": 0.704,
+      "costOptimized": false
+    },
+    {
+      "page": 3,
+      "text": "    MCCALL ET AL.\n\n\n    were evaluated as the number of reports of PF reported to the FDA\n    over time. A best-fit trendline based on an exponential function was\n    used to model the relationship between number of reports per year\n    and time. Using time series plots, emerging reports of drug-induced\n    PF were identified and changes over the 23-year period    were\n    assessed using GraphPad Prism version 9.3.0 for Windows.\u00b9\u00b9\n\n\n\n    3   |   RESULTS\n\n    We queried 24 095 935 reports in the FAERS database from 2000 to\n    2022 and identified reports involving PF. Preliminary aggregates for\n    PF reports totaled 17 520 reports. After removing incomplete reports\n    and reports involving persons less than 18 years of age, the study\n    included 11 988 reports of which 6248 (52.1%) were male. The mean\n    age of the study sample was 67.8 (SD 12.2) and 65.1 (SD 13.7) years\n    for men   and women,  respectively. Many adverse event         reports\n    (33.2%) listed more than one suspected drug with a mean (SD) of 2.1\n    (3.3) drugs per report. Most adverse event reports were submitted by\n    a healthcare professional (7994, 66.7%). Death and hospitalization\n    were reported as outcomes in 3896 (32.5%) and 6293 (52.5%) of\n    reports, respectively.\n        The lowest and    highest  number of reports per      year were\n    252 reports in 2001 and 1049 reports in 2020, which reflected an\n    increase of 316%. Plotting the 11 988 PF reports by year demonstrated\n    an increasing slope over time with approximately 35 additional reports\n    per year (estimate = 35.1, 95% CI = 27.3\u201342.8, R\u00b2 = 0.81,      P-value\n    <0.0001) using linear regression. Plotting an exponential regression line\n    to the number of reports per year revealed a doubling time of 9.4 years\n    (95% CI = 7.9\u201311.5 years, R\u00b2 = 0.88, P-value <0.0001). The number of\n    reports per year was relatively stable from 2000 to 2009 and subse-\n    quently increased in 10 out of 13 years from 2010 to 2022.\n          The top 50 drugs associated with a report of PF submitted to the\n    FDA from 2000 to 2022 are shown in Table 1 (more than one sus-\n    pected drug could be listed in each report). The main drug classes\n    reported to the FDA in association with PF in descending order were\n    disease-modifying antirheumatic drugs (DMARDs, 39.4%), antineo-\n    plastics (26.4%), cardiovascular agents (12.6%), corticosteroids (4.6%),\n    immunosuppressive     agents (4.0%), HMG-CoA reductase    inhibitors\n    (4.0%), \u201cother\u201d (3.7%), analgesics (3.2%), and bone resorption inhibi-\n    tors (2.2%). DMARDs and antineoplastics accounted for 11 and 13 of\n    the top 50 drugs, respectively.\n         As shown in Figure 1, the number of reports per year for 9 of the\n    top 10 drugs increased over the timeframe of the study. Year over\n    year reporting for pulmonary fibrosis generally increased throughout\n    the study timeframe except for 2021. In the pre-COVID timeframe\n    from 2000 to 2019, seven of the top 10 drugs (methotrexate, etaner-\n    cept, adalimumab, rituximab, hydroxychloroquine, tocilizumab, and\n    abatacept) demonstrated an increasing slope over time. The three\n    drugs with the steepest slopes of increasing reports over time from\n    2019 to 2022 were leflunomide, tocilizumab, and infliximab (Figure 1).\n    Reports involving amiodarone did not increase over the timeframe of\n    the study.\n\n\n\n\n\n\n\n\n\n\n  a\n  T\n  A B L\n\n  Drug  E \u00b9 The   top   50  drugs  suspected  of pulmonary  fibrosis  by   count  in descending  order:  FAERS  database  2000   to 2022.\n  (Rank  1\n  \u2013\n  10)  Cases  (#)  Drug  (Rank  11 \u2013\n  20)  Cases  (#)  Drug  (Rank  21 \u2013\n  30)  Cases  (#)  Drug  (Rank  31 \u2013\n  40)  Cases  (#)  Drug  (Rank  41\u2013\n  Methotrexate  1350  Prednisone  367  Azathioprine  171  Celecoxib  130  Fluticasone\\Salmeterol  50)  Cases  (#)\n  103\n  Etanercept  1032  Tofacitinib  293  Golimumab  165  Mycophenolate  130  Amlodipine  99\n  Adalimumab  819  Simvastatin  270  Bleomycin  158  Docetaxel  120  Tacrolimus  95\n  Amiodarone  792  Atorvastatin  244  Doxorubicin  152  Cyclosporine  119  Clopidogrel  94\n  Infliximab  565  Cyclophosphamide  244  Macitentan  149  Carboplatin  118  Etoposide  92\n  Rituximab  561  Sulfasalazine  222  Alendronate  147  Prednisolone  115  Gemcitabine  90\nHydroxychloroquine  515  Certolizumab  209  Nitrofurantoin  141  Paclitaxel  108  Acetaminophen  87\n  Abatacept  430  Ambrisentan  193  Zoledronic  Acid  140  Ribavirin  108  Cisplatin  86\n  Leflunomide  406  Bosentan  179  Metformin  133  Aspirin  108  Gold  86\n  Tocilizumab  389  Oxaliplatin  175  Fluorouracil  131  Furosemide  105  Rofecoxib  84\n  a TOTAL  6859  2396  1487  1161  916\n  More  than  one   suspected  drug  could  be  listed  in each   report.\n\n\n\n\n\n\n\n\n\n\n    3 of 5\n\n\n\n\n\n\n\n\n\n\n    10991557, 2024, 5, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/pds.5797 by Universitatsbibliothek RWTH Aachen University, Wiley Online Library on [05/03/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms\u2011and\u2011conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License",
+      "md": "\nMCCALL ET AL.\n\n# 3   |   RESULTS\n\nWe queried 24 095 935 reports in the FAERS database from 2000 to 2022 and identified reports involving PF. Preliminary aggregates for PF reports totaled 17 520 reports. After removing incomplete reports and reports involving persons less than 18 years of age, the study included 11 988 reports of which 6248 (52.1%) were male. The mean age of the study sample was 67.8 (SD 12.2) and 65.1 (SD 13.7) years for men and women, respectively. Many adverse event reports (33.2%) listed more than one suspected drug with a mean (SD) of 2.1 (3.3) drugs per report. Most adverse event reports were submitted by a healthcare professional (7994, 66.7%). Death and hospitalization were reported as outcomes in 3896 (32.5%) and 6293 (52.5%) of reports, respectively.\n\nThe lowest and highest number of reports per year were 252 reports in 2001 and 1049 reports in 2020, which reflected an increase of 316%. Plotting the 11 988 PF reports by year demonstrated an increasing slope over time with approximately 35 additional reports per year (estimate = 35.1, 95% CI = 27.3\u201342.8, R\u00b2 = 0.81, P-value &#x3C;0.0001) using linear regression. Plotting an exponential regression line to the number of reports per year revealed a doubling time of 9.4 years (95% CI = 7.9\u201311.5 years, R\u00b2 = 0.88, P-value &#x3C;0.0001). The number of reports per year was relatively stable from 2000 to 2009 and subsequently increased in 10 out of 13 years from 2010 to 2022.\n\nThe top 50 drugs associated with a report of PF submitted to the FDA from 2000 to 2022 are shown in Table 1 (more than one suspected drug could be listed in each report). The main drug classes reported to the FDA in association with PF in descending order were disease-modifying antirheumatic drugs (DMARDs, 39.4%), antineoplastics (26.4%), cardiovascular agents (12.6%), corticosteroids (4.6%), immunosuppressive agents (4.0%), HMG-CoA reductase inhibitors (4.0%), \u201cother\u201d (3.7%), analgesics (3.2%), and bone resorption inhibitors (2.2%). DMARDs and antineoplastics accounted for 11 and 13 of the top 50 drugs, respectively.\n\nAs shown in Figure 1, the number of reports per year for 9 of the top 10 drugs increased over the timeframe of the study. Year over year reporting for pulmonary fibrosis generally increased throughout the study timeframe except for 2021. In the pre-COVID timeframe from 2000 to 2019, seven of the top 10 drugs (methotrexate, etanercept, adalimumab, rituximab, hydroxychloroquine, tocilizumab, and abatacept) demonstrated an increasing slope over time. The three drugs with the steepest slopes of increasing reports over time from 2019 to 2022 were leflunomide, tocilizumab, and infliximab (Figure 1). Reports involving amiodarone did not increase over the timeframe of the study.\n\n| The top 50 drugs suspected of pulmonary fibrosis by count in descending order: FAERS database 2000 to 2022. |           |\n| ----------------------------------------------------------------------------------------------------------- | --------- |\n| Drug (Rank 1 \u2013 10)                                                                                          | Cases (#) |\n| Methotrexate                                                                                                | 1350      |\n| Etanercept                                                                                                  | 1032      |\n| Adalimumab                                                                                                  | 819       |\n| Amiodarone                                                                                                  | 792       |\n| Infliximab                                                                                                  | 565       |\n| Hydroxychloroquine                                                                                          | 515       |\n| Abatacept                                                                                                   | 430       |\n| Leflunomide                                                                                                 | 406       |\n| Tocilizumab                                                                                                 | 389       |\n| Prednisone                                                                                                  | 367       |\n| Tofacitinib                                                                                                 | 293       |\n| Simvastatin                                                                                                 | 270       |\n| Atorvastatin                                                                                                | 244       |\n| Cyclophosphamide                                                                                            | 244       |\n| Bleomycin                                                                                                   | 158       |\n| Mycophenolate                                                                                               | 130       |\n| Docetaxel                                                                                                   | 120       |\n| Cyclosporine                                                                                                | 119       |\n| Carboplatin                                                                                                 | 118       |\n| Prednisolone                                                                                                | 115       |\n| Gemcitabine                                                                                                 | 90        |\n| Acetaminophen                                                                                               | 87        |\n| More than one suspected drug could be listed in each report.                                                |           |\n\n10991557, 2024, 5, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/pds.5797 by Universitatsbibliothek RWTH Aachen University, Wiley Online Library on [05/03/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms\u2011and\u2011conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License\n",
+      "images": [
+        {
+          "name": "page_3.jpg",
+          "height": 782.362,
+          "width": 595.276,
+          "x": 0,
+          "y": 0,
+          "original_width": 1217,
+          "original_height": 1600,
+          "rotation": 0,
+          "type": "full_page_screenshot"
+        }
+      ],
+      "charts": [],
+      "items": [
+        {
+          "type": "text",
+          "md": "MCCALL ET AL.",
+          "value": "MCCALL ET AL.",
+          "bBox": {
+            "x": 45.64,
+            "y": 22.25,
+            "w": 42.99,
+            "h": 7,
+            "confidence": 0.7,
+            "label": "text"
+          }
+        },
+        {
+          "type": "heading",
+          "md": "# 3   |   RESULTS",
+          "value": "3   |   RESULTS",
+          "lvl": 1,
+          "bBox": {
+            "x": 45.64,
+            "y": 152.94,
+            "w": 79,
+            "h": 10,
+            "confidence": 0.7,
+            "label": "heading"
+          }
+        },
+        {
+          "type": "text",
+          "md": "We queried 24 095 935 reports in the FAERS database from 2000 to 2022 and identified reports involving PF. Preliminary aggregates for PF reports totaled 17 520 reports. After removing incomplete reports and reports involving persons less than 18 years of age, the study included 11 988 reports of which 6248 (52.1%) were male. The mean age of the study sample was 67.8 (SD 12.2) and 65.1 (SD 13.7) years for men and women, respectively. Many adverse event reports (33.2%) listed more than one suspected drug with a mean (SD) of 2.1 (3.3) drugs per report. Most adverse event reports were submitted by a healthcare professional (7994, 66.7%). Death and hospitalization were reported as outcomes in 3896 (32.5%) and 6293 (52.5%) of reports, respectively.",
+          "value": "We queried 24 095 935 reports in the FAERS database from 2000 to 2022 and identified reports involving PF. Preliminary aggregates for PF reports totaled 17 520 reports. After removing incomplete reports and reports involving persons less than 18 years of age, the study included 11 988 reports of which 6248 (52.1%) were male. The mean age of the study sample was 67.8 (SD 12.2) and 65.1 (SD 13.7) years for men and women, respectively. Many adverse event reports (33.2%) listed more than one suspected drug with a mean (SD) of 2.1 (3.3) drugs per report. Most adverse event reports were submitted by a healthcare professional (7994, 66.7%). Death and hospitalization were reported as outcomes in 3896 (32.5%) and 6293 (52.5%) of reports, respectively.",
+          "bBox": {
+            "x": 45.64,
+            "y": 180.96,
+            "w": 242.87,
+            "h": 150.97,
+            "confidence": 0.7,
+            "label": "text"
+          }
+        },
+        {
+          "type": "text",
+          "md": "The lowest and highest number of reports per year were 252 reports in 2001 and 1049 reports in 2020, which reflected an increase of 316%. Plotting the 11 988 PF reports by year demonstrated an increasing slope over time with approximately 35 additional reports per year (estimate = 35.1, 95% CI = 27.3\u201342.8, R\u00b2 = 0.81, P-value &#x3C;0.0001) using linear regression. Plotting an exponential regression line to the number of reports per year revealed a doubling time of 9.4 years (95% CI = 7.9\u201311.5 years, R\u00b2 = 0.88, P-value &#x3C;0.0001). The number of reports per year was relatively stable from 2000 to 2009 and subsequently increased in 10 out of 13 years from 2010 to 2022.",
+          "value": "The lowest and highest number of reports per year were 252 reports in 2001 and 1049 reports in 2020, which reflected an increase of 316%. Plotting the 11 988 PF reports by year demonstrated an increasing slope over time with approximately 35 additional reports per year (estimate = 35.1, 95% CI = 27.3\u201342.8, R\u00b2 = 0.81, P-value &#x3C;0.0001) using linear regression. Plotting an exponential regression line to the number of reports per year revealed a doubling time of 9.4 years (95% CI = 7.9\u201311.5 years, R\u00b2 = 0.88, P-value &#x3C;0.0001). The number of reports per year was relatively stable from 2000 to 2009 and subsequently increased in 10 out of 13 years from 2010 to 2022.",
+          "bBox": {
+            "x": 45.64,
+            "y": 102.95,
+            "w": 480.08,
+            "h": 626.03,
+            "confidence": 0.7,
+            "label": "text"
+          }
+        },
+        {
+          "type": "text",
+          "md": "The top 50 drugs associated with a report of PF submitted to the FDA from 2000 to 2022 are shown in Table 1 (more than one suspected drug could be listed in each report). The main drug classes reported to the FDA in association with PF in descending order were disease-modifying antirheumatic drugs (DMARDs, 39.4%), antineoplastics (26.4%), cardiovascular agents (12.6%), corticosteroids (4.6%), immunosuppressive agents (4.0%), HMG-CoA reductase inhibitors (4.0%), \u201cother\u201d (3.7%), analgesics (3.2%), and bone resorption inhibitors (2.2%). DMARDs and antineoplastics accounted for 11 and 13 of the top 50 drugs, respectively.",
+          "value": "The top 50 drugs associated with a report of PF submitted to the FDA from 2000 to 2022 are shown in Table 1 (more than one suspected drug could be listed in each report). The main drug classes reported to the FDA in association with PF in descending order were disease-modifying antirheumatic drugs (DMARDs, 39.4%), antineoplastics (26.4%), cardiovascular agents (12.6%), corticosteroids (4.6%), immunosuppressive agents (4.0%), HMG-CoA reductase inhibitors (4.0%), \u201cother\u201d (3.7%), analgesics (3.2%), and bone resorption inhibitors (2.2%). DMARDs and antineoplastics accounted for 11 and 13 of the top 50 drugs, respectively.",
+          "bBox": {
+            "x": 45.64,
+            "y": 102.95,
+            "w": 480.08,
+            "h": 629.24,
+            "confidence": 0.7,
+            "label": "text"
+          }
+        },
+        {
+          "type": "text",
+          "md": "As shown in Figure 1, the number of reports per year for 9 of the top 10 drugs increased over the timeframe of the study. Year over year reporting for pulmonary fibrosis generally increased throughout the study timeframe except for 2021. In the pre-COVID timeframe from 2000 to 2019, seven of the top 10 drugs (methotrexate, etanercept, adalimumab, rituximab, hydroxychloroquine, tocilizumab, and abatacept) demonstrated an increasing slope over time. The three drugs with the steepest slopes of increasing reports over time from 2019 to 2022 were leflunomide, tocilizumab, and infliximab (Figure 1). Reports involving amiodarone did not increase over the timeframe of the study.",
+          "value": "As shown in Figure 1, the number of reports per year for 9 of the top 10 drugs increased over the timeframe of the study. Year over year reporting for pulmonary fibrosis generally increased throughout the study timeframe except for 2021. In the pre-COVID timeframe from 2000 to 2019, seven of the top 10 drugs (methotrexate, etanercept, adalimumab, rituximab, hydroxychloroquine, tocilizumab, and abatacept) demonstrated an increasing slope over time. The three drugs with the steepest slopes of increasing reports over time from 2019 to 2022 were leflunomide, tocilizumab, and infliximab (Figure 1). Reports involving amiodarone did not increase over the timeframe of the study.",
+          "bBox": {
+            "x": 45.64,
+            "y": 329.16,
+            "w": 322.87,
+            "h": 398.78,
+            "confidence": 0.7,
+            "label": "text"
+          }
+        },
+        {
+          "type": "table",
+          "md": "| The top 50 drugs suspected of pulmonary fibrosis by count in descending order: FAERS database 2000 to 2022. |           |\n| ----------------------------------------------------------------------------------------------------------- | --------- |\n| Drug (Rank 1 \u2013 10)                                                                                          | Cases (#) |\n| Methotrexate                                                                                                | 1350      |\n| Etanercept                                                                                                  | 1032      |\n| Adalimumab                                                                                                  | 819       |\n| Amiodarone                                                                                                  | 792       |\n| Infliximab                                                                                                  | 565       |\n| Hydroxychloroquine                                                                                          | 515       |\n| Abatacept                                                                                                   | 430       |\n| Leflunomide                                                                                                 | 406       |\n| Tocilizumab                                                                                                 | 389       |\n| Prednisone                                                                                                  | 367       |\n| Tofacitinib                                                                                                 | 293       |\n| Simvastatin                                                                                                 | 270       |\n| Atorvastatin                                                                                                | 244       |\n| Cyclophosphamide                                                                                            | 244       |\n| Bleomycin                                                                                                   | 158       |\n| Mycophenolate                                                                                               | 130       |\n| Docetaxel                                                                                                   | 120       |\n| Cyclosporine                                                                                                | 119       |\n| Carboplatin                                                                                                 | 118       |\n| Prednisolone                                                                                                | 115       |\n| Gemcitabine                                                                                                 | 90        |\n| Acetaminophen                                                                                               | 87        |\n| More than one suspected drug could be listed in each report.                                                |           |",
+          "rows": [
+            [
+              "The top 50 drugs suspected of pulmonary fibrosis by count in descending order: FAERS database 2000 to 2022.",
+              ""
+            ],
+            [
+              "Drug (Rank 1 \u2013 10)",
+              "Cases (#)"
+            ],
+            [
+              "Methotrexate",
+              "1350"
+            ],
+            [
+              "Etanercept",
+              "1032"
+            ],
+            [
+              "Adalimumab",
+              "819"
+            ],
+            [
+              "Amiodarone",
+              "792"
+            ],
+            [
+              "Infliximab",
+              "565"
+            ],
+            [
+              "Hydroxychloroquine",
+              "515"
+            ],
+            [
+              "Abatacept",
+              "430"
+            ],
+            [
+              "Leflunomide",
+              "406"
+            ],
+            [
+              "Tocilizumab",
+              "389"
+            ],
+            [
+              "Prednisone",
+              "367"
+            ],
+            [
+              "Tofacitinib",
+              "293"
+            ],
+            [
+              "Simvastatin",
+              "270"
+            ],
+            [
+              "Atorvastatin",
+              "244"
+            ],
+            [
+              "Cyclophosphamide",
+              "244"
+            ],
+            [
+              "Bleomycin",
+              "158"
+            ],
+            [
+              "Mycophenolate",
+              "130"
+            ],
+            [
+              "Docetaxel",
+              "120"
+            ],
+            [
+              "Cyclosporine",
+              "119"
+            ],
+            [
+              "Carboplatin",
+              "118"
+            ],
+            [
+              "Prednisolone",
+              "115"
+            ],
+            [
+              "Gemcitabine",
+              "90"
+            ],
+            [
+              "Acetaminophen",
+              "87"
+            ],
+            [
+              "More than one suspected drug could be listed in each report.",
+              ""
+            ]
+          ],
+          "isPerfectTable": true,
+          "csv": "\"The top 50 drugs suspected of pulmonary fibrosis by count in descending order: FAERS database 2000 to 2022.\",\"\"\n\"Drug (Rank 1 \u2013 10)\",\"Cases (#)\"\n\"Methotrexate\",\"1350\"\n\"Etanercept\",\"1032\"\n\"Adalimumab\",\"819\"\n\"Amiodarone\",\"792\"\n\"Infliximab\",\"565\"\n\"Hydroxychloroquine\",\"515\"\n\"Abatacept\",\"430\"\n\"Leflunomide\",\"406\"\n\"Tocilizumab\",\"389\"\n\"Prednisone\",\"367\"\n\"Tofacitinib\",\"293\"\n\"Simvastatin\",\"270\"\n\"Atorvastatin\",\"244\"\n\"Cyclophosphamide\",\"244\"\n\"Bleomycin\",\"158\"\n\"Mycophenolate\",\"130\"\n\"Docetaxel\",\"120\"\n\"Cyclosporine\",\"119\"\n\"Carboplatin\",\"118\"\n\"Prednisolone\",\"115\"\n\"Gemcitabine\",\"90\"\n\"Acetaminophen\",\"87\"\n\"More than one suspected drug could be listed in each report.\",\"\"",
+          "bBox": {
+            "x": 45.64,
+            "y": 16.87,
+            "w": 539.64,
+            "h": 749.71,
+            "confidence": 0.7,
+            "label": "table"
+          }
+        },
+        {
+          "type": "text",
+          "md": "10991557, 2024, 5, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/pds.5797 by Universitatsbibliothek RWTH Aachen University, Wiley Online Library on [05/03/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms\u2011and\u2011conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License",
+          "value": "10991557, 2024, 5, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/pds.5797 by Universitatsbibliothek RWTH Aachen University, Wiley Online Library on [05/03/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms\u2011and\u2011conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License",
+          "bBox": {
+            "x": 580.42,
+            "y": 16.87,
+            "w": 4.86,
+            "h": 749.71,
+            "confidence": 0.7,
+            "label": "text"
+          }
+        }
+      ],
+      "status": "OK",
+      "originalOrientationAngle": 0,
+      "links": [],
+      "width": 595.276,
+      "height": 782.362,
+      "triggeredAutoMode": false,
+      "parsingMode": "accurate",
+      "structuredData": null,
+      "noStructuredContent": false,
+      "noTextContent": false,
+      "pageHeaderMarkdown": "\nMCCALL ET AL.\n",
+      "pageFooterMarkdown": "\n10991557, 2024, 5, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/pds.5797 by Universitatsbibliothek RWTH Aachen University, Wiley Online Library on [05/03/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms\u2011and\u2011conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License\n",
+      "printedPageNumber": "",
+      "slideSpeakerNotes": null,
+      "slideSectionName": null,
+      "confidence": 0.781,
+      "costOptimized": false
+    },
+    {
+      "page": 4,
+      "text": "  4 of 5    MCCALL ET AL.\n\n\n250       Methotrexate       F I G U R E 1  Reports of pulmonary\n          -Etanercept        fibrosis submitted to FAERS for the\n200       Adalimumab         10 most common drugs by year from\n          - Infliximab       2000 to 2022.\n  20      Rituximab\n150       Amiodarone\n          Leflunomide\n          - Tocilizumab\n100       -Hydroxychloroquine\n          - Abatacept\n\n        50\n\n\n  2000  2005  2010  2015  2020\n\n\n  4 |       DISCUSSION                                                            diseases such as rheumatoid arthritis affect many organs and may pre-\n                                                                                  sent with pulmonary manifestations such as interstitial lung disease.\u00b9\u2076\n  A 23-year analysis of a national         database revealed      significant     Antineoplastics were the second most common medication class\n  increases and dynamic changes in adverse event reports involving PF             associated with drug-induced PF. Antineoplastics, such as bleomycin,\n  from 2000 to 2022. This upward trend in reporting began prior to                disrupt cell replication and/or damage DNA.\u2074 It is theorized that PF\n  COVID-19  and appeared  to         accelerate during the pandemic as            may occur due to deposition of collagen in the lungs after cellular\n  reflected by an exponential        regression line.  Significant  annual        damage and from direct injury to the lung tissue leading to increased\n  increases in the reporting of PF suspected with methotrexate, etaner-           elastin production.\u00b9\u2077 The lungs are inherently the most likely organs\n  cept, adalimumab, infliximab, rituximab, hydroxychloroquine, abata-             to be affected by antineoplastic agents, which may be due to the\n  cept, leflunomide, and tocilizumab were identified. DMARDs and                  mechanisms listed above, or alternatively may be related to immuno-\n  antineoplastics accounted for almost two-thirds of the suspected                suppressive infections.\u00b9\u2077\n  drugs in these adverse event reports.                                           Of the top 10 most reported drugs, only amiodarone was not\n    The increases in adverse event reports involving PF reflect a vital           associated with an increase in reports over time. This finding may be\n  need for further research on the causes and potential treatment. We             due in part to longstanding vigilance on the part of prescribers regard-\n  suspect that the increased volatility in reporting in recent years may          ing potential pulmonary toxicity secondary to amiodarone based on\n  be due in part to pandemic-related effects as well as increased aware-          guidelines for regularly screening patients for pulmonary toxicity.\u00b9\u2078\n  ness of prescribers of the potential for pulmonary toxicity from these          This would have implications for clinical practice as increased aware-\n  drugs. The decrease in overall reporting of pulmonary fibrosis in 2021          ness and screenings may have the potential to reduced incidence of\n  may be due to a decrease in access to routine care during the pan-              pulmonary toxicity secondary to drugs.\n  demic leading to a delay in diagnosis. A potential explanation for the          To our knowledge, this is the first analysis of the FAERS database\n  increase in reports associated with hydroxychloroquine and tocilizu-            focused on adverse event reports associated with PF. The results of\n  mab is the expanded use of these agents during the pandemic.\u00b9\u00b2                  our study are supported using a national database, allowing access to\n  There is also a significant possibility that post COVID-19 patients may         a diverse patient population, as well as over a two decade-long time-\n  be more likely to develop PF.\u00b9\u00b3                                                 frame for reports. Limitations of the FAERS database include that it is\n                  DMARDs are the most common medication class implicated with     populated with adverse event reports from healthcare professionals\n  adverse event reports of PF in our study. DMARDs work via various               as well as non-healthcare professionals. There is also a risk of misclas-\n  mechanisms, typically through interfering with the inflammatory cas-            sification bias in the analysis of FAERS data as medications often pre-\n  cade. Through these complex pathways, DMARDs can contribute to                  scribed to treat inflammatory or interstitial lung diseases may be\n  lung toxicity, in addition to providing immunosuppression and further           included in reports, which may result in the potential for reverse cau-\n  risk of infection.\u2074 Araujo and colleagues examined reports in the FAERS         sation. Another potential limitation is that FAERS is a voluntary\n  database from 2003 to 2016 and identified a reporting signal involving          reporting system and MedWatch reports of adverse drug events are\n  pulmonary fibrosis with infliximab, etanercept, adalimumab, certolizu-          often underreported.\u00b9\u2079 As with most observations made from surveil-\n  mab pegol, rituximab, abatacept, and tocilizumab.\u00b9\u2074 Perez-Alvarez et al.        lance databases, the results should not be viewed in isolation and\n  analyzed 122 cases of PF with the use of etanercept, and it was deter-          need to be put in context with other evidence. Determining causality\n  mined that 97% of patients on biologics were diagnosed with lung dam-           is not within the scope of this study.\u00b2\u2070 Future research directions\n  age.\u00b9\u2075 Regarding methotrexate, there are numerous previous studies              could include a disproportionality analysis of PF reports, an analysis of\n  implicating the rare adverse effect of PF.\u00b9   Further complicating the          PF reports in the World Health Organization VigiAccess database, and\n  relationship between DMARDs and PF is that chronic inflammatory                 a subsequent analysis of reports in the post-pandemic timeframe.\n\n\n\n\n\n\n\n\n\n\n  10991557, 2024, 5, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/pds.5797 by Universitatsbibliothek RWTH Aachen University, Wiley Online Library on [05/03/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms\u2011and\u2011conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License",
+      "md": "\n\n250 Methotrexate\n\n200 Adalimumab\n\n200 - Infliximab\n\n20 Rituximab\n\n150 Amiodarone\n\nLeflunomide\n\n- Tocilizumab\n\n100 -Hydroxychloroquine\n\n- Abatacept\n\n50\n\n2000 2005 2010 2015 2020\n\n# 4 | DISCUSSION\n\ndiseases such as rheumatoid arthritis affect many organs and may present with pulmonary manifestations such as interstitial lung disease.\u00b9\u2076\n\nA 23-year analysis of a national database revealed significant increases and dynamic changes in adverse event reports involving PF from 2000 to 2022. This upward trend in reporting began prior to COVID-19 and appeared to accelerate during the pandemic as reflected by an exponential regression line. Significant annual increases in the reporting of PF suspected with methotrexate, etanercept, adalimumab, infliximab, rituximab, hydroxychloroquine, abatacept, leflunomide, and tocilizumab were identified. DMARDs and antineoplastics accounted for almost two-thirds of the suspected drugs in these adverse event reports.\n\nOf the top 10 most reported drugs, only amiodarone was not associated with an increase in reports over time. This finding may be due in part to longstanding vigilance on the part of prescribers regarding potential pulmonary toxicity secondary to amiodarone based on guidelines for regularly screening patients for pulmonary toxicity.\u00b9\u2078\n\nThis would have implications for clinical practice as increased awareness and screenings may have the potential to reduce incidence of pulmonary toxicity secondary to drugs. The decrease in overall reporting of pulmonary fibrosis in 2021 may be due to a decrease in access to routine care during the pandemic leading to a delay in diagnosis. A potential explanation for the increase in reports associated with hydroxychloroquine and tocilizumab is the expanded use of these agents during the pandemic.\u00b9\u00b2\n\nThere is also a significant possibility that post COVID-19 patients may be more likely to develop PF.\u00b9\u00b3\n\nDMARDs are the most common medication class implicated with adverse event reports of PF in our study. DMARDs work via various mechanisms, typically through interfering with the inflammatory cascade. Through these complex pathways, DMARDs can contribute to lung toxicity, in addition to providing immunosuppression and further risk of infection.\u2074\n\nAraujo and colleagues examined reports in the FAERS database from 2003 to 2016 and identified a reporting signal involving pulmonary fibrosis with infliximab, etanercept, adalimumab, certolizumab pegol, rituximab, abatacept, and tocilizumab.\u00b9\u2074 Perez-Alvarez et al. analyzed 122 cases of PF with the use of etanercept, and it was determined that 97% of patients on biologics were diagnosed with lung damage.\u00b9\u2075 Regarding methotrexate, there are numerous previous studies implicating the rare adverse effect of PF.\u00b9\n\nFurther complicating the relationship between DMARDs and PF is that chronic inflammatory conditions may also contribute to the development of PF. Future research directions could include a disproportionality analysis of PF reports, an analysis of PF reports in the World Health Organization VigiAccess database, and a subsequent analysis of reports in the post-pandemic timeframe.\n\n",
+      "images": [
+        {
+          "name": "img_p3_1.png",
+          "height": 164.579,
+          "width": 340.101,
+          "x": 45.638,
+          "y": 51.761,
+          "original_width": 695,
+          "original_height": 336,
+          "rotation": 0,
+          "ocr": [
+            {
+              "x": 143,
+              "y": 310,
+              "w": 38,
+              "h": 26,
+              "confidence": 1,
+              "text": "2005"
+            },
+            {
+              "x": 41,
+              "y": 310,
+              "w": 36,
+              "h": 26,
+              "confidence": 1,
+              "text": "2000"
+            },
+            {
+              "x": 453,
+              "y": 310,
+              "w": 36,
+              "h": 26,
+              "confidence": 0.999,
+              "text": "2020"
+            },
+            {
+              "x": 247,
+              "y": 309,
+              "w": 37,
+              "h": 27,
+              "confidence": 0.999,
+              "text": "2010"
+            },
+            {
+              "x": 348,
+              "y": 308,
+              "w": 39,
+              "h": 28,
+              "confidence": 1,
+              "text": "2015"
+            },
+            {
+              "x": 40,
+              "y": 231,
+              "w": 25,
+              "h": 22,
+              "confidence": 1,
+              "text": "50"
+            },
+            {
+              "x": 539,
+              "y": 193,
+              "w": 91,
+              "h": 21,
+              "confidence": 0.952,
+              "text": "- Abatacept"
+            },
+            {
+              "x": 541,
+              "y": 173,
+              "w": 153,
+              "h": 18,
+              "confidence": 0.984,
+              "text": "-Hydroxychloroquine"
+            },
+            {
+              "x": 33,
+              "y": 170,
+              "w": 33,
+              "h": 24,
+              "confidence": 1,
+              "text": "100"
+            },
+            {
+              "x": 540,
+              "y": 150,
+              "w": 101,
+              "h": 18,
+              "confidence": 0.955,
+              "text": "- Tocilizumab"
+            },
+            {
+              "x": 545,
+              "y": 128,
+              "w": 99,
+              "h": 18,
+              "confidence": 1,
+              "text": "Leflunomide"
+            },
+            {
+              "x": 35,
+              "y": 112,
+              "w": 29,
+              "h": 20,
+              "confidence": 1,
+              "text": "150"
+            },
+            {
+              "x": 551,
+              "y": 106,
+              "w": 92,
+              "h": 18,
+              "confidence": 1,
+              "text": "Amiodarone"
+            },
+            {
+              "x": 0,
+              "y": 89,
+              "w": 21,
+              "h": 152,
+              "confidence": 0.646,
+              "text": "20"
+            },
+            {
+              "x": 544,
+              "y": 84,
+              "w": 85,
+              "h": 18,
+              "confidence": 1,
+              "text": "Rituximab"
+            },
+            {
+              "x": 539,
+              "y": 60,
+              "w": 88,
+              "h": 21,
+              "confidence": 0.926,
+              "text": "- Infliximab"
+            },
+            {
+              "x": 34,
+              "y": 52,
+              "w": 31,
+              "h": 22,
+              "confidence": 1,
+              "text": "200"
+            },
+            {
+              "x": 544,
+              "y": 40,
+              "w": 99,
+              "h": 15,
+              "confidence": 1,
+              "text": "Adalimumab"
+            },
+            {
+              "x": 541,
+              "y": 18,
+              "w": 93,
+              "h": 18,
+              "confidence": 0.991,
+              "text": "-Etanercept"
+            },
+            {
+              "x": 554,
+              "y": 0,
+              "w": 94,
+              "h": 13,
+              "confidence": 1,
+              "text": "Methotrexate"
+            },
+            {
+              "x": 36,
+              "y": 0,
+              "w": 27,
+              "h": 14,
+              "confidence": 1,
+              "text": "250"
+            }
+          ]
+        },
+        {
+          "name": "page_4.jpg",
+          "height": 782.362,
+          "width": 595.276,
+          "x": 0,
+          "y": 0,
+          "original_width": 1217,
+          "original_height": 1600,
+          "rotation": 0,
+          "type": "full_page_screenshot"
+        }
+      ],
+      "charts": [],
+      "items": [
+        {
+          "type": "text",
+          "md": "250 Methotrexate",
+          "value": "250 Methotrexate",
+          "bBox": {
+            "x": 63.25,
+            "y": 51.76,
+            "w": 299.48,
+            "h": 6.86,
+            "confidence": 0.7,
+            "label": "text"
+          }
+        },
+        {
+          "type": "text",
+          "md": "200 Adalimumab",
+          "value": "200 Adalimumab",
+          "bBox": {
+            "x": 62.28,
+            "y": 71.35,
+            "w": 298.02,
+            "h": 16.65,
+            "confidence": 0.7,
+            "label": "text"
+          }
+        },
+        {
+          "type": "text",
+          "md": "200 - Infliximab",
+          "value": "200 - Infliximab",
+          "bBox": {
+            "x": 62.28,
+            "y": 77.23,
+            "w": 290.19,
+            "h": 14.2,
+            "confidence": 0.7,
+            "label": "text"
+          }
+        },
+        {
+          "type": "text",
+          "md": "20 Rituximab",
+          "value": "20 Rituximab",
+          "bBox": {
+            "x": 45.64,
+            "y": 92.91,
+            "w": 307.8,
+            "h": 76.9,
+            "confidence": 0.7,
+            "label": "text"
+          }
+        },
+        {
+          "type": "text",
+          "md": "150 Amiodarone",
+          "value": "150 Amiodarone",
+          "bBox": {
+            "x": 62.77,
+            "y": 103.68,
+            "w": 297.53,
+            "h": 12.74,
+            "confidence": 0.7,
+            "label": "text"
+          }
+        },
+        {
+          "type": "text",
+          "md": "Leflunomide",
+          "value": "Leflunomide",
+          "bBox": {
+            "x": 312.34,
+            "y": 114.46,
+            "w": 48.45,
+            "h": 8.82,
+            "confidence": 0.7,
+            "label": "text"
+          }
+        },
+        {
+          "type": "text",
+          "md": "- Tocilizumab",
+          "value": "- Tocilizumab",
+          "bBox": {
+            "x": 309.89,
+            "y": 125.23,
+            "w": 49.42,
+            "h": 8.82,
+            "confidence": 0.7,
+            "label": "text"
+          }
+        },
+        {
+          "type": "text",
+          "md": "100 -Hydroxychloroquine",
+          "value": "100 -Hydroxychloroquine",
+          "bBox": {
+            "x": 61.79,
+            "y": 135.03,
+            "w": 323.46,
+            "h": 11.76,
+            "confidence": 0.7,
+            "label": "text"
+          }
+        },
+        {
+          "type": "text",
+          "md": "- Abatacept",
+          "value": "- Abatacept",
+          "bBox": {
+            "x": 309.4,
+            "y": 146.3,
+            "w": 44.53,
+            "h": 10.29,
+            "confidence": 0.7,
+            "label": "text"
+          }
+        },
+        {
+          "type": "text",
+          "md": "50",
+          "value": "50",
+          "bBox": {
+            "x": 65.21,
+            "y": 164.91,
+            "w": 12.23,
+            "h": 10.78,
+            "confidence": 0.7,
+            "label": "text"
+          }
+        },
+        {
+          "type": "text",
+          "md": "2000 2005 2010 2015 2020",
+          "value": "2000 2005 2010 2015 2020",
+          "bBox": {
+            "x": 65.7,
+            "y": 202.63,
+            "w": 219.23,
+            "h": 13.71,
+            "confidence": 0.7,
+            "label": "text"
+          }
+        },
+        {
+          "type": "heading",
+          "md": "# 4 | DISCUSSION",
+          "value": "4 | DISCUSSION",
+          "lvl": 1,
+          "bBox": {
+            "x": 45.64,
+            "y": 243.93,
+            "w": 99.94,
+            "h": 10,
+            "confidence": 0.7,
+            "label": "heading"
+          }
+        },
+        {
+          "type": "text",
+          "md": "diseases such as rheumatoid arthritis affect many organs and may present with pulmonary manifestations such as interstitial lung disease.\u00b9\u2076",
+          "value": "diseases such as rheumatoid arthritis affect many organs and may present with pulmonary manifestations such as interstitial lung disease.\u00b9\u2076",
+          "bBox": {
+            "x": 88.38,
+            "y": 258.06,
+            "w": 454.68,
+            "h": 73.87,
+            "confidence": 0.7,
+            "label": "text"
+          }
+        },
+        {
+          "type": "text",
+          "md": "A 23-year analysis of a national database revealed significant increases and dynamic changes in adverse event reports involving PF from 2000 to 2022. This upward trend in reporting began prior to COVID-19 and appeared to accelerate during the pandemic as reflected by an exponential regression line. Significant annual increases in the reporting of PF suspected with methotrexate, etanercept, adalimumab, infliximab, rituximab, hydroxychloroquine, abatacept, leflunomide, and tocilizumab were identified. DMARDs and antineoplastics accounted for almost two-thirds of the suspected drugs in these adverse event reports.",
+          "value": "A 23-year analysis of a national database revealed significant increases and dynamic changes in adverse event reports involving PF from 2000 to 2022. This upward trend in reporting began prior to COVID-19 and appeared to accelerate during the pandemic as reflected by an exponential regression line. Significant annual increases in the reporting of PF suspected with methotrexate, etanercept, adalimumab, infliximab, rituximab, hydroxychloroquine, abatacept, leflunomide, and tocilizumab were identified. DMARDs and antineoplastics accounted for almost two-thirds of the suspected drugs in these adverse event reports.",
+          "bBox": {
+            "x": 45.64,
+            "y": 51.76,
+            "w": 317.1,
+            "h": 345.2,
+            "confidence": 0.7,
+            "label": "text"
+          }
+        },
+        {
+          "type": "text",
+          "md": "Of the top 10 most reported drugs, only amiodarone was not associated with an increase in reports over time. This finding may be due in part to longstanding vigilance on the part of prescribers regarding potential pulmonary toxicity secondary to amiodarone based on guidelines for regularly screening patients for pulmonary toxicity.\u00b9\u2078",
+          "value": "Of the top 10 most reported drugs, only amiodarone was not associated with an increase in reports over time. This finding may be due in part to longstanding vigilance on the part of prescribers regarding potential pulmonary toxicity secondary to amiodarone based on guidelines for regularly screening patients for pulmonary toxicity.\u00b9\u2078",
+          "bBox": {
+            "x": 88.38,
+            "y": 310.95,
+            "w": 461.27,
+            "h": 138,
+            "confidence": 0.7,
+            "label": "text"
+          }
+        },
+        {
+          "type": "text",
+          "md": "This would have implications for clinical practice as increased awareness and screenings may have the potential to reduce incidence of pulmonary toxicity secondary to drugs. The decrease in overall reporting of pulmonary fibrosis in 2021 may be due to a decrease in access to routine care during the pandemic leading to a delay in diagnosis. A potential explanation for the increase in reports associated with hydroxychloroquine and tocilizumab is the expanded use of these agents during the pandemic.\u00b9\u00b2",
+          "value": "This would have implications for clinical practice as increased awareness and screenings may have the potential to reduce incidence of pulmonary toxicity secondary to drugs. The decrease in overall reporting of pulmonary fibrosis in 2021 may be due to a decrease in access to routine care during the pandemic leading to a delay in diagnosis. A potential explanation for the increase in reports associated with hydroxychloroquine and tocilizumab is the expanded use of these agents during the pandemic.\u00b9\u00b2",
+          "bBox": {
+            "x": 45.64,
+            "y": 271.95,
+            "w": 242.81,
+            "h": 255,
+            "confidence": 0.7,
+            "label": "text"
+          }
+        },
+        {
+          "type": "text",
+          "md": "There is also a significant possibility that post COVID-19 patients may be more likely to develop PF.\u00b9\u00b3",
+          "value": "There is also a significant possibility that post COVID-19 patients may be more likely to develop PF.\u00b9\u00b3",
+          "bBox": {
+            "x": 45.64,
+            "y": 531.94,
+            "w": 242.79,
+            "h": 20.98,
+            "confidence": 0.7,
+            "label": "text"
+          }
+        },
+        {
+          "type": "text",
+          "md": "DMARDs are the most common medication class implicated with adverse event reports of PF in our study. DMARDs work via various mechanisms, typically through interfering with the inflammatory cascade. Through these complex pathways, DMARDs can contribute to lung toxicity, in addition to providing immunosuppression and further risk of infection.\u2074",
+          "value": "DMARDs are the most common medication class implicated with adverse event reports of PF in our study. DMARDs work via various mechanisms, typically through interfering with the inflammatory cascade. Through these complex pathways, DMARDs can contribute to lung toxicity, in addition to providing immunosuppression and further risk of infection.\u2074",
+          "bBox": {
+            "x": 45.64,
+            "y": 310.95,
+            "w": 242.89,
+            "h": 307,
+            "confidence": 0.7,
+            "label": "text"
+          }
+        },
+        {
+          "type": "text",
+          "md": "Araujo and colleagues examined reports in the FAERS database from 2003 to 2016 and identified a reporting signal involving pulmonary fibrosis with infliximab, etanercept, adalimumab, certolizumab pegol, rituximab, abatacept, and tocilizumab.\u00b9\u2074 Perez-Alvarez et al. analyzed 122 cases of PF with the use of etanercept, and it was determined that 97% of patients on biologics were diagnosed with lung damage.\u00b9\u2075 Regarding methotrexate, there are numerous previous studies implicating the rare adverse effect of PF.\u00b9",
+          "value": "Araujo and colleagues examined reports in the FAERS database from 2003 to 2016 and identified a reporting signal involving pulmonary fibrosis with infliximab, etanercept, adalimumab, certolizumab pegol, rituximab, abatacept, and tocilizumab.\u00b9\u2074 Perez-Alvarez et al. analyzed 122 cases of PF with the use of etanercept, and it was determined that 97% of patients on biologics were diagnosed with lung damage.\u00b9\u2075 Regarding methotrexate, there are numerous previous studies implicating the rare adverse effect of PF.\u00b9",
+          "bBox": {
+            "x": 45.64,
+            "y": 71.35,
+            "w": 419.01,
+            "h": 650.57,
+            "confidence": 0.7,
+            "label": "text"
+          }
+        },
+        {
+          "type": "text",
+          "md": "Further complicating the relationship between DMARDs and PF is that chronic inflammatory conditions may also contribute to the development of PF. Future research directions could include a disproportionality analysis of PF reports, an analysis of PF reports in the World Health Organization VigiAccess database, and a subsequent analysis of reports in the post-pandemic timeframe.",
+          "value": "Further complicating the relationship between DMARDs and PF is that chronic inflammatory conditions may also contribute to the development of PF. Future research directions could include a disproportionality analysis of PF reports, an analysis of PF reports in the World Health Organization VigiAccess database, and a subsequent analysis of reports in the post-pandemic timeframe.",
+          "bBox": {
+            "x": 45.64,
+            "y": 271.95,
+            "w": 504.06,
+            "h": 463.02,
+            "confidence": 0.7,
+            "label": "text"
+          }
+        }
+      ],
+      "status": "OK",
+      "originalOrientationAngle": 0,
+      "links": [],
+      "width": 595.276,
+      "height": 782.362,
+      "triggeredAutoMode": false,
+      "parsingMode": "accurate",
+      "structuredData": null,
+      "noStructuredContent": false,
+      "noTextContent": false,
+      "pageHeaderMarkdown": "",
+      "pageFooterMarkdown": "",
+      "printedPageNumber": "",
+      "slideSpeakerNotes": null,
+      "slideSectionName": null,
+      "confidence": 0.545,
+      "costOptimized": false
+    },
+    {
+      "page": 5,
+      "text": "MCCALL ET AL.    5 of 5\n\n\n5    |      CONCLUSIONS                                                            ComplianceRegulatoryInformation/Surveillance/AdverseDrugEffects/\n                                                                                   ucm070093.htm. Published   October     22, 2021. Accessed         August\n\nThis analysis    of a national   database recognizes    an    exponential      7.  7, 2023\n                                                                                   Schwaiblmair M, Behr W, Haeckel T, M\u00e4rkl B, Foerg W, Berghaus T.\nincrease in the number of drug-induced PF reports from 2000 to                     Drug induced interstitial lung disease. Open Respir Med J. 2012;6:63-74.\n2022. This increase is widespread among the top 50 drugs, most                 8.  Food    and Drug Administration. National  Drug       Code    Directory.\nnotably DMARDs and antineoplastic agents. While our pharmacov-                     https://www.fda.gov/drugs/drug-approvals-and-databases/national-\nigilance study has limitations, it highlights important trends, which              drug-code-directory Published July     22, 2022. Accessed         August\nshould be used to guide research related to potential drug-induced             9.  7, 2023\n                                                                                   AHFS Classification \u2013 Drug Assignments. AHFS Clinical Drug Informa-\ncauses of PF.                                                                      tion. American Society  of Health-System   Pharmacists,    Inc. 2021.\n                                                                                   https://ahfsdruginformation.com/ahfs-classification-drug-assignments/\n\nAUTHOR CONTRIBUTIONS                                                          10.  Accessed August 7, 2023\nAll authors were involved in the study conceptualization, development              Nathan N, Sileo C, Thouvenin G, et al. Pulmonary fibrosis in children.\n                                                                                   J Clin Med. 2019;8(9):1312.\nof methodology and analysis, writing, reviewing, and editing the man-         11.  GraphPad Prism version 9.3.0 for Windows, GraphPad Software, San\nuscript. All authors have read and agreed to the published version of              Diego, California, USA. www.graphpad.com\nthe manuscript.                                                               12.  Food    and Drug Administration. Coronavirus    (COVID-19)       Update:\n                                                                                   FDA Authorizes Drug for Treatment of COVID-19. https://www.fda.\n                                                                                   gov/news-events/press-announcements/coronavirus-covid-19-update-\nFUND ING INFORMATION                                                               fda-authorizes-drug-treatment-covid-19    Published June   24,     2021.\nThis research did not receive any funding from agencies in the public,             Accessed August 7, 2023\ncommercial, or not-for-profit sectors.                                        13.  Hama Amin BJ, Kakamad FH, Ahmed GS, et al. Post COVID-19\n                                                                                   pulmonary fibrosis; a meta-analysis study. Ann Med Surg (Lond). 2022\n                                                                                   May;77:103590. doi:10.1016/j.amsu.2022.103590\nCONF LICT OF IN TEREST STATEMENT                                              14.  Araujo AGS, Borba HHL, Tonin FS, et al. Safety of biologics approved\nThe authors declare no conflict of interest.                                       for the treatment of rheumatoid arthritis and other autoimmune dis-\n                                                                                   eases: a disproportionality analysis from the FDA adverse event\n\nETHICS STATEMENT                                                              15.  reporting system (FAERS). BioDrugs. 2018;32(4):377-390.\n                                                                                   Perez-Alvarez R, Perez-de-Lis M, Diaz-Lagares C, et al. Interstitial lung\nThe study was approved by the Binghamton University Institutional                  disease induced or exacerbated by TNF-targeted therapies: analysis\nReview Board. IRB ID# STUDY00004072 February 3, 2023. All data                     of 122 cases. Semin Arthritis Rheum. 2011;41(2):256-264.\nrecords used in this study were obtained from a publically available          16.  Shaw M, Collins BF, Ho LA, Raghu G. Rheumatoid arthritis-associated\ndatabase    using   de\u2010identified records which are     fully compliant       17.  lung disease. Eur Respir Rev. 2015;24(135):1-16.\nwith United States patient confidentiality requirements, including                 Dhamija E, Meena P, Ramalingam V, Sahoo R, Rastogi S, Thulkar S.\n                                                                                   Chemotherapy-induced pulmonary complications in cancer: signifi-\nthe Health Insurance Portability and Accountability Act (HIPAA)                    cance of clinicoradiological correlation. Indian J Radiol Imag. 2020;\nof 1996.                                                                           30(1):20-26.\n                                                                              18.  Joglar  JA,  Chung  MK,    Armbruster      AL, et   al.  2023   ACC/\n\nORCID                                                                              AHA/ACCP/HRS Guideline     for   the   Diagnosis    and  Management\n                                                                                   of    Atrial  Fibrillation:  a report of  the  American    College    of\nKenneth L. McCall     https://orcid.org/0000-0003-2061-108X                        Cardiology/American Heart Association Joint Committee on Clinical\n                                                                                   Practice Guidelines. Circulation. 2024;149(1):e1-e156.\nREFERENC ES                                                                   19.  Stergiopoulos S, Brown CA, Felix T, Grampp G, Getz KA. A survey of\n 1.  Wijsenbeek M, Suzuki A, Maher TM. Interstitial lung diseases. Lancet.         adverse event reporting practices among US healthcare professionals.\n     2022;400(10354):769-786.                                                 20.  Drug Saf. 2016;39(11):1117-1127.\n 2.  Raghu G, Chen SY, Yeh WS, et al. Idiopathic pulmonary fibrosis in US          Stephenson WP, Hauben M. Data mining for signals in spontaneous\n     Medicare beneficiaries aged 65 years and older: incidence, preva-             reporting databases: proceed with caution. Pharmacoepidemiol Drug\n     lence, and survival, 2001\u201311. Lancet Respir Med. 2014;2:566-572.              Saf. 2007;16(4):359-365.\n 3.  Jeganathan    N, Smith RA,   Sathananthan  M. Mortality  trends     of\n     idiopathic pulmonary fibrosis in the United States from 2004 through\n\n 4.  2017. Chest. 2021;159(1):228-238.                                            How to cite this article: McCall KL, Hennig KR, Abe ZT, et al.\n     Zhang Y, Wang J. Cellular and molecular mechanisms in idiopathic\n     pulmonary fibrosis. Adv Respir Med. 2023;91(1):26-48.                        Rising cases of drug-induced pulmonary fibrosis: Analysis of\n 5.  Brown E. Medical dictionary for regulatory activities (MedDRA).              the Food and Drug Administration Adverse Event Reporting\n     Pharmacovigilance. John Wiley & Sons, Ltd; 2006:168-183 Medical              System (FAERS) database, 2000\u20132022. Pharmacoepidemiol\n\n 6.  Dictionary for Regulatory Activities (MedDRA\u00ae).                              Drug Saf. 2024;33(5):e5797. doi:10.1002/pds.5797\n     Food and Drug Administration. FDA Adverse Event Reporting System\n     (FAERS)     public dashboard. https://www.fda.gov/Drugs/Guidance\n\n\n\n\n\n\n\n\n\n\n10991557, 2024, 5, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/pds.5797 by Universitatsbibliothek RWTH Aachen University, Wiley Online Library on [05/03/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms\u2011and\u2011conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License",
+      "md": "\n\n# CONCLUSIONS\n\nThis analysis of a national database recognizes an exponential increase in the number of drug-induced PF reports from 2000 to 2022. This increase is widespread among the top 50 drugs, most notably DMARDs and antineoplastic agents. While our pharmacovigilance study has limitations, it highlights important trends, which should be used to guide research related to potential drug-induced causes of PF.\n\n# AUTHOR CONTRIBUTIONS\n\nAll authors were involved in the study conceptualization, development of methodology and analysis, writing, reviewing, and editing the manuscript. All authors have read and agreed to the published version of the manuscript.\n\n# FUNDING INFORMATION\n\nThis research did not receive any funding from agencies in the public, commercial, or not-for-profit sectors.\n\n# CONFLICT OF INTEREST STATEMENT\n\nThe authors declare no conflict of interest.\n\n# ETHICS STATEMENT\n\nThe study was approved by the Binghamton University Institutional Review Board. IRB ID# STUDY00004072 February 3, 2023. All data records used in this study were obtained from a publicly available database using de-identified records which are fully compliant with United States patient confidentiality requirements, including the Health Insurance Portability and Accountability Act (HIPAA) of 1996.\n\n# ORCID\n\nKenneth L. McCall https://orcid.org/0000-0003-2061-108X\n\n# REFERENCES\n\n1. Wijsenbeek M, Suzuki A, Maher TM. Interstitial lung diseases. Lancet. 2022;400(10354):769-786.\n2. Raghu G, Chen SY, Yeh WS, et al. Idiopathic pulmonary fibrosis in US Medicare beneficiaries aged 65 years and older: incidence, prevalence, and survival, 2001\u201311. Lancet Respir Med. 2014;2:566-572.\n3. Jeganathan N, Smith RA, Sathananthan M. Mortality trends of idiopathic pulmonary fibrosis in the United States from 2004 through 2017. Chest. 2021;159(1):228-238.\n4. Zhang Y, Wang J. Cellular and molecular mechanisms in idiopathic pulmonary fibrosis. Adv Respir Med. 2023;91(1):26-48.\n5. Brown E. Medical dictionary for regulatory activities (MedDRA). Pharmacovigilance. John Wiley &#x26; Sons, Ltd; 2006:168-183 Medical Dictionary for Regulatory Activities (MedDRA\u00ae).\n6. Food and Drug Administration. FDA Adverse Event Reporting System (FAERS) public dashboard. https://www.fda.gov/Drugs/Guidance\n7. Schwaiblmair M, Behr W, Haeckel T, M\u00e4rkl B, Foerg W, Berghaus T. Drug induced interstitial lung disease. Open Respir Med J. 2012;6:63-74.\n8. Food and Drug Administration. National Drug Code Directory. https://www.fda.gov/drugs/drug-approvals-and-databases/national-drug-code-directory Published July 22, 2022. Accessed August 7, 2023.\n9. AHFS Classification \u2013 Drug Assignments. AHFS Clinical Drug Information. American Society of Health-System Pharmacists, Inc. 2021. https://ahfsdruginformation.com/ahfs-classification-drug-assignments/\n10. Nathan N, Sileo C, Thouvenin G, et al. Pulmonary fibrosis in children. J Clin Med. 2019;8(9):1312.\n11. GraphPad Prism version 9.3.0 for Windows, GraphPad Software, San Diego, California, USA. www.graphpad.com\n12. Food and Drug Administration. Coronavirus (COVID-19) Update: FDA Authorizes Drug for Treatment of COVID-19. https://www.fda.gov/news-events/press-announcements/coronavirus-covid-19-update-fda-authorizes-drug-treatment-covid-19 Published June 24, 2021. Accessed August 7, 2023.\n13. Hama Amin BJ, Kakamad FH, Ahmed GS, et al. Post COVID-19 pulmonary fibrosis; a meta-analysis study. Ann Med Surg (Lond). 2022 May;77:103590. doi:10.1016/j.amsu.2022.103590\n14. Araujo AGS, Borba HHL, Tonin FS, et al. Safety of biologics approved for the treatment of rheumatoid arthritis and other autoimmune diseases: a disproportionality analysis from the FDA adverse event reporting system (FAERS). BioDrugs. 2018;32(4):377-390.\n15. Perez-Alvarez R, Perez-de-Lis M, Diaz-Lagares C, et al. Interstitial lung disease induced or exacerbated by TNF-targeted therapies: analysis of 122 cases. Semin Arthritis Rheum. 2011;41(2):256-264.\n16. Shaw M, Collins BF, Ho LA, Raghu G. Rheumatoid arthritis-associated lung disease. Eur Respir Rev. 2015;24(135):1-16.\n17. Dhamija E, Meena P, Ramalingam V, Sahoo R, Rastogi S, Thulkar S. Chemotherapy-induced pulmonary complications in cancer: significance of clinicoradiological correlation. Indian J Radiol Imag. 2020;30(1):20-26.\n18. Joglar JA, Chung MK, Armbruster AL, et al. 2023 ACC/AHA/ACCP/HRS Guideline for the Diagnosis and Management of Atrial Fibrillation: a report of the American College of Cardiology/American Heart Association Joint Committee on Clinical Practice Guidelines. Circulation. 2024;149(1):e1-e156.\n19. Stergiopoulos S, Brown CA, Felix T, Grampp G, Getz KA. A survey of adverse event reporting practices among US healthcare professionals. Drug Saf. 2016;39(11):1117-1127.\n20. Stephenson WP, Hauben M. Data mining for signals in spontaneous reporting databases: proceed with caution. Pharmacoepidemiol Drug Saf. 2007;16(4):359-365.\n\n",
+      "images": [
+        {
+          "name": "page_5.jpg",
+          "height": 782.362,
+          "width": 595.276,
+          "x": 0,
+          "y": 0,
+          "original_width": 1217,
+          "original_height": 1600,
+          "rotation": 0,
+          "type": "full_page_screenshot"
+        }
+      ],
+      "charts": [],
+      "items": [
+        {
+          "type": "heading",
+          "md": "# CONCLUSIONS",
+          "value": "CONCLUSIONS",
+          "lvl": 1,
+          "bBox": {
+            "x": 77.27,
+            "y": 48.96,
+            "w": 80.7,
+            "h": 10,
+            "confidence": 0.7,
+            "label": "heading"
+          }
+        },
+        {
+          "type": "text",
+          "md": "This analysis of a national database recognizes an exponential increase in the number of drug-induced PF reports from 2000 to 2022. This increase is widespread among the top 50 drugs, most notably DMARDs and antineoplastic agents. While our pharmacovigilance study has limitations, it highlights important trends, which should be used to guide research related to potential drug-induced causes of PF.",
+          "value": "This analysis of a national database recognizes an exponential increase in the number of drug-induced PF reports from 2000 to 2022. This increase is widespread among the top 50 drugs, most notably DMARDs and antineoplastic agents. While our pharmacovigilance study has limitations, it highlights important trends, which should be used to guide research related to potential drug-induced causes of PF.",
+          "bBox": {
+            "x": 45.64,
+            "y": 76.93,
+            "w": 310.62,
+            "h": 86.01,
+            "confidence": 0.7,
+            "label": "text"
+          }
+        },
+        {
+          "type": "heading",
+          "md": "# AUTHOR CONTRIBUTIONS",
+          "value": "AUTHOR CONTRIBUTIONS",
+          "lvl": 1,
+          "bBox": {
+            "x": 45.64,
+            "y": 180.96,
+            "w": 114.93,
+            "h": 8,
+            "confidence": 0.7,
+            "label": "heading"
+          }
+        },
+        {
+          "type": "text",
+          "md": "All authors were involved in the study conceptualization, development of methodology and analysis, writing, reviewing, and editing the manuscript. All authors have read and agreed to the published version of the manuscript.",
+          "value": "All authors were involved in the study conceptualization, development of methodology and analysis, writing, reviewing, and editing the manuscript. All authors have read and agreed to the published version of the manuscript.",
+          "bBox": {
+            "x": 45.64,
+            "y": 76.93,
+            "w": 439.42,
+            "h": 380.58,
+            "confidence": 0.7,
+            "label": "text"
+          }
+        },
+        {
+          "type": "heading",
+          "md": "# FUNDING INFORMATION",
+          "value": "FUNDING INFORMATION",
+          "lvl": 1,
+          "bBox": {
+            "x": 45.64,
+            "y": 258.96,
+            "w": 109.14,
+            "h": 8,
+            "confidence": 0.7,
+            "label": "heading"
+          }
+        },
+        {
+          "type": "text",
+          "md": "This research did not receive any funding from agencies in the public, commercial, or not-for-profit sectors.",
+          "value": "This research did not receive any funding from agencies in the public, commercial, or not-for-profit sectors.",
+          "bBox": {
+            "x": 45.64,
+            "y": 271.95,
+            "w": 242.75,
+            "h": 20.98,
+            "confidence": 0.7,
+            "label": "text"
+          }
+        },
+        {
+          "type": "heading",
+          "md": "# CONFLICT OF INTEREST STATEMENT",
+          "value": "CONFLICT OF INTEREST STATEMENT",
+          "lvl": 1,
+          "bBox": {
+            "x": 45.64,
+            "y": 310.95,
+            "w": 159.5,
+            "h": 8,
+            "confidence": 0.7,
+            "label": "heading"
+          }
+        },
+        {
+          "type": "text",
+          "md": "The authors declare no conflict of interest.",
+          "value": "The authors declare no conflict of interest.",
+          "bBox": {
+            "x": 45.64,
+            "y": 323.93,
+            "w": 147.11,
+            "h": 8,
+            "confidence": 0.7,
+            "label": "text"
+          }
+        },
+        {
+          "type": "heading",
+          "md": "# ETHICS STATEMENT",
+          "value": "ETHICS STATEMENT",
+          "lvl": 1,
+          "bBox": {
+            "x": 45.64,
+            "y": 349.95,
+            "w": 87.24,
+            "h": 8,
+            "confidence": 0.7,
+            "label": "heading"
+          }
+        },
+        {
+          "type": "text",
+          "md": "The study was approved by the Binghamton University Institutional Review Board. IRB ID# STUDY00004072 February 3, 2023. All data records used in this study were obtained from a publicly available database using de-identified records which are fully compliant with United States patient confidentiality requirements, including the Health Insurance Portability and Accountability Act (HIPAA) of 1996.",
+          "value": "The study was approved by the Binghamton University Institutional Review Board. IRB ID# STUDY00004072 February 3, 2023. All data records used in this study were obtained from a publicly available database using de-identified records which are fully compliant with United States patient confidentiality requirements, including the Health Insurance Portability and Accountability Act (HIPAA) of 1996.",
+          "bBox": {
+            "x": 45.64,
+            "y": 76.93,
+            "w": 242.81,
+            "h": 597.04,
+            "confidence": 0.7,
+            "label": "text"
+          }
+        },
+        {
+          "type": "heading",
+          "md": "# ORCID",
+          "value": "ORCID",
+          "lvl": 1,
+          "bBox": {
+            "x": 45.64,
+            "y": 466.97,
+            "w": 28.3,
+            "h": 8,
+            "confidence": 0.7,
+            "label": "heading"
+          }
+        },
+        {
+          "type": "text",
+          "md": "Kenneth L. McCall https://orcid.org/0000-0003-2061-108X",
+          "value": "Kenneth L. McCall https://orcid.org/0000-0003-2061-108X",
+          "bBox": {
+            "x": 45.64,
+            "y": 479.95,
+            "w": 215.9,
+            "h": 8.01,
+            "confidence": 0.7,
+            "label": "text"
+          }
+        },
+        {
+          "type": "heading",
+          "md": "# REFERENCES",
+          "value": "REFERENCES",
+          "lvl": 1,
+          "bBox": {
+            "x": 45.64,
+            "y": 505.92,
+            "w": 55.75,
+            "h": 8,
+            "confidence": 0.7,
+            "label": "heading"
+          }
+        },
+        {
+          "type": "text",
+          "md": "1. Wijsenbeek M, Suzuki A, Maher TM. Interstitial lung diseases. Lancet. 2022;400(10354):769-786.\n2. Raghu G, Chen SY, Yeh WS, et al. Idiopathic pulmonary fibrosis in US Medicare beneficiaries aged 65 years and older: incidence, prevalence, and survival, 2001\u201311. Lancet Respir Med. 2014;2:566-572.\n3. Jeganathan N, Smith RA, Sathananthan M. Mortality trends of idiopathic pulmonary fibrosis in the United States from 2004 through 2017. Chest. 2021;159(1):228-238.\n4. Zhang Y, Wang J. Cellular and molecular mechanisms in idiopathic pulmonary fibrosis. Adv Respir Med. 2023;91(1):26-48.\n5. Brown E. Medical dictionary for regulatory activities (MedDRA). Pharmacovigilance. John Wiley &#x26; Sons, Ltd; 2006:168-183 Medical Dictionary for Regulatory Activities (MedDRA\u00ae).\n6. Food and Drug Administration. FDA Adverse Event Reporting System (FAERS) public dashboard. https://www.fda.gov/Drugs/Guidance\n7. Schwaiblmair M, Behr W, Haeckel T, M\u00e4rkl B, Foerg W, Berghaus T. Drug induced interstitial lung disease. Open Respir Med J. 2012;6:63-74.\n8. Food and Drug Administration. National Drug Code Directory. https://www.fda.gov/drugs/drug-approvals-and-databases/national-drug-code-directory Published July 22, 2022. Accessed August 7, 2023.\n9. AHFS Classification \u2013 Drug Assignments. AHFS Clinical Drug Information. American Society of Health-System Pharmacists, Inc. 2021. https://ahfsdruginformation.com/ahfs-classification-drug-assignments/\n10. Nathan N, Sileo C, Thouvenin G, et al. Pulmonary fibrosis in children. J Clin Med. 2019;8(9):1312.\n11. GraphPad Prism version 9.3.0 for Windows, GraphPad Software, San Diego, California, USA. www.graphpad.com\n12. Food and Drug Administration. Coronavirus (COVID-19) Update: FDA Authorizes Drug for Treatment of COVID-19. https://www.fda.gov/news-events/press-announcements/coronavirus-covid-19-update-fda-authorizes-drug-treatment-covid-19 Published June 24, 2021. Accessed August 7, 2023.\n13. Hama Amin BJ, Kakamad FH, Ahmed GS, et al. Post COVID-19 pulmonary fibrosis; a meta-analysis study. Ann Med Surg (Lond). 2022 May;77:103590. doi:10.1016/j.amsu.2022.103590\n14. Araujo AGS, Borba HHL, Tonin FS, et al. Safety of biologics approved for the treatment of rheumatoid arthritis and other autoimmune diseases: a disproportionality analysis from the FDA adverse event reporting system (FAERS). BioDrugs. 2018;32(4):377-390.\n15. Perez-Alvarez R, Perez-de-Lis M, Diaz-Lagares C, et al. Interstitial lung disease induced or exacerbated by TNF-targeted therapies: analysis of 122 cases. Semin Arthritis Rheum. 2011;41(2):256-264.\n16. Shaw M, Collins BF, Ho LA, Raghu G. Rheumatoid arthritis-associated lung disease. Eur Respir Rev. 2015;24(135):1-16.\n17. Dhamija E, Meena P, Ramalingam V, Sahoo R, Rastogi S, Thulkar S. Chemotherapy-induced pulmonary complications in cancer: significance of clinicoradiological correlation. Indian J Radiol Imag. 2020;30(1):20-26.\n18. Joglar JA, Chung MK, Armbruster AL, et al. 2023 ACC/AHA/ACCP/HRS Guideline for the Diagnosis and Management of Atrial Fibrillation: a report of the American College of Cardiology/American Heart Association Joint Committee on Clinical Practice Guidelines. Circulation. 2024;149(1):e1-e156.\n19. Stergiopoulos S, Brown CA, Felix T, Grampp G, Getz KA. A survey of adverse event reporting practices among US healthcare professionals. Drug Saf. 2016;39(11):1117-1127.\n20. Stephenson WP, Hauben M. Data mining for signals in spontaneous reporting databases: proceed with caution. Pharmacoepidemiol Drug Saf. 2007;16(4):359-365.",
+          "value": "1. Wijsenbeek M, Suzuki A, Maher TM. Interstitial lung diseases. Lancet. 2022;400(10354):769-786.\n2. Raghu G, Chen SY, Yeh WS, et al. Idiopathic pulmonary fibrosis in US Medicare beneficiaries aged 65 years and older: incidence, prevalence, and survival, 2001\u201311. Lancet Respir Med. 2014;2:566-572.\n3. Jeganathan N, Smith RA, Sathananthan M. Mortality trends of idiopathic pulmonary fibrosis in the United States from 2004 through 2017. Chest. 2021;159(1):228-238.\n4. Zhang Y, Wang J. Cellular and molecular mechanisms in idiopathic pulmonary fibrosis. Adv Respir Med. 2023;91(1):26-48.\n5. Brown E. Medical dictionary for regulatory activities (MedDRA). Pharmacovigilance. John Wiley &#x26; Sons, Ltd; 2006:168-183 Medical Dictionary for Regulatory Activities (MedDRA\u00ae).\n6. Food and Drug Administration. FDA Adverse Event Reporting System (FAERS) public dashboard. https://www.fda.gov/Drugs/Guidance\n7. Schwaiblmair M, Behr W, Haeckel T, M\u00e4rkl B, Foerg W, Berghaus T. Drug induced interstitial lung disease. Open Respir Med J. 2012;6:63-74.\n8. Food and Drug Administration. National Drug Code Directory. https://www.fda.gov/drugs/drug-approvals-and-databases/national-drug-code-directory Published July 22, 2022. Accessed August 7, 2023.\n9. AHFS Classification \u2013 Drug Assignments. AHFS Clinical Drug Information. American Society of Health-System Pharmacists, Inc. 2021. https://ahfsdruginformation.com/ahfs-classification-drug-assignments/\n10. Nathan N, Sileo C, Thouvenin G, et al. Pulmonary fibrosis in children. J Clin Med. 2019;8(9):1312.\n11. GraphPad Prism version 9.3.0 for Windows, GraphPad Software, San Diego, California, USA. www.graphpad.com\n12. Food and Drug Administration. Coronavirus (COVID-19) Update: FDA Authorizes Drug for Treatment of COVID-19. https://www.fda.gov/news-events/press-announcements/coronavirus-covid-19-update-fda-authorizes-drug-treatment-covid-19 Published June 24, 2021. Accessed August 7, 2023.\n13. Hama Amin BJ, Kakamad FH, Ahmed GS, et al. Post COVID-19 pulmonary fibrosis; a meta-analysis study. Ann Med Surg (Lond). 2022 May;77:103590. doi:10.1016/j.amsu.2022.103590\n14. Araujo AGS, Borba HHL, Tonin FS, et al. Safety of biologics approved for the treatment of rheumatoid arthritis and other autoimmune diseases: a disproportionality analysis from the FDA adverse event reporting system (FAERS). BioDrugs. 2018;32(4):377-390.\n15. Perez-Alvarez R, Perez-de-Lis M, Diaz-Lagares C, et al. Interstitial lung disease induced or exacerbated by TNF-targeted therapies: analysis of 122 cases. Semin Arthritis Rheum. 2011;41(2):256-264.\n16. Shaw M, Collins BF, Ho LA, Raghu G. Rheumatoid arthritis-associated lung disease. Eur Respir Rev. 2015;24(135):1-16.\n17. Dhamija E, Meena P, Ramalingam V, Sahoo R, Rastogi S, Thulkar S. Chemotherapy-induced pulmonary complications in cancer: significance of clinicoradiological correlation. Indian J Radiol Imag. 2020;30(1):20-26.\n18. Joglar JA, Chung MK, Armbruster AL, et al. 2023 ACC/AHA/ACCP/HRS Guideline for the Diagnosis and Management of Atrial Fibrillation: a report of the American College of Cardiology/American Heart Association Joint Committee on Clinical Practice Guidelines. Circulation. 2024;149(1):e1-e156.\n19. Stergiopoulos S, Brown CA, Felix T, Grampp G, Getz KA. A survey of adverse event reporting practices among US healthcare professionals. Drug Saf. 2016;39(11):1117-1127.\n20. Stephenson WP, Hauben M. Data mining for signals in spontaneous reporting databases: proceed with caution. Pharmacoepidemiol Drug Saf. 2007;16(4):359-365.",
+          "bBox": {
+            "x": 49.38,
+            "y": 61.5,
+            "w": 500.33,
+            "h": 612.47,
+            "confidence": 0.7,
+            "label": "text"
+          }
+        }
+      ],
+      "status": "OK",
+      "originalOrientationAngle": 0,
+      "links": [
+        {
+          "url": "https://orcid.org/0000-0003-2061-108X",
+          "unsafeUrl": "https://orcid.org/0000-0003-2061-108X",
+          "text": ""
+        },
+        {
+          "url": "https://orcid.org/0000-0003-2061-108X",
+          "unsafeUrl": "https://orcid.org/0000-0003-2061-108X",
+          "text": "https://orcid.org/0000-0003-2061-108X"
+        },
+        {
+          "url": "https://www.fda.gov/Drugs/GuidanceComplianceRegulatoryInformation/Surveillance/AdverseDrugEffects/ucm070093.htm",
+          "unsafeUrl": "https://www.fda.gov/Drugs/GuidanceComplianceRegulatoryInformation/Surveillance/AdverseDrugEffects/ucm070093.htm",
+          "text": "https://www.fda.gov/Drugs/Guidance"
+        },
+        {
+          "url": "https://www.fda.gov/Drugs/GuidanceComplianceRegulatoryInformation/Surveillance/AdverseDrugEffects/ucm070093.htm",
+          "unsafeUrl": "https://www.fda.gov/Drugs/GuidanceComplianceRegulatoryInformation/Surveillance/AdverseDrugEffects/ucm070093.htm",
+          "text": "ComplianceRegulatoryInformation/Surveillance/AdverseDrugEffects/"
+        },
+        {
+          "url": "https://www.fda.gov/Drugs/GuidanceComplianceRegulatoryInformation/Surveillance/AdverseDrugEffects/ucm070093.htm",
+          "unsafeUrl": "https://www.fda.gov/Drugs/GuidanceComplianceRegulatoryInformation/Surveillance/AdverseDrugEffects/ucm070093.htm",
+          "text": "ucm070093.htm."
+        },
+        {
+          "url": "https://www.fda.gov/drugs/drug-approvals-and-databases/national-drug-code-directory",
+          "unsafeUrl": "https://www.fda.gov/drugs/drug-approvals-and-databases/national-drug-code-directory",
+          "text": "https://www.fda.gov/drugs/drug-approvals-and-databases/national-"
+        },
+        {
+          "url": "https://www.fda.gov/drugs/drug-approvals-and-databases/national-drug-code-directory",
+          "unsafeUrl": "https://www.fda.gov/drugs/drug-approvals-and-databases/national-drug-code-directory",
+          "text": "drug-code-directory"
+        },
+        {
+          "url": "https://ahfsdruginformation.com/ahfs-classification-drug-assignments/",
+          "unsafeUrl": "https://ahfsdruginformation.com/ahfs-classification-drug-assignments/",
+          "text": "https://ahfsdruginformation.com/ahfs-classification-drug-assignments/"
+        },
+        {
+          "url": "http://www.graphpad.com/",
+          "unsafeUrl": "http://www.graphpad.com",
+          "text": "USA.  www.graphpad.com"
+        },
+        {
+          "url": "https://www.fda.gov/news-events/press-announcements/coronavirus-covid-19-update-fda-authorizes-drug-treatment-covid-19",
+          "unsafeUrl": "https://www.fda.gov/news-events/press-announcements/coronavirus-covid-19-update-fda-authorizes-drug-treatment-covid-19",
+          "text": "COVID-19.  https://www.fda."
+        },
+        {
+          "url": "https://www.fda.gov/news-events/press-announcements/coronavirus-covid-19-update-fda-authorizes-drug-treatment-covid-19",
+          "unsafeUrl": "https://www.fda.gov/news-events/press-announcements/coronavirus-covid-19-update-fda-authorizes-drug-treatment-covid-19",
+          "text": "gov/news-events/press-announcements/coronavirus-covid-19-update-"
+        },
+        {
+          "url": "https://www.fda.gov/news-events/press-announcements/coronavirus-covid-19-update-fda-authorizes-drug-treatment-covid-19",
+          "unsafeUrl": "https://www.fda.gov/news-events/press-announcements/coronavirus-covid-19-update-fda-authorizes-drug-treatment-covid-19",
+          "text": "fda-authorizes-drug-treatment-covid-19"
+        },
+        {
+          "unsafeUrl": "info:doi/10.1016/j.amsu.2022.103590",
+          "text": "doi:10.1016/j.amsu.2022.103590"
+        },
+        {
+          "unsafeUrl": "info:doi/10.1002/pds.5797",
+          "text": "doi:10.1002/pds.5797"
+        }
+      ],
+      "width": 595.276,
+      "height": 782.362,
+      "triggeredAutoMode": false,
+      "parsingMode": "accurate",
+      "structuredData": null,
+      "noStructuredContent": false,
+      "noTextContent": false,
+      "pageHeaderMarkdown": "",
+      "pageFooterMarkdown": "",
+      "printedPageNumber": "",
+      "slideSpeakerNotes": null,
+      "slideSectionName": null,
+      "confidence": 0.843,
+      "costOptimized": false
+    }
+  ]
+}

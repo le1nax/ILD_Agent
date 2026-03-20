@@ -1,0 +1,34 @@
+# Environment & secrets
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+
+# Conda / virtualenv
+env/
+venv/
+.venv/
+environment.yml.lock
+
+# IDE
+.vscode/
+.idea/
+
+# Claude Code
+.claude/
+
+# Evaluation & debug artifacts
+eval_results.json
+citation_audit.txt
+highlight-debug.txt
+
+# Old guideline drafts (not part of active index)
+guidelines_old/
+guidelines_old2/
+
+# macOS
+.DS_Store

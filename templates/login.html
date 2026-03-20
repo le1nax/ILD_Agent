@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ILD RAG Assistant – Login</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #202123;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      color: #ececf1;
+    }
+    .card {
+      background: #343541;
+      border: 1px solid #444654;
+      border-radius: 12px;
+      padding: 2.5rem 2rem;
+      width: 100%;
+      max-width: 380px;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+    }
+    .logo {
+      text-align: center;
+      margin-bottom: 1.75rem;
+    }
+    .logo h1 {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: #ececf1;
+      letter-spacing: -0.01em;
+    }
+    .logo p {
+      font-size: 0.8rem;
+      color: #8e8ea0;
+      margin-top: 0.3rem;
+    }
+    label {
+      display: block;
+      font-size: 0.8rem;
+      color: #8e8ea0;
+      margin-bottom: 0.4rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    input[type="password"] {
+      width: 100%;
+      padding: 0.65rem 0.85rem;
+      background: #202123;
+      border: 1px solid #565869;
+      border-radius: 6px;
+      color: #ececf1;
+      font-size: 0.95rem;
+      outline: none;
+      transition: border-color 0.15s;
+    }
+    input[type="password"]:focus { border-color: #4a9eff; }
+    button {
+      margin-top: 1.25rem;
+      width: 100%;
+      padding: 0.7rem;
+      background: #4a9eff;
+      border: none;
+      border-radius: 6px;
+      color: #fff;
+      font-size: 0.95rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.15s;
+    }
+    button:hover { background: #2f80e0; }
+    .error {
+      margin-top: 1rem;
+      padding: 0.6rem 0.8rem;
+      background: rgba(231,76,60,0.15);
+      border: 1px solid rgba(231,76,60,0.4);
+      border-radius: 6px;
+      color: #e74c3c;
+      font-size: 0.85rem;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="logo">
+      <h1>ILD RAG Assistant</h1>
+      <p>Interstitial Lung Disease Clinical Guidelines</p>
+    </div>
+    <form method="post" action="/login">
+      <label for="password">Passwort</label>
+      <input type="password" id="password" name="password" placeholder="••••••••" autofocus required>
+      <button type="submit">Anmelden</button>
+      {% if error %}
+      <div class="error">{{ error }}</div>
+      {% endif %}
+    </form>
+  </div>
+</body>
+</html>

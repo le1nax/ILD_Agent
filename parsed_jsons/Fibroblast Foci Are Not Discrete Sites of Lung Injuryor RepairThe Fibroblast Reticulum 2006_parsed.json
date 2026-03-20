@@ -1,0 +1,1116 @@
+{
+  "pages": [
+    {
+      "page": 1,
+      "text": "Fibroblast Foci Are Not Discrete Sites of Lung Injury\nor Repair\nThe Fibroblast Reticulum\n\nCarlyne D. Cool, Steve D. GroshongX, Pradeep R. RaiX, Peter M. Henson, J. Scott Stewart, and\nKevin K. Brown\n\nDepartments of Medicine and Pathology, University of Colorado Health Sciences Center; and Interstitial Lung Disease Program, National Jewish\nMedical and Research Center, Denver, Colorado\n\n\nBackground: Usual interstitial pneumonia (UIP), the pathologic cor-                      The clinical features of IPF\u2014insidious onset, progression\nrelate of idiopathic pulmonary fibrosis, contains characteristic dis-                    over years, infrequent but abrupt episodes of deterioration (3),\ncrete areas of fibroblasts, myofibroblasts, and newly formed colla-                      and failure to respond to immunosuppressive therapy\u2014have\ngen, termed \u201cfibroblast foci.\u201d These lesions are argued to represent                     offered indirect evidence in support of this hypothesis. More\nisolated sites of recurrent acute lung injury and suggested to be the                    substantial support comes from the histopathologic features of\nmechanism of disease progression. We hypothesized that, rather than                      the disease. UIP is characterized by a temporally heterogeneous\nisolated, these lesions are part of an organized neoplasm.                               appearance with areas of normal appearing lung intermixed\nMethods: Morphometric analysis of pentachrome-stained histologic                         with older collagenized \ufb01brosis, microscopic honeycombing, and\nsections of UIP was performed. Using point-counting technique                            small focal areas of younger, myxoid-appearing matrix with ag-\non serial sections, fibroblast foci, arteries, and macrophage clusters                   gregates of actively proliferating and collagen-producing myo\ufb01-\nwere identified   and     we determined   their            individual       \u201cconnec-     broblasts termed \u201c\ufb01broblast foci\u201d (4\u20136). These foci are often\ntiveness\u201d by estimating the Euler number. Two-dimensional micro-                         identi\ufb01ed in a transition zone between the more normal unin-\ngraphs were collated into a three-dimensional array from which a                         volved lung and the abnormal \ufb01brotic lung. They have been\nvisual three-dimensional reconstruction could be constructed. Clon-                      interpreted to represent an organizing phase of focal acute lung\nality analysis was performed using human androgen receptor gene                          injury (5, 7, 8) and believed to recapitulate the events that typify\nmethylation assay.                                                                       the healing skin wound (9). These foci are clinically and biologi-\nResults: Blood vessels show significant connectivity with a Euler                        cally important in the progression of disease; their numbers on\nnumber of 2, whereas macrophage clusters exhibited no connectiv-                         surgical lung biopsy directly correlate with progressive physio-\nity. The fibroblast foci showed a high level of interconnection with                     logic deterioration and shortened survival (1, 10).\nEuler numbers ranging from 19 to 39. The computer generated                              Unfortunately, there is little other direct evidence to support\nthree-dimensional models provide a visual confirmation of this                           recurrent epithelial injury, and no obvious source or mechanism\nconnectiveness. Human androgen receptor gene methylation assay\nanalysis of the foci showed balanced methylation consistent with                         for this injury has been identi\ufb01ed. Given the absence of direct\npolyclonality.                                                                           evidence for the prevailing theory, we considered alternative\nConclusions:                    The fibroblast foci of UIP are the leading edge of a     explanations for the \ufb01broblast foci. We explored the hypothesis\ncomplex reticulum that is highly interconnected and extends from                         that, far from multiple discrete lesions, the young \ufb01broblastic\nthe pleura into the underlying parenchyma. It is a reactive, rather                      tissue that characterizes the \ufb01broblast foci of the UIP lung is a\nthan a malignant, process.                                                               complex interconnected neoplasm by reconstructing the UIP\n\nKeywords: fibroblast foci; fibroblast reticulum; idiopathic pulmonary                    lung in three dimensions, performing stereologic analysis, and\nfibrosis; usual interstitial pneumonia                                                   analyzing the clonality of these lesions.\n\nIdiopathic pulmonary \ufb01brosis (IPF) is a progressive \ufb01brosing                             METHODS\ninterstitial pneumonia of unknown etiology with a median sur-                            Clinical Material\nvival of 3 yr (1). Histopathologically, it is de\ufb01ned by a speci\ufb01c                        Surgical lung biopsy specimens were obtained from subjects with IPF\npattern on surgical lung biopsy, usual interstitial pneumonia                            and cryptogenic organizing pneumonia (COP) who had been prospec-\n(UIP). Although IPF is a disease of unknown etiology, the cur-                           tively enrolled in our institutional review board\u2013approved, Health In-\nrent hypothesis regarding its development conceptualizes on-                             surance Portability and Accountability Act of 1996 (HIPAA) compliant\ngoing multiple, small, focal, and isolated episodes of epithelial                        protocols. IPF was diagnosed on the basis of appropriate clinical fea-\ninjury followed by a pathologic \ufb01brotic repair mechanism (2).                            tures and UIP on surgical lung biopsy. UIP was diagnosed by the\n                                                                                         identi\ufb01cation of a patchy, nonuniform, \ufb01brosing interstitial pneumonia\n                                                                                         of variable distribution. Alternating zones of interstitial \ufb01brosis, in-\n                                                                                         \ufb02ammation, honeycomb change, normal lung, and \ufb01broblast foci were\n                                                                                         required. The interstitial \ufb01brosis was characterized by eosinophilic col-\n(Received in original form February 10, 2006; accepted in final form May 30, 2006 )      lagen thickening alveolar septa and forming patchy scars with few asso-\nSupported by NHLBI SCOR HL67671.                                                         ciated in\ufb02ammatory cells (Figures 1A and 1B) (11). COP was diagnosed\nX These authors contributed equally to this manuscript.                                  by the identi\ufb01cation of typical features including \ufb01broblastic tissue in\nCorrespondence and requests for reprints should be addressed to Kevin K. Brown,          airspaces (Masson bodies; Figures 1C and 1D) on surgical lung biopsy\nM.D., National Jewish Center, 1400 Jackson Street, Denver, CO 80206. E-mail:             in the appropriate clinical setting (11).\nbrownk@njc.org                                                                           Three-Dimensional Reconstruction\nThis article has an online supplement, which is accessible from this issue\u2019s table       Serial sections 5-mm thick were cut over approximately 500 mm (approx-\nof contents at www.atsjournals.org                                                       imately 100 sections) from surgical lung biopsies from four cases of\nAm J Respir Crit Care Med Vol 174. pp 654\u2013658, 2006                                      UIP and one case of COP. Slides were stained with pentachrome\nOriginally Published in Press as DOI: 10.1164/rccm.200602-205OC on June 23, 2006         (Movat), and digitally photomicrographed. These sections were manually\nInternet address: www.atsjournals.org",
+      "md": "\n# Fibroblast Foci Are Not Discrete Sites of Lung Injury or Repair\n\n# The Fibroblast Reticulum\n\nCarlyne D. Cool, Steve D. GroshongX, Pradeep R. RaiX, Peter M. Henson, J. Scott Stewart, and Kevin K. Brown\n\nDepartments of Medicine and Pathology, University of Colorado Health Sciences Center; and Interstitial Lung Disease Program, National Jewish Medical and Research Center, Denver, Colorado\n\nBackground: Usual interstitial pneumonia (UIP), the pathologic correlate of idiopathic pulmonary fibrosis, contains characteristic discrete areas of fibroblasts, myofibroblasts, and newly formed collagen, termed \u201cfibroblast foci.\u201d These lesions are argued to represent isolated sites of recurrent acute lung injury and suggested to be the mechanism of disease progression. We hypothesized that, rather than isolated, these lesions are part of an organized neoplasm.\n\nMethods: Morphometric analysis of pentachrome-stained histologic sections of UIP was performed. Using point-counting technique on serial sections, fibroblast foci, arteries, and macrophage clusters were identified and we determined their individual \u201cconnectiveness\u201d by estimating the Euler number. Two-dimensional micrographs were collated into a three-dimensional array from which a visual three-dimensional reconstruction could be constructed. Clonality analysis was performed using human androgen receptor gene methylation assay.\n\nResults: Blood vessels show significant connectivity with a Euler number of 2, whereas macrophage clusters exhibited no connectivity. The fibroblast foci showed a high level of interconnection with Euler numbers ranging from 19 to 39. The computer generated three-dimensional models provide a visual confirmation of this connectiveness. Human androgen receptor gene methylation assay analysis of the foci showed balanced methylation consistent with polyclonality.\n\nConclusions: The fibroblast foci of UIP are the leading edge of a complex reticulum that is highly interconnected and extends from the pleura into the underlying parenchyma. It is a reactive, rather than a malignant, process.\n\nKeywords: fibroblast foci; fibroblast reticulum; idiopathic pulmonary fibrosis; usual interstitial pneumonia\n\nIdiopathic pulmonary fibrosis (IPF) is a progressive fibrosing interstitial pneumonia of unknown etiology with a median survival of 3 yr (1). Histopathologically, it is defined by a specific pattern on surgical lung biopsy, usual interstitial pneumonia (UIP). Although IPF is a disease of unknown etiology, the current hypothesis regarding its development conceptualizes ongoing multiple, small, focal, and isolated episodes of epithelial injury followed by a pathologic fibrotic repair mechanism (2).\n\nMETHODS\n\nClinical Material\n\nSurgical lung biopsy specimens were obtained from subjects with IPF and cryptogenic organizing pneumonia (COP) who had been prospectively enrolled in our institutional review board\u2013approved, Health Insurance Portability and Accountability Act of 1996 (HIPAA) compliant protocols. IPF was diagnosed on the basis of appropriate clinical features and UIP on surgical lung biopsy. UIP was diagnosed by the identification of a patchy, nonuniform, fibrosing interstitial pneumonia of variable distribution. Alternating zones of interstitial fibrosis, inflammation, honeycomb change, normal lung, and fibroblast foci were required. The interstitial fibrosis was characterized by eosinophilic collagen thickening alveolar septa and forming patchy scars with few associated inflammatory cells (Figures 1A and 1B) (11). COP was diagnosed by the identification of typical features including fibroblastic tissue in airspaces (Masson bodies; Figures 1C and 1D) on surgical lung biopsy in the appropriate clinical setting (11).\n\nThree-Dimensional Reconstruction\n\nSerial sections 5-mm thick were cut over approximately 500 mm (approximately 100 sections) from surgical lung biopsies from four cases of UIP and one case of COP. Slides were stained with pentachrome (Movat), and digitally photomicrographed. These sections were manually.",
+      "images": [
+        {
+          "name": "page_1.jpg",
+          "height": 783,
+          "width": 603,
+          "x": 0,
+          "y": 0,
+          "original_width": 1232,
+          "original_height": 1600,
+          "rotation": 0,
+          "type": "full_page_screenshot"
+        }
+      ],
+      "charts": [],
+      "items": [
+        {
+          "type": "heading",
+          "md": "# Fibroblast Foci Are Not Discrete Sites of Lung Injury or Repair",
+          "value": "Fibroblast Foci Are Not Discrete Sites of Lung Injury or Repair",
+          "lvl": 1,
+          "bBox": {
+            "x": 44.85,
+            "y": 41.7,
+            "w": 473.72,
+            "h": 35.85,
+            "confidence": 0.7,
+            "label": "heading"
+          }
+        },
+        {
+          "type": "heading",
+          "md": "# The Fibroblast Reticulum",
+          "value": "The Fibroblast Reticulum",
+          "lvl": 1,
+          "bBox": {
+            "x": 44.85,
+            "y": 81.58,
+            "w": 163.43,
+            "h": 13.97,
+            "confidence": 0.7,
+            "label": "heading"
+          }
+        },
+        {
+          "type": "text",
+          "md": "Carlyne D. Cool, Steve D. GroshongX, Pradeep R. RaiX, Peter M. Henson, J. Scott Stewart, and Kevin K. Brown",
+          "value": "Carlyne D. Cool, Steve D. GroshongX, Pradeep R. RaiX, Peter M. Henson, J. Scott Stewart, and Kevin K. Brown",
+          "bBox": {
+            "x": 44.85,
+            "y": 110.45,
+            "w": 425.58,
+            "h": 19.9,
+            "confidence": 0.7,
+            "label": "text"
+          }
+        },
+        {
+          "type": "text",
+          "md": "Departments of Medicine and Pathology, University of Colorado Health Sciences Center; and Interstitial Lung Disease Program, National Jewish Medical and Research Center, Denver, Colorado",
+          "value": "Departments of Medicine and Pathology, University of Colorado Health Sciences Center; and Interstitial Lung Disease Program, National Jewish Medical and Research Center, Denver, Colorado",
+          "bBox": {
+            "x": 44.85,
+            "y": 140.36,
+            "w": 510.2,
+            "h": 17.95,
+            "confidence": 0.7,
+            "label": "text"
+          }
+        },
+        {
+          "type": "text",
+          "md": "Background: Usual interstitial pneumonia (UIP), the pathologic correlate of idiopathic pulmonary fibrosis, contains characteristic discrete areas of fibroblasts, myofibroblasts, and newly formed collagen, termed \u201cfibroblast foci.\u201d These lesions are argued to represent isolated sites of recurrent acute lung injury and suggested to be the mechanism of disease progression. We hypothesized that, rather than isolated, these lesions are part of an organized neoplasm.",
+          "value": "Background: Usual interstitial pneumonia (UIP), the pathologic correlate of idiopathic pulmonary fibrosis, contains characteristic discrete areas of fibroblasts, myofibroblasts, and newly formed collagen, termed \u201cfibroblast foci.\u201d These lesions are argued to represent isolated sites of recurrent acute lung injury and suggested to be the mechanism of disease progression. We hypothesized that, rather than isolated, these lesions are part of an organized neoplasm.",
+          "bBox": {
+            "x": 44.85,
+            "y": 210.44,
+            "w": 247.94,
+            "h": 79.15,
+            "confidence": 0.7,
+            "label": "text"
+          }
+        },
+        {
+          "type": "text",
+          "md": "Methods: Morphometric analysis of pentachrome-stained histologic sections of UIP was performed. Using point-counting technique on serial sections, fibroblast foci, arteries, and macrophage clusters were identified and we determined their individual \u201cconnectiveness\u201d by estimating the Euler number. Two-dimensional micrographs were collated into a three-dimensional array from which a visual three-dimensional reconstruction could be constructed. Clonality analysis was performed using human androgen receptor gene methylation assay.",
+          "value": "Methods: Morphometric analysis of pentachrome-stained histologic sections of UIP was performed. Using point-counting technique on serial sections, fibroblast foci, arteries, and macrophage clusters were identified and we determined their individual \u201cconnectiveness\u201d by estimating the Euler number. Two-dimensional micrographs were collated into a three-dimensional array from which a visual three-dimensional reconstruction could be constructed. Clonality analysis was performed using human androgen receptor gene methylation assay.",
+          "bBox": {
+            "x": 44.85,
+            "y": 251.12,
+            "w": 402.74,
+            "h": 439.99,
+            "confidence": 0.7,
+            "label": "text"
+          }
+        },
+        {
+          "type": "text",
+          "md": "Results: Blood vessels show significant connectivity with a Euler number of 2, whereas macrophage clusters exhibited no connectivity. The fibroblast foci showed a high level of interconnection with Euler numbers ranging from 19 to 39. The computer generated three-dimensional models provide a visual confirmation of this connectiveness. Human androgen receptor gene methylation assay analysis of the foci showed balanced methylation consistent with polyclonality.",
+          "value": "Results: Blood vessels show significant connectivity with a Euler number of 2, whereas macrophage clusters exhibited no connectivity. The fibroblast foci showed a high level of interconnection with Euler numbers ranging from 19 to 39. The computer generated three-dimensional models provide a visual confirmation of this connectiveness. Human androgen receptor gene methylation assay analysis of the foci showed balanced methylation consistent with polyclonality.",
+          "bBox": {
+            "x": 44.85,
+            "y": 342.56,
+            "w": 247.76,
+            "h": 79.15,
+            "confidence": 0.7,
+            "label": "text"
+          }
+        },
+        {
+          "type": "text",
+          "md": "Conclusions: The fibroblast foci of UIP are the leading edge of a complex reticulum that is highly interconnected and extends from the pleura into the underlying parenchyma. It is a reactive, rather than a malignant, process.",
+          "value": "Conclusions: The fibroblast foci of UIP are the leading edge of a complex reticulum that is highly interconnected and extends from the pleura into the underlying parenchyma. It is a reactive, rather than a malignant, process.",
+          "bBox": {
+            "x": 44.85,
+            "y": 423.93,
+            "w": 247.77,
+            "h": 38.47,
+            "confidence": 0.7,
+            "label": "text"
+          }
+        },
+        {
+          "type": "text",
+          "md": "Keywords: fibroblast foci; fibroblast reticulum; idiopathic pulmonary fibrosis; usual interstitial pneumonia",
+          "value": "Keywords: fibroblast foci; fibroblast reticulum; idiopathic pulmonary fibrosis; usual interstitial pneumonia",
+          "bBox": {
+            "x": 44.85,
+            "y": 473.01,
+            "w": 247.67,
+            "h": 18.07,
+            "confidence": 0.7,
+            "label": "text"
+          }
+        },
+        {
+          "type": "text",
+          "md": "Idiopathic pulmonary fibrosis (IPF) is a progressive fibrosing interstitial pneumonia of unknown etiology with a median survival of 3 yr (1). Histopathologically, it is defined by a specific pattern on surgical lung biopsy, usual interstitial pneumonia (UIP). Although IPF is a disease of unknown etiology, the current hypothesis regarding its development conceptualizes ongoing multiple, small, focal, and isolated episodes of epithelial injury followed by a pathologic fibrotic repair mechanism (2).",
+          "value": "Idiopathic pulmonary fibrosis (IPF) is a progressive fibrosing interstitial pneumonia of unknown etiology with a median survival of 3 yr (1). Histopathologically, it is defined by a specific pattern on surgical lung biopsy, usual interstitial pneumonia (UIP). Although IPF is a disease of unknown etiology, the current hypothesis regarding its development conceptualizes ongoing multiple, small, focal, and isolated episodes of epithelial injury followed by a pathologic fibrotic repair mechanism (2).",
+          "bBox": {
+            "x": 44.85,
+            "y": 533.09,
+            "w": 247.69,
+            "h": 41.02,
+            "confidence": 0.7,
+            "label": "text"
+          }
+        },
+        {
+          "type": "text",
+          "md": "METHODS",
+          "value": "METHODS",
+          "bBox": {
+            "x": 310.53,
+            "y": 497.43,
+            "w": 46.54,
+            "h": 9.48,
+            "confidence": 0.7,
+            "label": "text"
+          }
+        },
+        {
+          "type": "text",
+          "md": "Clinical Material",
+          "value": "Clinical Material",
+          "bBox": {
+            "x": 310.53,
+            "y": 515.59,
+            "w": 64.33,
+            "h": 8.48,
+            "confidence": 0.7,
+            "label": "text"
+          }
+        },
+        {
+          "type": "text",
+          "md": "Surgical lung biopsy specimens were obtained from subjects with IPF and cryptogenic organizing pneumonia (COP) who had been prospectively enrolled in our institutional review board\u2013approved, Health Insurance Portability and Accountability Act of 1996 (HIPAA) compliant protocols. IPF was diagnosed on the basis of appropriate clinical features and UIP on surgical lung biopsy. UIP was diagnosed by the identification of a patchy, nonuniform, fibrosing interstitial pneumonia of variable distribution. Alternating zones of interstitial fibrosis, inflammation, honeycomb change, normal lung, and fibroblast foci were required. The interstitial fibrosis was characterized by eosinophilic collagen thickening alveolar septa and forming patchy scars with few associated inflammatory cells (Figures 1A and 1B) (11). COP was diagnosed by the identification of typical features including fibroblastic tissue in airspaces (Masson bodies; Figures 1C and 1D) on surgical lung biopsy in the appropriate clinical setting (11).",
+          "value": "Surgical lung biopsy specimens were obtained from subjects with IPF and cryptogenic organizing pneumonia (COP) who had been prospectively enrolled in our institutional review board\u2013approved, Health Insurance Portability and Accountability Act of 1996 (HIPAA) compliant protocols. IPF was diagnosed on the basis of appropriate clinical features and UIP on surgical lung biopsy. UIP was diagnosed by the identification of a patchy, nonuniform, fibrosing interstitial pneumonia of variable distribution. Alternating zones of interstitial fibrosis, inflammation, honeycomb change, normal lung, and fibroblast foci were required. The interstitial fibrosis was characterized by eosinophilic collagen thickening alveolar septa and forming patchy scars with few associated inflammatory cells (Figures 1A and 1B) (11). COP was diagnosed by the identification of typical features including fibroblastic tissue in airspaces (Masson bodies; Figures 1C and 1D) on surgical lung biopsy in the appropriate clinical setting (11).",
+          "bBox": {
+            "x": 109.77,
+            "y": 281.6,
+            "w": 448.43,
+            "h": 390.91,
+            "confidence": 0.7,
+            "label": "text"
+          }
+        },
+        {
+          "type": "text",
+          "md": "Three-Dimensional Reconstruction",
+          "value": "Three-Dimensional Reconstruction",
+          "bBox": {
+            "x": 310.53,
+            "y": 682.63,
+            "w": 137.06,
+            "h": 8.48,
+            "confidence": 0.7,
+            "label": "text"
+          }
+        },
+        {
+          "type": "text",
+          "md": "Serial sections 5-mm thick were cut over approximately 500 mm (approximately 100 sections) from surgical lung biopsies from four cases of UIP and one case of COP. Slides were stained with pentachrome (Movat), and digitally photomicrographed. These sections were manually.",
+          "value": "Serial sections 5-mm thick were cut over approximately 500 mm (approximately 100 sections) from surgical lung biopsies from four cases of UIP and one case of COP. Slides were stained with pentachrome (Movat), and digitally photomicrographed. These sections were manually.",
+          "bBox": {
+            "x": 44.85,
+            "y": 281.6,
+            "w": 513.5,
+            "h": 451.62,
+            "confidence": 0.7,
+            "label": "text"
+          }
+        }
+      ],
+      "status": "OK",
+      "originalOrientationAngle": 0,
+      "links": [],
+      "width": 603,
+      "height": 783,
+      "triggeredAutoMode": false,
+      "parsingMode": "accurate",
+      "structuredData": null,
+      "noStructuredContent": false,
+      "noTextContent": false,
+      "pageHeaderMarkdown": "\n# Fibroblast Foci Are Not Discrete Sites of Lung Injury or Repair\n\n# The Fibroblast Reticulum\n\nCarlyne D. Cool, Steve D. GroshongX, Pradeep R. RaiX, Peter M. Henson, J. Scott Stewart, and Kevin K. Brown\n\nDepartments of Medicine and Pathology, University of Colorado Health Sciences Center; and Interstitial Lung Disease Program, National Jewish Medical and Research Center, Denver, Colorado\n\n",
+      "pageFooterMarkdown": "",
+      "printedPageNumber": "",
+      "slideSpeakerNotes": null,
+      "slideSectionName": null,
+      "confidence": 0.603,
+      "costOptimized": false
+    },
+    {
+      "page": 2,
+      "text": "Cool, Groshong, Rai, et al.: The Fibroblast Reticulum    655\n\n                                                         B\n\n\n\nFigure 1. Pentachrome-stained\nsections  of  usual  interstitial\npneumonia (UIP) are shown at\n100    (A), with a high power\n(400 ) view of a fibroblast foci\n(B ).  There  is  heterogeneous\ndeposition of mature collagen\n(yellow) throughout the paren-\nchyma with associated architec-\ntural distortion and focal depos-\nits of young, immature collagen\n(blue-green) within the subepi-\nthelial interstitium. Pentachrome-\nstained sections of cryptogenic\norganizing    pneumonia    (COP)\nare shown at 100     (C), with a\nhigh power (400      ) view of a\nMasson body (D). In contrast to\nthe sections of UIP, there is min-\nimal mature   collagen deposi-\ntion (yellow), and only young\nimmature collagen (blue-green)\nis present within airways.\n\n\n\n\n\n\n\n\n\ntranslated and rotated so that the consecutive images were coaligned           connections (here, the number of \ufb01broblast foci) is proportional to the\nwith respect to clear features such as blood vessels and tissue bound-         Euler number, and any value above zero indicates connectivity. A\naries, utilizing the pleura as the primary reference point (see Figure E1      multiply connected structure such as a net has a higher Euler number\nin the online supplement). Analysis focused on the following features:         than a simply connected structure such as a single-trunked tree. Using\npleura, macrophage clusters, pulmonary vessels, and interstitial \ufb01bro-         adjacent sections as physical dissectors for counting in both directions\nblast proliferation (\ufb01broblast foci). The two-dimensional images were          (i.e., using each single section once as a sampling section and once as\ncollated into three-dimensional structures using proprietary software          a look-up section), we denoted \ufb01broblast foci that spanned sections as\nwritten in C and C    that imports the registered and colored images           bridges (B). Isolated \ufb01broblast foci without connections to previously\nfrom a numbered series of image \ufb01les and stores them in a three-               visible foci were denoted as islands (I). Areas entirely surrounded by\ndimensional data array. Missing levels (due to tissue ribbon breaks,           tissue were denoted as holes (H). With dissectors used to count in both\netc.) were interpolated from adjacent sections using a percentage-closer       directions, the contribution from the dissector counts to the total Euler\ninterpolation technique. Two complementary methods were used to ana-           number (X) is then X  H B I (where H  holes, B        bridges and\nlyze the data array. For the \ufb01rst method, the freeware software Vis5D          I  islands). Additional details on calculating the stereologic estimators,\n(University of Wisconsin, Madison, WI) was used to visualize the three-        including descriptions of all parameters and values from all six cases\ndimensional array. For the second method, the marching-cube algo-              are shown in the online supplement (Tables E1 and E2).\nrithm (12) was used to create a polygon mesh along the isosurface of the       Analysis of Clonality\nvolumetric data using a local density function of the given component          Surgical lung biopsy specimens from seven women with UIP and seven\nof interest (e.g., \ufb01broblastic tissue). The resulting polygon mesh was         women with COP were analyzed. DNA from the endometrial adenocar-\nsmoothed to remove spurious high-frequency detail that is artifactually        cinoma cell line HEC-1-A (American Type Culture Collection, Rock-\ncreated in the reconstruction due to \ufb01nite sampling. The \ufb01nal polygon          ville, MD) was used as a positive control for restriction digestion and\nmeshes were imported into Softimage XSI (Softimage Co., Montreal,              polymerase chain reaction (PCR) ampli\ufb01cation. To obtain samples for\nPQ, Canada) for \ufb01nal rendering.                                                DNA analysis by PCR, we performed microdissection on the tissue\n\nStereologic Analysis and Calculation of Euler Number                           sections to isolate the \ufb01broblast foci and Masson bodies using an\n                                                                               Arcturus Pix Cell II (Arcturus Bioscience, Mountain View, CA). The\nStereologic analysis was performed using a light microscope on \ufb01ve             internal control consisted of tissue free of \ufb01broblastic lesions. Clonality\nsubjects with UIP and one subject with COP. One block from each subject        was determined with an adaptation of the human androgen receptor\nwas analyzed for connectivity using multiple sections over 500 mm (range,      gene methylation assay. The methylation pattern of the DNA was\n455\u2013510 mm).                                                                   examined using the methyl-sensitive restriction endonuclease HhaI\n   To calculate the Euler number, between 16 and 20 consecutive sec-           (Invitrogen, Carlsbad, CA). Additional details are available in the on-\ntions spaced every 20\u201330 mm were analyzed from each subject. Using             line supplement.\nthe point-counting technique on serial sections, \ufb01broblast foci, arteries,     RESULTS\nand macrophage clusters were identi\ufb01ed. The connectivity of each of\nthese features was then determined by the estimation of the Euler              Two-Dimensional Histopathology\nnumber (13, 14). For a two-dimensional network in a three-dimensional          The histologic appearance of UIP and COP are contrasted in\nspace, the Euler number (X) is a positive integer that indicates the\nextent (or redundancy) of connectivity in the network. The number of           Figure 1. UIP is a \ufb01brosing interstitial pneumonia that exhibits",
+      "md": "\n# Cool, Groshong, Rai, et al.: The Fibroblast Reticulum\n\nFigure 1. Pentachrome-stained sections of usual interstitial pneumonia (UIP) are shown at 100 (A), with a high power (400) view of a fibroblast foci (B). There is heterogeneous deposition of mature collagen (yellow) throughout the parenchyma with associated architectural distortion and focal deposits of young, immature collagen (blue-green) within the subepithelial interstitium. Pentachrome-stained sections of cryptogenic organizing pneumonia (COP) are shown at 100 (C), with a high power (400) view of a Masson body (D). In contrast to the sections of UIP, there is minimal mature collagen deposition (yellow), and only young immature collagen (blue-green) is present within airways.\n\ntranslated and rotated so that the consecutive images were coaligned with respect to clear features such as blood vessels and tissue boundaries, utilizing the pleura as the primary reference point (see Figure E1 in the online supplement). Analysis focused on the following features: pleura, macrophage clusters, pulmonary vessels, and interstitial fibroblast proliferation (fibroblast foci). The two-dimensional images were collated into three-dimensional structures using proprietary software written in C and C that imports the registered and colored images from a numbered series of image files and stores them in a three-dimensional data array. Missing levels (due to tissue ribbon breaks, etc.) were interpolated from adjacent sections using a percentage-closer interpolation technique. Two complementary methods were used to analyze the data array. For the first method, the freeware software Vis5D (University of Wisconsin, Madison, WI) was used to visualize the three-dimensional array. For the second method, the marching-cube algorithm (12) was used to create a polygon mesh along the isosurface of the volumetric data using a local density function of the given component of interest (e.g., fibroblastic tissue). The resulting polygon mesh was smoothed to remove spurious high-frequency detail that is artifactually created in the reconstruction due to finite sampling. The final polygon meshes were imported into Softimage XSI (Softimage Co., Montreal, PQ, Canada) for final rendering.\n\n# Stereologic Analysis and Calculation of Euler Number\n\nStereologic analysis was performed using a light microscope on five subjects with UIP and one subject with COP. One block from each subject was analyzed for connectivity using multiple sections over 500 mm (range, 455\u2013510 mm). To calculate the Euler number, between 16 and 20 consecutive sections spaced every 20\u201330 mm were analyzed from each subject. Using the point-counting technique on serial sections, fibroblast foci, arteries, and macrophage clusters were identified. The connectivity of each of these features was then determined by the estimation of the Euler number (13, 14). For a two-dimensional network in a three-dimensional space, the Euler number (X) is a positive integer that indicates the extent (or redundancy) of connectivity in the network. The number of connections (here, the number of fibroblast foci) is proportional to the Euler number, and any value above zero indicates connectivity. A multiply connected structure such as a net has a higher Euler number than a simply connected structure such as a single-trunked tree. Using adjacent sections as physical dissectors for counting in both directions (i.e., using each single section once as a sampling section and once as a look-up section), we denoted fibroblast foci that spanned sections as bridges (B). Isolated fibroblast foci without connections to previously visible foci were denoted as islands (I). Areas entirely surrounded by tissue were denoted as holes (H). With dissectors used to count in both directions, the contribution from the dissector counts to the total Euler number (X) is then X = H + B + I (where H = holes, B = bridges and I = islands). Additional details on calculating the stereologic estimators, including descriptions of all parameters and values from all six cases are shown in the online supplement (Tables E1 and E2).\n\n# Analysis of Clonality\n\nSurgical lung biopsy specimens from seven women with UIP and seven women with COP were analyzed. DNA from the endometrial adenocarcinoma cell line HEC-1-A (American Type Culture Collection, Rockville, MD) was used as a positive control for restriction digestion and polymerase chain reaction (PCR) amplification. To obtain samples for DNA analysis by PCR, we performed microdissection on the tissue sections to isolate the fibroblast foci and Masson bodies using an Arcturus Pix Cell II (Arcturus Bioscience, Mountain View, CA). The internal control consisted of tissue free of fibroblastic lesions. Clonality was determined with an adaptation of the human androgen receptor gene methylation assay. The methylation pattern of the DNA was examined using the methyl-sensitive restriction endonuclease HhaI (Invitrogen, Carlsbad, CA). Additional details are available in the online supplement.\n\n# RESULTS\n\n# Two-Dimensional Histopathology\n\nThe histologic appearance of UIP and COP are contrasted in Figure 1. UIP is a fibrosing interstitial pneumonia that exhibits\n\n",
+      "images": [
+        {
+          "name": "img_p1_1.jpg",
+          "height": 151.667,
+          "width": 191.092,
+          "x": 45.154,
+          "y": 44.643,
+          "original_width": 390,
+          "original_height": 309,
+          "rotation": 0
+        },
+        {
+          "name": "img_p1_2.jpg",
+          "height": 151.667,
+          "width": 191.091,
+          "x": 246.005,
+          "y": 44.643,
+          "original_width": 390,
+          "original_height": 309,
+          "rotation": 0,
+          "ocr": [
+            {
+              "x": 2,
+              "y": 6,
+              "w": 21,
+              "h": 20,
+              "confidence": 1,
+              "text": "B"
+            }
+          ]
+        },
+        {
+          "name": "img_p1_3.jpg",
+          "height": 151.668,
+          "width": 191.092,
+          "x": 45.154,
+          "y": 206.275,
+          "original_width": 390,
+          "original_height": 309,
+          "rotation": 0
+        },
+        {
+          "name": "img_p1_4.jpg",
+          "height": 151.668,
+          "width": 191.091,
+          "x": 246.005,
+          "y": 206.275,
+          "original_width": 390,
+          "original_height": 309,
+          "rotation": 0
+        },
+        {
+          "name": "page_2.jpg",
+          "height": 783,
+          "width": 603,
+          "x": 0,
+          "y": 0,
+          "original_width": 1232,
+          "original_height": 1600,
+          "rotation": 0,
+          "type": "full_page_screenshot"
+        }
+      ],
+      "charts": [],
+      "items": [
+        {
+          "type": "heading",
+          "md": "# Cool, Groshong, Rai, et al.: The Fibroblast Reticulum",
+          "value": "Cool, Groshong, Rai, et al.: The Fibroblast Reticulum",
+          "lvl": 1,
+          "bBox": {
+            "x": 45.21,
+            "y": 20.72,
+            "w": 186.65,
+            "h": 7.99,
+            "confidence": 0.7,
+            "label": "heading"
+          }
+        },
+        {
+          "type": "text",
+          "md": "Figure 1. Pentachrome-stained sections of usual interstitial pneumonia (UIP) are shown at 100 (A), with a high power (400) view of a fibroblast foci (B). There is heterogeneous deposition of mature collagen (yellow) throughout the parenchyma with associated architectural distortion and focal deposits of young, immature collagen (blue-green) within the subepithelial interstitium. Pentachrome-stained sections of cryptogenic organizing pneumonia (COP) are shown at 100 (C), with a high power (400) view of a Masson body (D). In contrast to the sections of UIP, there is minimal mature collagen deposition (yellow), and only young immature collagen (blue-green) is present within airways.",
+          "value": "Figure 1. Pentachrome-stained sections of usual interstitial pneumonia (UIP) are shown at 100 (A), with a high power (400) view of a fibroblast foci (B). There is heterogeneous deposition of mature collagen (yellow) throughout the parenchyma with associated architectural distortion and focal deposits of young, immature collagen (blue-green) within the subepithelial interstitium. Pentachrome-stained sections of cryptogenic organizing pneumonia (COP) are shown at 100 (C), with a high power (400) view of a Masson body (D). In contrast to the sections of UIP, there is minimal mature collagen deposition (yellow), and only young immature collagen (blue-green) is present within airways.",
+          "bBox": {
+            "x": 449.13,
+            "y": 86.72,
+            "w": 109.58,
+            "h": 227.23,
+            "confidence": 0.7,
+            "label": "text"
+          }
+        },
+        {
+          "type": "text",
+          "md": "translated and rotated so that the consecutive images were coaligned with respect to clear features such as blood vessels and tissue boundaries, utilizing the pleura as the primary reference point (see Figure E1 in the online supplement). Analysis focused on the following features: pleura, macrophage clusters, pulmonary vessels, and interstitial fibroblast proliferation (fibroblast foci). The two-dimensional images were collated into three-dimensional structures using proprietary software written in C and C that imports the registered and colored images from a numbered series of image files and stores them in a three-dimensional data array. Missing levels (due to tissue ribbon breaks, etc.) were interpolated from adjacent sections using a percentage-closer interpolation technique. Two complementary methods were used to analyze the data array. For the first method, the freeware software Vis5D (University of Wisconsin, Madison, WI) was used to visualize the three-dimensional array. For the second method, the marching-cube algorithm (12) was used to create a polygon mesh along the isosurface of the volumetric data using a local density function of the given component of interest (e.g., fibroblastic tissue). The resulting polygon mesh was smoothed to remove spurious high-frequency detail that is artifactually created in the reconstruction due to finite sampling. The final polygon meshes were imported into Softimage XSI (Softimage Co., Montreal, PQ, Canada) for final rendering.",
+          "value": "translated and rotated so that the consecutive images were coaligned with respect to clear features such as blood vessels and tissue boundaries, utilizing the pleura as the primary reference point (see Figure E1 in the online supplement). Analysis focused on the following features: pleura, macrophage clusters, pulmonary vessels, and interstitial fibroblast proliferation (fibroblast foci). The two-dimensional images were collated into three-dimensional structures using proprietary software written in C and C that imports the registered and colored images from a numbered series of image files and stores them in a three-dimensional data array. Missing levels (due to tissue ribbon breaks, etc.) were interpolated from adjacent sections using a percentage-closer interpolation technique. Two complementary methods were used to analyze the data array. For the first method, the freeware software Vis5D (University of Wisconsin, Madison, WI) was used to visualize the three-dimensional array. For the second method, the marching-cube algorithm (12) was used to create a polygon mesh along the isosurface of the volumetric data using a local density function of the given component of interest (e.g., fibroblastic tissue). The resulting polygon mesh was smoothed to remove spurious high-frequency detail that is artifactually created in the reconstruction due to finite sampling. The final polygon meshes were imported into Softimage XSI (Softimage Co., Montreal, PQ, Canada) for final rendering.",
+          "bBox": {
+            "x": 45.21,
+            "y": 47.59,
+            "w": 513.21,
+            "h": 541.05,
+            "confidence": 0.7,
+            "label": "text"
+          }
+        },
+        {
+          "type": "heading",
+          "md": "# Stereologic Analysis and Calculation of Euler Number",
+          "value": "Stereologic Analysis and Calculation of Euler Number",
+          "lvl": 1,
+          "bBox": {
+            "x": 45.21,
+            "y": 607.63,
+            "w": 212.82,
+            "h": 8.48,
+            "confidence": 0.7,
+            "label": "heading"
+          }
+        },
+        {
+          "type": "text",
+          "md": "Stereologic analysis was performed using a light microscope on five subjects with UIP and one subject with COP. One block from each subject was analyzed for connectivity using multiple sections over 500 mm (range, 455\u2013510 mm). To calculate the Euler number, between 16 and 20 consecutive sections spaced every 20\u201330 mm were analyzed from each subject. Using the point-counting technique on serial sections, fibroblast foci, arteries, and macrophage clusters were identified. The connectivity of each of these features was then determined by the estimation of the Euler number (13, 14). For a two-dimensional network in a three-dimensional space, the Euler number (X) is a positive integer that indicates the extent (or redundancy) of connectivity in the network. The number of connections (here, the number of fibroblast foci) is proportional to the Euler number, and any value above zero indicates connectivity. A multiply connected structure such as a net has a higher Euler number than a simply connected structure such as a single-trunked tree. Using adjacent sections as physical dissectors for counting in both directions (i.e., using each single section once as a sampling section and once as a look-up section), we denoted fibroblast foci that spanned sections as bridges (B). Isolated fibroblast foci without connections to previously visible foci were denoted as islands (I). Areas entirely surrounded by tissue were denoted as holes (H). With dissectors used to count in both directions, the contribution from the dissector counts to the total Euler number (X) is then X = H + B + I (where H = holes, B = bridges and I = islands). Additional details on calculating the stereologic estimators, including descriptions of all parameters and values from all six cases are shown in the online supplement (Tables E1 and E2).",
+          "value": "Stereologic analysis was performed using a light microscope on five subjects with UIP and one subject with COP. One block from each subject was analyzed for connectivity using multiple sections over 500 mm (range, 455\u2013510 mm). To calculate the Euler number, between 16 and 20 consecutive sections spaced every 20\u201330 mm were analyzed from each subject. Using the point-counting technique on serial sections, fibroblast foci, arteries, and macrophage clusters were identified. The connectivity of each of these features was then determined by the estimation of the Euler number (13, 14). For a two-dimensional network in a three-dimensional space, the Euler number (X) is a positive integer that indicates the extent (or redundancy) of connectivity in the network. The number of connections (here, the number of fibroblast foci) is proportional to the Euler number, and any value above zero indicates connectivity. A multiply connected structure such as a net has a higher Euler number than a simply connected structure such as a single-trunked tree. Using adjacent sections as physical dissectors for counting in both directions (i.e., using each single section once as a sampling section and once as a look-up section), we denoted fibroblast foci that spanned sections as bridges (B). Isolated fibroblast foci without connections to previously visible foci were denoted as islands (I). Areas entirely surrounded by tissue were denoted as holes (H). With dissectors used to count in both directions, the contribution from the dissector counts to the total Euler number (X) is then X = H + B + I (where H = holes, B = bridges and I = islands). Additional details on calculating the stereologic estimators, including descriptions of all parameters and values from all six cases are shown in the online supplement (Tables E1 and E2).",
+          "bBox": {
+            "x": 45.21,
+            "y": 96.68,
+            "w": 513.32,
+            "h": 636.55,
+            "confidence": 0.7,
+            "label": "text"
+          }
+        },
+        {
+          "type": "heading",
+          "md": "# Analysis of Clonality",
+          "value": "Analysis of Clonality",
+          "lvl": 1,
+          "bBox": {
+            "x": 310.77,
+            "y": 534.79,
+            "w": 80.25,
+            "h": 8.48,
+            "confidence": 0.7,
+            "label": "heading"
+          }
+        },
+        {
+          "type": "text",
+          "md": "Surgical lung biopsy specimens from seven women with UIP and seven women with COP were analyzed. DNA from the endometrial adenocarcinoma cell line HEC-1-A (American Type Culture Collection, Rockville, MD) was used as a positive control for restriction digestion and polymerase chain reaction (PCR) amplification. To obtain samples for DNA analysis by PCR, we performed microdissection on the tissue sections to isolate the fibroblast foci and Masson bodies using an Arcturus Pix Cell II (Arcturus Bioscience, Mountain View, CA). The internal control consisted of tissue free of fibroblastic lesions. Clonality was determined with an adaptation of the human androgen receptor gene methylation assay. The methylation pattern of the DNA was examined using the methyl-sensitive restriction endonuclease HhaI (Invitrogen, Carlsbad, CA). Additional details are available in the online supplement.",
+          "value": "Surgical lung biopsy specimens from seven women with UIP and seven women with COP were analyzed. DNA from the endometrial adenocarcinoma cell line HEC-1-A (American Type Culture Collection, Rockville, MD) was used as a positive control for restriction digestion and polymerase chain reaction (PCR) amplification. To obtain samples for DNA analysis by PCR, we performed microdissection on the tissue sections to isolate the fibroblast foci and Masson bodies using an Arcturus Pix Cell II (Arcturus Bioscience, Mountain View, CA). The internal control consisted of tissue free of fibroblastic lesions. Clonality was determined with an adaptation of the human androgen receptor gene methylation assay. The methylation pattern of the DNA was examined using the methyl-sensitive restriction endonuclease HhaI (Invitrogen, Carlsbad, CA). Additional details are available in the online supplement.",
+          "bBox": {
+            "x": 310.77,
+            "y": 96.68,
+            "w": 247.73,
+            "h": 577.03,
+            "confidence": 0.7,
+            "label": "text"
+          }
+        },
+        {
+          "type": "heading",
+          "md": "# RESULTS",
+          "value": "RESULTS",
+          "lvl": 1,
+          "bBox": {
+            "x": 310.77,
+            "y": 684.63,
+            "w": 38.67,
+            "h": 9.48,
+            "confidence": 0.7,
+            "label": "heading"
+          }
+        },
+        {
+          "type": "heading",
+          "md": "# Two-Dimensional Histopathology",
+          "value": "Two-Dimensional Histopathology",
+          "lvl": 1,
+          "bBox": {
+            "x": 310.77,
+            "y": 701.11,
+            "w": 132.84,
+            "h": 8.48,
+            "confidence": 0.7,
+            "label": "heading"
+          }
+        },
+        {
+          "type": "text",
+          "md": "The histologic appearance of UIP and COP are contrasted in Figure 1. UIP is a fibrosing interstitial pneumonia that exhibits",
+          "value": "The histologic appearance of UIP and COP are contrasted in Figure 1. UIP is a fibrosing interstitial pneumonia that exhibits",
+          "bBox": {
+            "x": 246.98,
+            "y": 47.59,
+            "w": 311.47,
+            "h": 675.56,
+            "confidence": 0.7,
+            "label": "text"
+          }
+        }
+      ],
+      "status": "OK",
+      "originalOrientationAngle": 0,
+      "links": [],
+      "width": 603,
+      "height": 783,
+      "triggeredAutoMode": false,
+      "parsingMode": "accurate",
+      "structuredData": null,
+      "noStructuredContent": false,
+      "noTextContent": false,
+      "pageHeaderMarkdown": "",
+      "pageFooterMarkdown": "",
+      "printedPageNumber": "",
+      "slideSpeakerNotes": null,
+      "slideSectionName": null,
+      "confidence": 0.963,
+      "costOptimized": false
+    },
+    {
+      "page": 3,
+      "text": "656                                           AMERICAN JOURNAL OF RESPIRATORY AND CRITICAL CARE MEDICINE           VOL 174 2006\n\narchitectural distortion, little cellular in\ufb02ammation, spatial and\ntemporal heterogeneity with advanced interstitial \ufb01brosis, and\nessentially normal parenchyma within the same microscopic                       29,00N\n\ufb01eld. In addition to the deposition of mature collagen (yellow\nin the pentachrome stain), immature collagen (stained blue-\ngreen) appears as interstitial foci projecting into the airspaces.\nOn two-dimensional section, these individual foci appear inde-                             *\npendent and discrete. In contrast, COP is an airspace-\ufb01lling pro-\ncess that leaves the interstitium largely uninvolved with little\narchitectural distortion. The individual plugs of \ufb01broblastic tissue\n(Masson bodies) appear to \ufb01ll the entire airspace, from the small\nairway to the alveolus.\n\nAnalysis of Connectivity\nTo evaluate the connectivity of the \ufb01broblast foci in UIP and\nMasson bodies in COP, we imaged multiple serial sections of\ntissue and built a three-dimensional representation of the \ufb01bro-\nblastic tissue, blood vessels, and macrophage clusters. Stereo-\nscopic analysis was then used to provide a quantitative descrip-\ntion of the connectivity. The resulting Euler numbers for the\n\ufb01broblastic tissue are presented in Table 1. As expected, blood                 0.OOS\nvessels showed connectivity with a Euler number of 2, whereas                              LODE                    102.00E\nmacrophage clusters exhibited no connectivity (a Euler number\nof 0). The \ufb01broblast foci show signi\ufb01cant connectivity with Euler\nnumbers ranging from 19 to 39 (see online supplement for com-                   B\nplete data). Table E1 provides \ufb01nal Euler numbers for each case                 29.00N\nand shows depth of tissue studied. Table E2 shows detailed\ndatasets for the UIP and COP cases.\n\nThree-Dimensional Reconstruction\nIn addition to the connectivity suggested by the Euler number,\ncomputer generated three-dimensional models provide a visual\nand intuitive presentation of the data (Figures 2 and 3). When\nviewed in three dimensions, the isolated \ufb01broblast foci appear\nas an interconnected network, forming a \u201c\ufb01broblast reticulum\u201d\nexpanding into the underlying tissue and closely intertwined\nwith an extensive and abnormal vascular network.\n\nAnalysis of Clonality\nThe identi\ufb01ed interconnectivity of the \ufb01broblast reticulum in\nUIP raised the possibility of a monoclonal, malignant process as\nthe mechanism for the progression of UIP. Surgical lung biopsy\nspecimens from seven women with COP and seven women with\nUIP were microdissected and analyzed using the human androgen                   0.O0S\nreceptor gene methylation assay. HEC-1-A endometrial adenocar-                            6.O0E                    102.00E\ncinoma cells were used as a positive control. Figure 4 shows the\nHhaI digested PCR products from representative cases of UIP                     Figure 2. Computer-generated three-dimensional reconstructions of\nand COP. All of the patients showed balanced methylation pat-                   (A) pleural surface (yellow) and blood vessels (red) and (B ) with the\nterns, consistent with polyclonality. Only the positive control,                fibroblast reticulum added (green).\nHEC-1-A,        showed unbalanced methylation consistent                    with\nmonoclonality. The data from analysis of all the specimens are\nin the online supplement (Table E3). The corresponding normal\ntissues had inactivation ratios between 0.87 and 1.41, and were                 used to correct for alterations in clonality ratio due to lyoniza-\n                                                                                tion. Thus, both UIP and COP are polyclonal proliferations of\n                                                                                \ufb01broblasts.\n\nTABLE 1. STEREOSCOPIC ANALYSIS OF CRYPTOGENIC                                   DISCUSSION\nORGANIZING PNEUMONIA AND USUAL INTERSTITIAL                                     Despite considerable recent investigation of IPF/UIP, neither\nPNEUMONIA DEFINING THE EXTENT OF\nINTERCONNECTEDNESS BY EULER NUMBERS                                             the initial cause nor the reasons for progression are known. With\n                                             UIP                                few clinical clues, the histopathologic pattern of UIP with its\n               COP                                                              combination of normal lung, mature \ufb01brosis, honeycomb change,\n              Case 1    Case 2    Case 3    Case 4    Case 5    Case 6          and \ufb01broblast foci has been a primary source of hypothesis gen-\nEuler number    26        38        32        26        39        19            eration regarding pathobiology. A number of studies, dating\n                                                                                from the original description of the \ufb01broblast foci in the 1980s\nThe extent of connectivity is directly proportional to the Euler number.        (5), have focused attention on their clinical relevance (1, 15, 16).",
+      "md": "AMERICAN JOURNAL OF RESPIRATORY AND CRITICAL CARE MEDICINE VOL 174 2006\n\narchitectural distortion, little cellular in\ufb02ammation, spatial and temporal heterogeneity with advanced interstitial \ufb01brosis, and essentially normal parenchyma within the same microscopic field. In addition to the deposition of mature collagen (yellow in the pentachrome stain), immature collagen (stained blue-green) appears as interstitial foci projecting into the airspaces. On two-dimensional section, these individual foci appear independent and discrete. In contrast, COP is an airspace-\ufb01lling process that leaves the interstitium largely uninvolved with little architectural distortion. The individual plugs of \ufb01broblastic tissue (Masson bodies) appear to \ufb01ll the entire airspace, from the small airway to the alveolus.\n\n# Analysis of Connectivity\n\nTo evaluate the connectivity of the \ufb01broblast foci in UIP and Masson bodies in COP, we imaged multiple serial sections of tissue and built a three-dimensional representation of the \ufb01broblastic tissue, blood vessels, and macrophage clusters. Stereoscopic analysis was then used to provide a quantitative description of the connectivity. The resulting Euler numbers for the \ufb01broblastic tissue are presented in Table 1. As expected, blood vessels showed connectivity with a Euler number of 2, whereas macrophage clusters exhibited no connectivity (a Euler number of 0). The \ufb01broblast foci show significant connectivity with Euler numbers ranging from 19 to 39 (see online supplement for complete data). Table E1 provides final Euler numbers for each case and shows depth of tissue studied. Table E2 shows detailed datasets for the UIP and COP cases.\n\n# Three-Dimensional Reconstruction\n\nIn addition to the connectivity suggested by the Euler number, computer generated three-dimensional models provide a visual and intuitive presentation of the data (Figures 2 and 3). When viewed in three dimensions, the isolated \ufb01broblast foci appear as an interconnected network, forming a \u201c\ufb01broblast reticulum\u201d expanding into the underlying tissue and closely intertwined with an extensive and abnormal vascular network.\n\n# Analysis of Clonality\n\nThe identified interconnectivity of the \ufb01broblast reticulum in UIP raised the possibility of a monoclonal, malignant process as the mechanism for the progression of UIP. Surgical lung biopsy specimens from seven women with COP and seven women with UIP were microdissected and analyzed using the human androgen receptor gene methylation assay. HEC-1-A endometrial adenocarcinoma cells were used as a positive control. Figure 4 shows the HhaI digested PCR products from representative cases of UIP and COP. All of the patients showed balanced methylation patterns, consistent with polyclonality. Only the positive control, HEC-1-A, showed unbalanced methylation consistent with monoclonality. The data from analysis of all the specimens are in the online supplement (Table E3). The corresponding normal tissues had inactivation ratios between 0.87 and 1.41, and were used to correct for alterations in clonality ratio due to lyonization. Thus, both UIP and COP are polyclonal proliferations of \ufb01broblasts.\n\n# TABLE 1. STEREOSCOPIC ANALYSIS OF CRYPTOGENIC ORGANIZING PNEUMONIA AND USUAL INTERSTITIAL PNEUMONIA DEFINING THE EXTENT OF INTERCONNECTEDNESS BY EULER NUMBERS\n\n| UIP          | COP | Case |    |    |    |    |\n| ------------ | --- | ---- | -- | -- | -- | -- |\n| 1            | 2   | 3    | 4  | 5  | 6  |    |\n| Euler number | 26  | 38   | 32 | 26 | 39 | 19 |\n\nThe extent of connectivity is directly proportional to the Euler number.\n\n# DISCUSSION\n\nDespite considerable recent investigation of IPF/UIP, neither the initial cause nor the reasons for progression are known. With few clinical clues, the histopathologic pattern of UIP with its combination of normal lung, mature \ufb01brosis, honeycomb change, and \ufb01broblast foci has been a primary source of hypothesis generation regarding pathobiology. A number of studies, dating from the original description of the \ufb01broblast foci in the 1980s (5), have focused attention on their clinical relevance (1, 15, 16).\n\n",
+      "images": [
+        {
+          "name": "img_p2_1.jpg",
+          "height": 240.256,
+          "width": 203.101,
+          "x": 333.348,
+          "y": 44.643,
+          "original_width": 414,
+          "original_height": 490,
+          "rotation": 0,
+          "ocr": [
+            {
+              "x": 41,
+              "y": 459,
+              "w": 26,
+              "h": 16,
+              "confidence": 0.72,
+              "text": "LODE"
+            },
+            {
+              "x": 337,
+              "y": 458,
+              "w": 38,
+              "h": 16,
+              "confidence": 0.949,
+              "text": "102.00E"
+            },
+            {
+              "x": 5,
+              "y": 441,
+              "w": 27,
+              "h": 18,
+              "confidence": 0.712,
+              "text": "0.OOS"
+            },
+            {
+              "x": 187,
+              "y": 131,
+              "w": 168,
+              "h": 136,
+              "confidence": 0.738,
+              "text": "*"
+            },
+            {
+              "x": 0,
+              "y": 38,
+              "w": 31,
+              "h": 23,
+              "confidence": 0.854,
+              "text": "29,00N"
+            }
+          ]
+        },
+        {
+          "name": "img_p2_2.jpg",
+          "height": 232.185,
+          "width": 196.471,
+          "x": 333.348,
+          "y": 294.864,
+          "original_width": 401,
+          "original_height": 474,
+          "rotation": 0,
+          "ocr": [
+            {
+              "x": 37,
+              "y": 443,
+              "w": 27,
+              "h": 15,
+              "confidence": 0.711,
+              "text": "6.O0E"
+            },
+            {
+              "x": 325,
+              "y": 442,
+              "w": 37,
+              "h": 14,
+              "confidence": 0.95,
+              "text": "102.00E"
+            },
+            {
+              "x": 4,
+              "y": 425,
+              "w": 28,
+              "h": 18,
+              "confidence": 0.766,
+              "text": "0.O0S"
+            },
+            {
+              "x": 0,
+              "y": 39,
+              "w": 31,
+              "h": 18,
+              "confidence": 0.89,
+              "text": "29.00N"
+            },
+            {
+              "x": 9,
+              "y": 9,
+              "w": 16,
+              "h": 19,
+              "confidence": 1,
+              "text": "B"
+            }
+          ]
+        },
+        {
+          "name": "page_3.jpg",
+          "height": 783,
+          "width": 603,
+          "x": 0,
+          "y": 0,
+          "original_width": 1232,
+          "original_height": 1600,
+          "rotation": 0,
+          "type": "full_page_screenshot"
+        }
+      ],
+      "charts": [],
+      "items": [
+        {
+          "type": "text",
+          "md": "AMERICAN JOURNAL OF RESPIRATORY AND CRITICAL CARE MEDICINE VOL 174 2006",
+          "value": "AMERICAN JOURNAL OF RESPIRATORY AND CRITICAL CARE MEDICINE VOL 174 2006",
+          "bBox": {
+            "x": 236.25,
+            "y": 20.72,
+            "w": 321.86,
+            "h": 7.99,
+            "confidence": 0.7,
+            "label": "text"
+          }
+        },
+        {
+          "type": "text",
+          "md": "architectural distortion, little cellular in\ufb02ammation, spatial and temporal heterogeneity with advanced interstitial \ufb01brosis, and essentially normal parenchyma within the same microscopic field. In addition to the deposition of mature collagen (yellow in the pentachrome stain), immature collagen (stained blue-green) appears as interstitial foci projecting into the airspaces. On two-dimensional section, these individual foci appear independent and discrete. In contrast, COP is an airspace-\ufb01lling process that leaves the interstitium largely uninvolved with little architectural distortion. The individual plugs of \ufb01broblastic tissue (Masson bodies) appear to \ufb01ll the entire airspace, from the small airway to the alveolus.",
+          "value": "architectural distortion, little cellular in\ufb02ammation, spatial and temporal heterogeneity with advanced interstitial \ufb01brosis, and essentially normal parenchyma within the same microscopic field. In addition to the deposition of mature collagen (yellow in the pentachrome stain), immature collagen (stained blue-green) appears as interstitial foci projecting into the airspaces. On two-dimensional section, these individual foci appear independent and discrete. In contrast, COP is an airspace-\ufb01lling process that leaves the interstitium largely uninvolved with little architectural distortion. The individual plugs of \ufb01broblastic tissue (Masson bodies) appear to \ufb01ll the entire airspace, from the small airway to the alveolus.",
+          "bBox": {
+            "x": 44.85,
+            "y": 43.13,
+            "w": 247.75,
+            "h": 124.31,
+            "confidence": 0.7,
+            "label": "text"
+          }
+        },
+        {
+          "type": "heading",
+          "md": "# Analysis of Connectivity",
+          "value": "Analysis of Connectivity",
+          "lvl": 1,
+          "bBox": {
+            "x": 44.85,
+            "y": 177.31,
+            "w": 94.97,
+            "h": 8.48,
+            "confidence": 0.7,
+            "label": "heading"
+          }
+        },
+        {
+          "type": "text",
+          "md": "To evaluate the connectivity of the \ufb01broblast foci in UIP and Masson bodies in COP, we imaged multiple serial sections of tissue and built a three-dimensional representation of the \ufb01broblastic tissue, blood vessels, and macrophage clusters. Stereoscopic analysis was then used to provide a quantitative description of the connectivity. The resulting Euler numbers for the \ufb01broblastic tissue are presented in Table 1. As expected, blood vessels showed connectivity with a Euler number of 2, whereas macrophage clusters exhibited no connectivity (a Euler number of 0). The \ufb01broblast foci show significant connectivity with Euler numbers ranging from 19 to 39 (see online supplement for complete data). Table E1 provides final Euler numbers for each case and shows depth of tissue studied. Table E2 shows detailed datasets for the UIP and COP cases.",
+          "value": "To evaluate the connectivity of the \ufb01broblast foci in UIP and Masson bodies in COP, we imaged multiple serial sections of tissue and built a three-dimensional representation of the \ufb01broblastic tissue, blood vessels, and macrophage clusters. Stereoscopic analysis was then used to provide a quantitative description of the connectivity. The resulting Euler numbers for the \ufb01broblastic tissue are presented in Table 1. As expected, blood vessels showed connectivity with a Euler number of 2, whereas macrophage clusters exhibited no connectivity (a Euler number of 0). The \ufb01broblast foci show significant connectivity with Euler numbers ranging from 19 to 39 (see online supplement for complete data). Table E1 provides final Euler numbers for each case and shows depth of tissue studied. Table E2 shows detailed datasets for the UIP and COP cases.",
+          "bBox": {
+            "x": 44.85,
+            "y": 190.85,
+            "w": 247.72,
+            "h": 525.46,
+            "confidence": 0.7,
+            "label": "text"
+          }
+        },
+        {
+          "type": "heading",
+          "md": "# Three-Dimensional Reconstruction",
+          "value": "Three-Dimensional Reconstruction",
+          "lvl": 1,
+          "bBox": {
+            "x": 44.85,
+            "y": 346.99,
+            "w": 137.06,
+            "h": 8.48,
+            "confidence": 0.7,
+            "label": "heading"
+          }
+        },
+        {
+          "type": "text",
+          "md": "In addition to the connectivity suggested by the Euler number, computer generated three-dimensional models provide a visual and intuitive presentation of the data (Figures 2 and 3). When viewed in three dimensions, the isolated \ufb01broblast foci appear as an interconnected network, forming a \u201c\ufb01broblast reticulum\u201d expanding into the underlying tissue and closely intertwined with an extensive and abnormal vascular network.",
+          "value": "In addition to the connectivity suggested by the Euler number, computer generated three-dimensional models provide a visual and intuitive presentation of the data (Figures 2 and 3). When viewed in three dimensions, the isolated \ufb01broblast foci appear as an interconnected network, forming a \u201c\ufb01broblast reticulum\u201d expanding into the underlying tissue and closely intertwined with an extensive and abnormal vascular network.",
+          "bBox": {
+            "x": 44.85,
+            "y": 360.53,
+            "w": 247.7,
+            "h": 72.35,
+            "confidence": 0.7,
+            "label": "text"
+          }
+        },
+        {
+          "type": "heading",
+          "md": "# Analysis of Clonality",
+          "value": "Analysis of Clonality",
+          "lvl": 1,
+          "bBox": {
+            "x": 44.85,
+            "y": 442.87,
+            "w": 80.25,
+            "h": 8.48,
+            "confidence": 0.7,
+            "label": "heading"
+          }
+        },
+        {
+          "type": "text",
+          "md": "The identified interconnectivity of the \ufb01broblast reticulum in UIP raised the possibility of a monoclonal, malignant process as the mechanism for the progression of UIP. Surgical lung biopsy specimens from seven women with COP and seven women with UIP were microdissected and analyzed using the human androgen receptor gene methylation assay. HEC-1-A endometrial adenocarcinoma cells were used as a positive control. Figure 4 shows the HhaI digested PCR products from representative cases of UIP and COP. All of the patients showed balanced methylation patterns, consistent with polyclonality. Only the positive control, HEC-1-A, showed unbalanced methylation consistent with monoclonality. The data from analysis of all the specimens are in the online supplement (Table E3). The corresponding normal tissues had inactivation ratios between 0.87 and 1.41, and were used to correct for alterations in clonality ratio due to lyonization. Thus, both UIP and COP are polyclonal proliferations of \ufb01broblasts.",
+          "value": "The identified interconnectivity of the \ufb01broblast reticulum in UIP raised the possibility of a monoclonal, malignant process as the mechanism for the progression of UIP. Surgical lung biopsy specimens from seven women with COP and seven women with UIP were microdissected and analyzed using the human androgen receptor gene methylation assay. HEC-1-A endometrial adenocarcinoma cells were used as a positive control. Figure 4 shows the HhaI digested PCR products from representative cases of UIP and COP. All of the patients showed balanced methylation patterns, consistent with polyclonality. Only the positive control, HEC-1-A, showed unbalanced methylation consistent with monoclonality. The data from analysis of all the specimens are in the online supplement (Table E3). The corresponding normal tissues had inactivation ratios between 0.87 and 1.41, and were used to correct for alterations in clonality ratio due to lyonization. Thus, both UIP and COP are polyclonal proliferations of \ufb01broblasts.",
+          "bBox": {
+            "x": 44.85,
+            "y": 299.27,
+            "w": 513.25,
+            "h": 323.92,
+            "confidence": 0.7,
+            "label": "text"
+          }
+        },
+        {
+          "type": "heading",
+          "md": "# TABLE 1. STEREOSCOPIC ANALYSIS OF CRYPTOGENIC ORGANIZING PNEUMONIA AND USUAL INTERSTITIAL PNEUMONIA DEFINING THE EXTENT OF INTERCONNECTEDNESS BY EULER NUMBERS",
+          "value": "TABLE 1. STEREOSCOPIC ANALYSIS OF CRYPTOGENIC ORGANIZING PNEUMONIA AND USUAL INTERSTITIAL PNEUMONIA DEFINING THE EXTENT OF INTERCONNECTEDNESS BY EULER NUMBERS",
+          "lvl": 1,
+          "bBox": {
+            "x": 44.85,
+            "y": 635.6,
+            "w": 211.49,
+            "h": 34.87,
+            "confidence": 0.7,
+            "label": "heading"
+          }
+        },
+        {
+          "type": "table",
+          "md": "| UIP          | COP | Case |    |    |    |    |\n| ------------ | --- | ---- | -- | -- | -- | -- |\n| 1            | 2   | 3    | 4  | 5  | 6  |    |\n| Euler number | 26  | 38   | 32 | 26 | 39 | 19 |",
+          "rows": [
+            [
+              "UIP",
+              "COP",
+              "Case",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              ""
+            ],
+            [
+              "Euler number",
+              "26",
+              "38",
+              "32",
+              "26",
+              "39",
+              "19"
+            ]
+          ],
+          "isPerfectTable": true,
+          "csv": "\"UIP\",\"COP\",\"Case\",\"\",\"\",\"\",\"\"\n\"1\",\"2\",\"3\",\"4\",\"5\",\"6\",\"\"\n\"Euler number\",\"26\",\"38\",\"32\",\"26\",\"39\",\"19\"",
+          "bBox": {
+            "x": 44.85,
+            "y": 20.72,
+            "w": 513.36,
+            "h": 712.51,
+            "confidence": 0.7,
+            "label": "table"
+          }
+        },
+        {
+          "type": "text",
+          "md": "The extent of connectivity is directly proportional to the Euler number.",
+          "value": "The extent of connectivity is directly proportional to the Euler number.",
+          "bBox": {
+            "x": 51.81,
+            "y": 726.24,
+            "w": 220.49,
+            "h": 6.99,
+            "confidence": 0.7,
+            "label": "text"
+          }
+        },
+        {
+          "type": "heading",
+          "md": "# DISCUSSION",
+          "value": "DISCUSSION",
+          "lvl": 1,
+          "bBox": {
+            "x": 310.53,
+            "y": 635.19,
+            "w": 56.6,
+            "h": 9.48,
+            "confidence": 0.7,
+            "label": "heading"
+          }
+        },
+        {
+          "type": "text",
+          "md": "Despite considerable recent investigation of IPF/UIP, neither the initial cause nor the reasons for progression are known. With few clinical clues, the histopathologic pattern of UIP with its combination of normal lung, mature \ufb01brosis, honeycomb change, and \ufb01broblast foci has been a primary source of hypothesis generation regarding pathobiology. A number of studies, dating from the original description of the \ufb01broblast foci in the 1980s (5), have focused attention on their clinical relevance (1, 15, 16).",
+          "value": "Despite considerable recent investigation of IPF/UIP, neither the initial cause nor the reasons for progression are known. With few clinical clues, the histopathologic pattern of UIP with its combination of normal lung, mature \ufb01brosis, honeycomb change, and \ufb01broblast foci has been a primary source of hypothesis generation regarding pathobiology. A number of studies, dating from the original description of the \ufb01broblast foci in the 1980s (5), have focused attention on their clinical relevance (1, 15, 16).",
+          "bBox": {
+            "x": 310.53,
+            "y": 651.65,
+            "w": 247.68,
+            "h": 81.58,
+            "confidence": 0.7,
+            "label": "text"
+          }
+        }
+      ],
+      "status": "OK",
+      "originalOrientationAngle": 0,
+      "links": [],
+      "width": 603,
+      "height": 783,
+      "triggeredAutoMode": false,
+      "parsingMode": "accurate",
+      "structuredData": null,
+      "noStructuredContent": false,
+      "noTextContent": false,
+      "pageHeaderMarkdown": "AMERICAN JOURNAL OF RESPIRATORY AND CRITICAL CARE MEDICINE VOL 174 2006",
+      "pageFooterMarkdown": "",
+      "printedPageNumber": "",
+      "slideSpeakerNotes": null,
+      "slideSectionName": null,
+      "confidence": 0.92,
+      "costOptimized": false
+    },
+    {
+      "page": 4,
+      "text": "Cool, Groshong, Rai, et al.: The Fibroblast Reticulum    657\n\nA                                                        ha ae\n\n\n\n                                                                                     888\n                                                                                                      2               3  4\n\n                                                                                     Figure 4.               Clonality analysis based on human androgen receptor gene\n                                                                                     methylation assay polymerase chain reaction of DNA from HEC1A; en-\n                                                                                     dometrial adenocarcinoma         cells are presented with and            without\n                                                                                     digestion by HhaI. A fibroblast focus of UIP, uninvolved (normal) lung,\n                                                                                     and a Masson body of COP, are presented after digestion by HhaI. In\n                                                                                     UIP and COP, two parental alleles are present after  HhaI     digestion\n                                                                                     representing the balanced methylation pattern and a polyclonal popula-\n                                                                                     tion of cells. In the uninvolved (normal) lung, both alleles are amplified\n                                                                                     equally after HhaI digestion, excluding the possibility of unequal lyoniza-\n                                                                                     tion of normal tissue.\nB\n\n                                                                                     number of 0, similar to isolated macrophage clusters; and three-\n                                                                                     dimensional reconstruction would con\ufb01rm them as islands of\n                                                                                     tissue. In contrast, we demonstrate that these foci are part of a\n                                                                                     continuous \ufb01brotic reticulum that extends from the pleural sur-\n                                                                                     face into the lung parenchyma. This structure raises the possi-\n                                                                                     bility of a malignant neoplasm growing through the lung or a\n                                                                                     reactive process responsive to local environmental stimuli. To\n                                                                                     explore this question, we performed clonality analysis on the\n                                                                                     \ufb01broblastic tissue.\n                                                                                                          Despite the high level of connectivity seen among the \ufb01bro-\n                                                                                     blast foci of UIP, clonality analysis reveals that it is a polyclonal\n                                                                                     proliferation, rather than a monoclonal population of \ufb01broblasts.\n                                                                                     This suggests that UIP/IPF is not malignant but reactive. The\n                                                                                     mechanism responsible for this reaction remains elusive; how-\n                                                                                     ever, a number of possibilities exist. This phenotypic transformation\n                                                                                     of lung \ufb01broblasts may be due to a persistent localized autoimmune\n                                                                                     stimulus (17, 18), a chronic infectious process with both latent and\n                                                                                     active phases such as a               herpes virus (19), or selection of speci\ufb01c\nFigure 3. Computer-generated three-dimensional reconstructions                of     subsets of lung \ufb01broblasts or circulating mesenchymal stem cells\nUIP (A) and COP (B ). In this rendering, fibroblastic tissue is white, blood         followed by localization and polyclonal expansion.\nvessels are red, and the pleural surface is brown.                                   In conclusion, we have found that the \ufb01broblast foci of UIP,\n                                                                                     far from being isolated discrete sites of focal lung injury, form\n                                                                                     a highly complex and interconnected, nonmalignant reticulum\n                                                                                     extending from the pleura into the lung parenchyma. These\n                  On individual tissue sections these foci are identi\ufb01ed as iso-     \ufb01ndings argue against the underlying biological cause of UIP\nlated lesions, suggesting that discrete, localized episodes of acute                 being the result of multiple, small, focal, and isolated episodes\nlung injury with an abnormal repair response may account for                         of epithelial injury followed by a pathologic \ufb01brotic repair mech-\nthe initial lesion, and that recurrent episodes may account for                      anism. This concept, of a \u201cwave\u201d of \ufb01brosis progressing through\nthe progression of IPF (2). Unfortunately, there is little direct                    the lung, alters our underlying assumptions regarding the initia-\nevidence to support recurrent epithelial injury, and no obvious                      tion and progression of IPF and suggests new hypotheses for\nsource or mechanism for the injury. Given the limited evidence                       the initiation and progression of \ufb01brosing lung disease.\nfor recurrent discrete episodes of lung injury, we hypothesized                      Conflict of Interest Statement : None of the authors has a financial relationship\nthat, rather than isolated lesions, the \ufb01broblast foci of the UIP                    with a commercial entity that has an interest in the subject of the manuscript.\nlung are an interconnected neoplasm. By reconstructing the UIP                       Acknowledgment : The authors thank Drs. Dallas Hyde and Jens Randel Nyengaard\nlung in three dimensions, performing stereologic analysis, and                       for assistance with stereology, Ms. Lisa Litzenberger for expert assistance with\nanalyzing the clonality of these lesions, we sought to determine                     digital imaging, and Ms. Jane Parr for expert assistance with histology support.\nwhether these foci are part of an organized reticulum, and whether\nthis reticulum is malignant.                                                         References\n                   The prevailing hypothesis predicts that reconstruction should     1. King TE Jr, Tooze JA, Schwarz MI, Brown KR, Cherniack RM. Pre-\nidentify discrete, isolated \ufb01broblast foci. If this were true, ster-                  dicting survival in idiopathic pulmonary \ufb01brosis: scoring system and\neologic analysis should identify discrete entities with a Euler                       survival model. Am J Respir Crit Care Med 2001;164:1171\u20131181.",
+      "md": "\n# Cool, Groshong, Rai, et al.: The Fibroblast Reticulum\n\nFigure 4. Clonality analysis based on human androgen receptor gene methylation assay polymerase chain reaction of DNA from HEC1A; endometrial adenocarcinoma cells are presented with and without digestion by HhaI. A fibroblast focus of UIP, uninvolved (normal) lung, and a Masson body of COP, are presented after digestion by HhaI. In UIP and COP, two parental alleles are present after HhaI digestion representing the balanced methylation pattern and a polyclonal population of cells. In the uninvolved (normal) lung, both alleles are amplified equally after HhaI digestion, excluding the possibility of unequal lyonization of normal tissue.\n\nDespite the high level of connectivity seen among the fibroblast foci of UIP, clonality analysis reveals that it is a polyclonal proliferation, rather than a monoclonal population of fibroblasts. This suggests that UIP/IPF is not malignant but reactive. The mechanism responsible for this reaction remains elusive; however, a number of possibilities exist. This phenotypic transformation of lung fibroblasts may be due to a persistent localized autoimmune stimulus (17, 18), a chronic infectious process with both latent and active phases such as a herpes virus (19), or selection of specific subsets of lung fibroblasts or circulating mesenchymal stem cells followed by localization and polyclonal expansion.\n\nIn conclusion, we have found that the fibroblast foci of UIP, far from being isolated discrete sites of focal lung injury, form a highly complex and interconnected, nonmalignant reticulum extending from the pleura into the lung parenchyma. These findings argue against the underlying biological cause of UIP being the result of multiple, small, focal, and isolated episodes of epithelial injury followed by a pathologic fibrotic repair mechanism. This concept, of a \u201cwave\u201d of fibrosis progressing through the lung, alters our underlying assumptions regarding the initiation and progression of IPF and suggests new hypotheses for the initiation and progression of fibrosing lung disease.\n\nConflict of Interest Statement: None of the authors has a financial relationship with a commercial entity that has an interest in the subject of the manuscript.\n\nAcknowledgment: The authors thank Drs. Dallas Hyde and Jens Randel Nyengaard for assistance with stereology, Ms. Lisa Litzenberger for expert assistance with digital imaging, and Ms. Jane Parr for expert assistance with histology support.\n\n# References\n\n1. King TE Jr, Tooze JA, Schwarz MI, Brown KR, Cherniack RM. Predicting survival in idiopathic pulmonary fibrosis: scoring system and survival model. Am J Respir Crit Care Med 2001;164:1171\u20131181.\n\n",
+      "images": [
+        {
+          "name": "img_p3_1.jpg",
+          "height": 215.144,
+          "width": 215.111,
+          "x": 57.092,
+          "y": 44.643,
+          "original_width": 439,
+          "original_height": 439,
+          "rotation": 0,
+          "ocr": [
+            {
+              "x": 9,
+              "y": 8,
+              "w": 18,
+              "h": 20,
+              "confidence": 1,
+              "text": "A"
+            }
+          ]
+        },
+        {
+          "name": "img_p3_2.jpg",
+          "height": 213.451,
+          "width": 219.999,
+          "x": 57.092,
+          "y": 269.752,
+          "original_width": 449,
+          "original_height": 436,
+          "rotation": 0,
+          "ocr": [
+            {
+              "x": 6,
+              "y": 6,
+              "w": 17,
+              "h": 20,
+              "confidence": 1,
+              "text": "B"
+            }
+          ]
+        },
+        {
+          "name": "img_p3_3.jpg",
+          "height": 117.388,
+          "width": 239.129,
+          "x": 315.243,
+          "y": 44.643,
+          "original_width": 488,
+          "original_height": 239,
+          "rotation": 0,
+          "ocr": [
+            {
+              "x": 130,
+              "y": 226,
+              "w": 9,
+              "h": 11,
+              "confidence": 0.999,
+              "text": "2"
+            },
+            {
+              "x": 317,
+              "y": 225,
+              "w": 8,
+              "h": 12,
+              "confidence": 1,
+              "text": "4"
+            },
+            {
+              "x": 226,
+              "y": 224,
+              "w": 12,
+              "h": 15,
+              "confidence": 1,
+              "text": "3"
+            },
+            {
+              "x": 0,
+              "y": 97,
+              "w": 467,
+              "h": 127,
+              "confidence": 0.795,
+              "text": "888"
+            },
+            {
+              "x": 128,
+              "y": 8,
+              "w": 75,
+              "h": 98,
+              "confidence": 0.14,
+              "text": "ae"
+            },
+            {
+              "x": 38,
+              "y": 3,
+              "w": 76,
+              "h": 102,
+              "confidence": 0.154,
+              "text": "ha"
+            }
+          ]
+        },
+        {
+          "name": "page_4.jpg",
+          "height": 783,
+          "width": 603,
+          "x": 0,
+          "y": 0,
+          "original_width": 1232,
+          "original_height": 1600,
+          "rotation": 0,
+          "type": "full_page_screenshot"
+        }
+      ],
+      "charts": [],
+      "items": [
+        {
+          "type": "heading",
+          "md": "# Cool, Groshong, Rai, et al.: The Fibroblast Reticulum",
+          "value": "Cool, Groshong, Rai, et al.: The Fibroblast Reticulum",
+          "lvl": 1,
+          "bBox": {
+            "x": 45.21,
+            "y": 20.72,
+            "w": 186.65,
+            "h": 7.99,
+            "confidence": 0.7,
+            "label": "heading"
+          }
+        },
+        {
+          "type": "text",
+          "md": "Figure 4. Clonality analysis based on human androgen receptor gene methylation assay polymerase chain reaction of DNA from HEC1A; endometrial adenocarcinoma cells are presented with and without digestion by HhaI. A fibroblast focus of UIP, uninvolved (normal) lung, and a Masson body of COP, are presented after digestion by HhaI. In UIP and COP, two parental alleles are present after HhaI digestion representing the balanced methylation pattern and a polyclonal population of cells. In the uninvolved (normal) lung, both alleles are amplified equally after HhaI digestion, excluding the possibility of unequal lyonization of normal tissue.",
+          "value": "Figure 4. Clonality analysis based on human androgen receptor gene methylation assay polymerase chain reaction of DNA from HEC1A; endometrial adenocarcinoma cells are presented with and without digestion by HhaI. A fibroblast focus of UIP, uninvolved (normal) lung, and a Masson body of COP, are presented after digestion by HhaI. In UIP and COP, two parental alleles are present after HhaI digestion representing the balanced methylation pattern and a polyclonal population of cells. In the uninvolved (normal) lung, both alleles are amplified equally after HhaI digestion, excluding the possibility of unequal lyonization of normal tissue.",
+          "bBox": {
+            "x": 285.95,
+            "y": 172.04,
+            "w": 272.6,
+            "h": 329.11,
+            "confidence": 0.7,
+            "label": "text"
+          }
+        },
+        {
+          "type": "text",
+          "md": "Despite the high level of connectivity seen among the fibroblast foci of UIP, clonality analysis reveals that it is a polyclonal proliferation, rather than a monoclonal population of fibroblasts. This suggests that UIP/IPF is not malignant but reactive. The mechanism responsible for this reaction remains elusive; however, a number of possibilities exist. This phenotypic transformation of lung fibroblasts may be due to a persistent localized autoimmune stimulus (17, 18), a chronic infectious process with both latent and active phases such as a herpes virus (19), or selection of specific subsets of lung fibroblasts or circulating mesenchymal stem cells followed by localization and polyclonal expansion.",
+          "value": "Despite the high level of connectivity seen among the fibroblast foci of UIP, clonality analysis reveals that it is a polyclonal proliferation, rather than a monoclonal population of fibroblasts. This suggests that UIP/IPF is not malignant but reactive. The mechanism responsible for this reaction remains elusive; however, a number of possibilities exist. This phenotypic transformation of lung fibroblasts may be due to a persistent localized autoimmune stimulus (17, 18), a chronic infectious process with both latent and active phases such as a herpes virus (19), or selection of specific subsets of lung fibroblasts or circulating mesenchymal stem cells followed by localization and polyclonal expansion.",
+          "bBox": {
+            "x": 60.03,
+            "y": 48.56,
+            "w": 498.58,
+            "h": 461.95,
+            "confidence": 0.7,
+            "label": "text"
+          }
+        },
+        {
+          "type": "text",
+          "md": "In conclusion, we have found that the fibroblast foci of UIP, far from being isolated discrete sites of focal lung injury, form a highly complex and interconnected, nonmalignant reticulum extending from the pleura into the lung parenchyma. These findings argue against the underlying biological cause of UIP being the result of multiple, small, focal, and isolated episodes of epithelial injury followed by a pathologic fibrotic repair mechanism. This concept, of a \u201cwave\u201d of fibrosis progressing through the lung, alters our underlying assumptions regarding the initiation and progression of IPF and suggests new hypotheses for the initiation and progression of fibrosing lung disease.",
+          "value": "In conclusion, we have found that the fibroblast foci of UIP, far from being isolated discrete sites of focal lung injury, form a highly complex and interconnected, nonmalignant reticulum extending from the pleura into the lung parenchyma. These findings argue against the underlying biological cause of UIP being the result of multiple, small, focal, and isolated episodes of epithelial injury followed by a pathologic fibrotic repair mechanism. This concept, of a \u201cwave\u201d of fibrosis progressing through the lung, alters our underlying assumptions regarding the initiation and progression of IPF and suggests new hypotheses for the initiation and progression of fibrosing lung disease.",
+          "bBox": {
+            "x": 60.03,
+            "y": 48.56,
+            "w": 498.47,
+            "h": 566.59,
+            "confidence": 0.7,
+            "label": "text"
+          }
+        },
+        {
+          "type": "text",
+          "md": "Conflict of Interest Statement: None of the authors has a financial relationship with a commercial entity that has an interest in the subject of the manuscript.",
+          "value": "Conflict of Interest Statement: None of the authors has a financial relationship with a commercial entity that has an interest in the subject of the manuscript.",
+          "bBox": {
+            "x": 310.77,
+            "y": 634.56,
+            "w": 247.55,
+            "h": 15.03,
+            "confidence": 0.7,
+            "label": "text"
+          }
+        },
+        {
+          "type": "text",
+          "md": "Acknowledgment: The authors thank Drs. Dallas Hyde and Jens Randel Nyengaard for assistance with stereology, Ms. Lisa Litzenberger for expert assistance with digital imaging, and Ms. Jane Parr for expert assistance with histology support.",
+          "value": "Acknowledgment: The authors thank Drs. Dallas Hyde and Jens Randel Nyengaard for assistance with stereology, Ms. Lisa Litzenberger for expert assistance with digital imaging, and Ms. Jane Parr for expert assistance with histology support.",
+          "bBox": {
+            "x": 310.77,
+            "y": 658.56,
+            "w": 247.66,
+            "h": 22.83,
+            "confidence": 0.7,
+            "label": "text"
+          }
+        },
+        {
+          "type": "heading",
+          "md": "# References",
+          "value": "References",
+          "lvl": 1,
+          "bBox": {
+            "x": 310.77,
+            "y": 695.36,
+            "w": 40.31,
+            "h": 7.99,
+            "confidence": 0.7,
+            "label": "heading"
+          }
+        },
+        {
+          "type": "text",
+          "md": "1. King TE Jr, Tooze JA, Schwarz MI, Brown KR, Cherniack RM. Predicting survival in idiopathic pulmonary fibrosis: scoring system and survival model. Am J Respir Crit Care Med 2001;164:1171\u20131181.",
+          "value": "1. King TE Jr, Tooze JA, Schwarz MI, Brown KR, Cherniack RM. Predicting survival in idiopathic pulmonary fibrosis: scoring system and survival model. Am J Respir Crit Care Med 2001;164:1171\u20131181.",
+          "bBox": {
+            "x": 60.03,
+            "y": 48.56,
+            "w": 483.55,
+            "h": 684.67,
+            "confidence": 0.7,
+            "label": "text"
+          }
+        }
+      ],
+      "status": "OK",
+      "originalOrientationAngle": 0,
+      "links": [],
+      "width": 603,
+      "height": 783,
+      "triggeredAutoMode": false,
+      "parsingMode": "accurate",
+      "structuredData": null,
+      "noStructuredContent": false,
+      "noTextContent": false,
+      "pageHeaderMarkdown": "",
+      "pageFooterMarkdown": "",
+      "printedPageNumber": "",
+      "slideSpeakerNotes": null,
+      "slideSectionName": null,
+      "confidence": 0.585,
+      "costOptimized": false
+    },
+    {
+      "page": 5,
+      "text": "658                                                       AMERICAN JOURNAL OF RESPIRATORY AND CRITICAL CARE MEDICINE                 VOL 174   2006\n\n2. Selman M, King TE, Pardo A. Idiopathic pulmonary \ufb01brosis: prevailing                 ease progression in idiopathic pulmonary \ufb01brosis. Am J Respir Crit\n       and evolving hypotheses about its pathogenesis and implications for              Care Med 2002;166:173\u2013177.\n       therapy. Ann Intern Med 2001;134:136\u2013151.                                       11. American Thoracic Society/European Respiratory Society. International\n3. King TE Jr, Safrin S, Starko KM, Brown KK, Noble PW, Raghu G,                        multidisciplinary consensus classi\ufb01cation of the idiopathic interstitial\n       Schwartz DA. Analyses of ef\ufb01cacy end points in a controlled trial of             pneumonias. Am J Respir Crit Care Med 2001;165:277\u2013304.\n       interferon-gamma1b for idiopathic pulmonary \ufb01brosis. Chest 2005;127:            12. Lorensen WE, Cline HE. Marching cubes: a high resolution 3D surface\n       171\u2013177.                                                                         reconstruction algorithm. Comput Graph (ACM) 1987;21:163\u2013169.\n4. Daniil ZD, Gilchrist FC, Nicholson AG, Hansell DM, Harris J, Colby                  13. Ochs M, Nyengaard JR, Jung A, Knudsen L, Voigt M, Wahlers T, Richter\n       TV, du Bois RM. A histologic pattern of nonspeci\ufb01c interstitial pneu-            J, Gundersen HJ. The number of alveoli in the human lung. Am J\n       monia is associated with a better prognosis than usual interstitial pneu-        Respir Crit Care Med 2004;169:120\u2013124.\n       monia in patients with cryptogenic \ufb01brosing alveolitis. Am J Respir             14. Gundersen HJ, Bagger P, Bendtsen TF, Evans SM, Korbo L, Marcussen\n       Crit Care Med 1999;160:899\u2013905.                                                  L, Moller A, Nielsen K, Nyengaard JR, Pakkenberg B, et al. The new\n5. Myers JL, Katzenstein AL. Epithelial necrosis and alveolar collapse in the           stereological tools: disector, fractionator, nucleator and point sampled\n       pathogenesis of usual interstitial pneumonia. Chest 1988;94:1309\u20131311.           intercepts and their use in pathological research and diagnosis. APMIS\n6. Katzenstein AL, Myers JL, Prophet WD, Corley LS 3rd, Shin MS. Bron-                  1988;96:857\u2013881.\n       chiolitis obliterans and usual interstitial pneumonia: a comparative clini-     15. Flaherty KR, Colby TV, Travis WD, Toews GB, Mumford J, Murray\n       copathologic study. Am J Surg Pathol 1986;10:373\u2013381.                            S, Thannickal VJ, Kazerooni EA, Gross BH, Lynch JP 3rd, et al.\n7. Fukuda Y, Basset F, Ferrans VJ, Yamanaka M. Signi\ufb01cance of early                     Fibroblastic foci in usual interstitial pneumonia: idiopathic verses colla-\n       intra-alveolar \ufb01brotic lesions and integrin expression in lung biopsy            gen vascular disease. Am J Respir Crit Care Med 2003;167:1410\u20131415.\n       specimens from patients with idiopathic pulmonary \ufb01brosis. Hum Pa-              16. Nicholson AG, Fulford LG, Colby TV, du Bois RM, Hansell DM, Wells\n       thol 1995;26:53\u201361.                                                              AU. The relationship between individual histologic features and dis-\n8. Kuhn C, McDonald JA. The roles of the myo\ufb01broblast in idiopathic                     ease progression in idiopathic pulmonary \ufb01brosis. Am J Respir Crit\n       pulmonary \ufb01brosis: ultrastructural and immunohistochemical features              Care Med 2002;166:173\u2013177.\n       of sites of active extracellular matrix synthesis. Am J Pathol 1991;            17. Buyon JP, Clancy RM. Autoantibody-associated congenital heart block:\n       138:1257\u20131265.                                                                   TGFbeta and the road to scar. Autoimmun Rev 2005;4:1\u20137.\n9. Kuhn C 3rd, Boldt J, King TE Jr, Crouch E, Vartio T, McDonald JA.                   18. Wallace WA, Scho\ufb01eld JA, Lamb D, Howie SE. Localisation of a pulmo-\n                                                                                        nary autoantigen in cryptogentic \ufb01brosing alveolitis. Thorax 1994;1994:\n       An immunohistochemical study of architectural remodeling and con-                1139\u201345.\n       nective tissue synthesis in pulmonary \ufb01brosis. Am Rev Respir Dis                19. Mora AL, Woods CR, Garcia A, Xu J, Rojas M, Speck SH, Roman J,\n       1989; 140:1693\u20131703.                                                             Brigham KL, Stecenko AA. Lung infection with gamma-herpesvirus\n10. Nicholson AG, Fulford LG, Colby TV, du Bois RM, Hansell DM, Wells                   induces progressive pulmonary \ufb01brosis in th2-biased mice. Am J Phys-\n       AU. The relationship between individual histologic features and dis-             iol Lung Cell Mol Physiol 2005;289:L711\u2013L721.",
+      "md": "\nAMERICAN JOURNAL OF RESPIRATORY AND CRITICAL CARE MEDICINE VOL 174 2006\n\n1. Selman M, King TE, Pardo A. Idiopathic pulmonary fibrosis: prevailing ease progression in idiopathic pulmonary fibrosis. Am J Respir Crit Care Med 2002;166:173\u2013177.\n2. King TE Jr, Safrin S, Starko KM, Brown KK, Noble PW, Raghu G, Schwartz DA. Analyses of efficacy end points in a controlled trial of interferon-gamma1b for idiopathic pulmonary fibrosis. Chest 2005;127:171\u2013177.\n3. Daniil ZD, Gilchrist FC, Nicholson AG, Hansell DM, Harris J, Colby TV, du Bois RM. A histologic pattern of nonspecific interstitial pneumonia is associated with a better prognosis than usual interstitial pneumonia in patients with cryptogenic fibrosing alveolitis. Am J Respir Crit Care Med 1999;160:899\u2013905.\n4. Myers JL, Katzenstein AL. Epithelial necrosis and alveolar collapse in the pathogenesis of usual interstitial pneumonia. Chest 1988;94:1309\u20131311.\n5. Katzenstein AL, Myers JL, Prophet WD, Corley LS 3rd, Shin MS. Bronchiolitis obliterans and usual interstitial pneumonia: a comparative clinicopathologic study. Am J Surg Pathol 1986;10:373\u2013381.\n6. Fukuda Y, Basset F, Ferrans VJ, Yamanaka M. Significance of early intra-alveolar fibrotic lesions and integrin expression in lung biopsy specimens from patients with idiopathic pulmonary fibrosis. Hum Pathol 1995;26:53\u201361.\n7. Kuhn C, McDonald JA. The roles of the myofibroblast in idiopathic pulmonary fibrosis: ultrastructural and immunohistochemical features of sites of active extracellular matrix synthesis. Am J Pathol 1991;138:1257\u20131265.\n8. Kuhn C 3rd, Boldt J, King TE Jr, Crouch E, Vartio T, McDonald JA. An immunohistochemical study of architectural remodeling and connective tissue synthesis in pulmonary fibrosis. Am Rev Respir Dis 1989;140:1693\u20131703.\n9. Nicholson AG, Fulford LG, Colby TV, du Bois RM, Hansell DM, Wells AU. The relationship between individual histologic features and disease progression in idiopathic pulmonary fibrosis. Am J Respir Crit Care Med 2002;166:173\u2013177.\n10. Buyon JP, Clancy RM. Autoantibody-associated congenital heart block: TGFbeta and the road to scar. Autoimmun Rev 2005;4:1\u20137.\n11. Wallace WA, Schofield JA, Lamb D, Howie SE. Localisation of a pulmonary autoantigen in cryptogenic fibrosing alveolitis. Thorax 1994;1994:1139\u201345.\n12. Mora AL, Woods CR, Garcia A, Xu J, Rojas M, Speck SH, Roman J, Brigham KL, Stecenko AA. Lung infection with gamma-herpesvirus induces progressive pulmonary fibrosis in th2-biased mice. Am J Physiol Lung Cell Mol Physiol 2005;289:L711\u2013L721.\n\n",
+      "images": [
+        {
+          "name": "page_5.jpg",
+          "height": 783,
+          "width": 603,
+          "x": 0,
+          "y": 0,
+          "original_width": 1232,
+          "original_height": 1600,
+          "rotation": 0,
+          "type": "full_page_screenshot"
+        }
+      ],
+      "charts": [],
+      "items": [
+        {
+          "type": "text",
+          "md": "AMERICAN JOURNAL OF RESPIRATORY AND CRITICAL CARE MEDICINE VOL 174 2006",
+          "value": "AMERICAN JOURNAL OF RESPIRATORY AND CRITICAL CARE MEDICINE VOL 174 2006",
+          "bBox": {
+            "x": 236.25,
+            "y": 20.72,
+            "w": 321.86,
+            "h": 7.99,
+            "confidence": 0.7,
+            "label": "text"
+          }
+        },
+        {
+          "type": "text",
+          "md": "1. Selman M, King TE, Pardo A. Idiopathic pulmonary fibrosis: prevailing ease progression in idiopathic pulmonary fibrosis. Am J Respir Crit Care Med 2002;166:173\u2013177.\n2. King TE Jr, Safrin S, Starko KM, Brown KK, Noble PW, Raghu G, Schwartz DA. Analyses of efficacy end points in a controlled trial of interferon-gamma1b for idiopathic pulmonary fibrosis. Chest 2005;127:171\u2013177.\n3. Daniil ZD, Gilchrist FC, Nicholson AG, Hansell DM, Harris J, Colby TV, du Bois RM. A histologic pattern of nonspecific interstitial pneumonia is associated with a better prognosis than usual interstitial pneumonia in patients with cryptogenic fibrosing alveolitis. Am J Respir Crit Care Med 1999;160:899\u2013905.\n4. Myers JL, Katzenstein AL. Epithelial necrosis and alveolar collapse in the pathogenesis of usual interstitial pneumonia. Chest 1988;94:1309\u20131311.\n5. Katzenstein AL, Myers JL, Prophet WD, Corley LS 3rd, Shin MS. Bronchiolitis obliterans and usual interstitial pneumonia: a comparative clinicopathologic study. Am J Surg Pathol 1986;10:373\u2013381.\n6. Fukuda Y, Basset F, Ferrans VJ, Yamanaka M. Significance of early intra-alveolar fibrotic lesions and integrin expression in lung biopsy specimens from patients with idiopathic pulmonary fibrosis. Hum Pathol 1995;26:53\u201361.\n7. Kuhn C, McDonald JA. The roles of the myofibroblast in idiopathic pulmonary fibrosis: ultrastructural and immunohistochemical features of sites of active extracellular matrix synthesis. Am J Pathol 1991;138:1257\u20131265.\n8. Kuhn C 3rd, Boldt J, King TE Jr, Crouch E, Vartio T, McDonald JA. An immunohistochemical study of architectural remodeling and connective tissue synthesis in pulmonary fibrosis. Am Rev Respir Dis 1989;140:1693\u20131703.\n9. Nicholson AG, Fulford LG, Colby TV, du Bois RM, Hansell DM, Wells AU. The relationship between individual histologic features and disease progression in idiopathic pulmonary fibrosis. Am J Respir Crit Care Med 2002;166:173\u2013177.\n10. Buyon JP, Clancy RM. Autoantibody-associated congenital heart block: TGFbeta and the road to scar. Autoimmun Rev 2005;4:1\u20137.\n11. Wallace WA, Schofield JA, Lamb D, Howie SE. Localisation of a pulmonary autoantigen in cryptogenic fibrosing alveolitis. Thorax 1994;1994:1139\u201345.\n12. Mora AL, Woods CR, Garcia A, Xu J, Rojas M, Speck SH, Roman J, Brigham KL, Stecenko AA. Lung infection with gamma-herpesvirus induces progressive pulmonary fibrosis in th2-biased mice. Am J Physiol Lung Cell Mol Physiol 2005;289:L711\u2013L721.",
+          "value": "1. Selman M, King TE, Pardo A. Idiopathic pulmonary fibrosis: prevailing ease progression in idiopathic pulmonary fibrosis. Am J Respir Crit Care Med 2002;166:173\u2013177.\n2. King TE Jr, Safrin S, Starko KM, Brown KK, Noble PW, Raghu G, Schwartz DA. Analyses of efficacy end points in a controlled trial of interferon-gamma1b for idiopathic pulmonary fibrosis. Chest 2005;127:171\u2013177.\n3. Daniil ZD, Gilchrist FC, Nicholson AG, Hansell DM, Harris J, Colby TV, du Bois RM. A histologic pattern of nonspecific interstitial pneumonia is associated with a better prognosis than usual interstitial pneumonia in patients with cryptogenic fibrosing alveolitis. Am J Respir Crit Care Med 1999;160:899\u2013905.\n4. Myers JL, Katzenstein AL. Epithelial necrosis and alveolar collapse in the pathogenesis of usual interstitial pneumonia. Chest 1988;94:1309\u20131311.\n5. Katzenstein AL, Myers JL, Prophet WD, Corley LS 3rd, Shin MS. Bronchiolitis obliterans and usual interstitial pneumonia: a comparative clinicopathologic study. Am J Surg Pathol 1986;10:373\u2013381.\n6. Fukuda Y, Basset F, Ferrans VJ, Yamanaka M. Significance of early intra-alveolar fibrotic lesions and integrin expression in lung biopsy specimens from patients with idiopathic pulmonary fibrosis. Hum Pathol 1995;26:53\u201361.\n7. Kuhn C, McDonald JA. The roles of the myofibroblast in idiopathic pulmonary fibrosis: ultrastructural and immunohistochemical features of sites of active extracellular matrix synthesis. Am J Pathol 1991;138:1257\u20131265.\n8. Kuhn C 3rd, Boldt J, King TE Jr, Crouch E, Vartio T, McDonald JA. An immunohistochemical study of architectural remodeling and connective tissue synthesis in pulmonary fibrosis. Am Rev Respir Dis 1989;140:1693\u20131703.\n9. Nicholson AG, Fulford LG, Colby TV, du Bois RM, Hansell DM, Wells AU. The relationship between individual histologic features and disease progression in idiopathic pulmonary fibrosis. Am J Respir Crit Care Med 2002;166:173\u2013177.\n10. Buyon JP, Clancy RM. Autoantibody-associated congenital heart block: TGFbeta and the road to scar. Autoimmun Rev 2005;4:1\u20137.\n11. Wallace WA, Schofield JA, Lamb D, Howie SE. Localisation of a pulmonary autoantigen in cryptogenic fibrosing alveolitis. Thorax 1994;1994:1139\u201345.\n12. Mora AL, Woods CR, Garcia A, Xu J, Rojas M, Speck SH, Roman J, Brigham KL, Stecenko AA. Lung infection with gamma-herpesvirus induces progressive pulmonary fibrosis in th2-biased mice. Am J Physiol Lung Cell Mol Physiol 2005;289:L711\u2013L721.",
+          "bBox": {
+            "x": 66.81,
+            "y": 52.07,
+            "w": 491.23,
+            "h": 272.09,
+            "confidence": 0.7,
+            "label": "text"
+          }
+        }
+      ],
+      "status": "OK",
+      "originalOrientationAngle": 0,
+      "links": [],
+      "width": 603,
+      "height": 783,
+      "triggeredAutoMode": false,
+      "parsingMode": "accurate",
+      "structuredData": null,
+      "noStructuredContent": false,
+      "noTextContent": false,
+      "pageHeaderMarkdown": "\nAMERICAN JOURNAL OF RESPIRATORY AND CRITICAL CARE MEDICINE VOL 174 2006\n",
+      "pageFooterMarkdown": "",
+      "printedPageNumber": "",
+      "slideSpeakerNotes": null,
+      "slideSectionName": null,
+      "confidence": 0.633,
+      "costOptimized": false
+    }
+  ]
+}

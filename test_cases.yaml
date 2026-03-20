@@ -1,0 +1,223 @@
+# ILD Test Cases for RAG Pipeline Evaluation
+# Each case includes clinical history, radiology findings, and expected diagnosis.
+
+cases:
+  - id: 1
+    name: Idiopathic Pulmonary Fibrosis (IPF/UIP)
+    expected_diagnosis: Idiopathic Pulmonary Fibrosis (IPF) with definite UIP pattern
+    clinical_history: >
+      68-year-old male, retired carpenter. Former smoker (35 pack-years, quit 10 years ago).
+      2-year history of progressive exertional dyspnea, now limiting walking to 50 meters on flat ground.
+      Persistent dry non-productive cough unresponsive to antitussives. No fever, hemoptysis, or
+      systemic symptoms. No bird or mold exposures. No features of connective tissue disease.
+      Exam: bilateral basal velcro-like inspiratory crackles, digital clubbing (grade II),
+      SpO2 94% at rest desaturating to 86% on 6MWT.
+      PFTs: FVC 58% predicted, DLCO 42% predicted.
+      ANA, RF, anti-CCP, anti-Scl-70, anti-SSA/SSB all negative.
+    radiology_report: >
+      HRCT chest thin-section: Bilateral predominantly basal and subpleural reticular opacification
+      with architectural distortion and volume loss in the lower lobes. Clear craniocaudal gradient
+      with most severe changes at lung bases and near-complete sparing of upper lobes. Honeycombing
+      in posterior subpleural regions of both lower lobes as clustered thick-walled cystic airspaces
+      (4-12 mm, 2-3 layers). Coarse traction bronchiectasis and bronchiolectasis within areas of
+      reticulation, most prominent in posterior basal segments bilaterally. No significant ground-glass
+      opacity. No consolidation, no centrilobular nodules, no mosaic attenuation.
+
+  - id: 2
+    name: Nonspecific Interstitial Pneumonia (NSIP)
+    expected_diagnosis: Fibrotic NSIP, consider undifferentiated CTD
+    clinical_history: >
+      48-year-old female, non-smoker, elementary school teacher. 18-month progressive dyspnea on
+      exertion and dry cough. Low-grade fatigue, mild weight loss (3 kg over 1 year). Raynaud's
+      phenomenon for 2 years (not yet evaluated). No fever, arthralgia, or skin changes.
+      Exam: fine basal inspiratory crackles, no clubbing. SpO2 96% at rest, 92% on exertion.
+      PFTs: FVC 68% predicted, DLCO 52% predicted.
+      ANA positive (1:320 speckled), anti-Ro/SSA weakly positive. RF, anti-CCP, anti-Scl-70,
+      anti-Jo-1 all negative. ESR 40 mm/hr.
+    radiology_report: >
+      HRCT chest thin-section: Bilateral symmetric ground-glass opacification predominantly basal
+      and subpleural. Relative subpleural sparing bilaterally (2-5 mm rim of preserved lung, most
+      apparent in lower lobes). Fine intralobular reticulation within GGO reflecting fibrotic change.
+      Mild traction bronchiectasis and bronchiolectasis in lower lobes. Peribronchovascular
+      interstitial thickening in lower lobes extending toward hila. Mild lower lobe volume loss.
+      No honeycombing. No consolidation. No centrilobular nodules. Upper lobes largely spared.
+
+  - id: 3
+    name: Chronic Hypersensitivity Pneumonitis (fibrotic HP)
+    expected_diagnosis: Fibrotic Hypersensitivity Pneumonitis, bird fancier's lung
+    clinical_history: >
+      62-year-old female, non-smoker, retired. Kept approximately 40 parakeets and cockatiels at
+      home for 15 years with daily cage cleaning. 3-year progressive dyspnea and dry cough.
+      Persistent symptoms not clearly fluctuating with exposure (chronic form). Mild fatigue,
+      unintentional 5 kg weight loss over 18 months. Recalls recurrent episodes of fever, malaise
+      and dyspnea 5-8 years ago following aviary cleaning.
+      Exam: diffuse fine crackles mid and lower zones, mild clubbing. SpO2 92% at rest.
+      PFTs: FVC 55% predicted, DLCO 38% predicted, mild obstructive component (FEV1/FVC 68%).
+      Avian precipitins (IgG to parakeet antigens): positive. BAL lymphocytosis 45%.
+      ANA, RF, anti-CCP negative.
+    radiology_report: >
+      HRCT chest thin-section with inspiratory and expiratory sequences: Bilateral pulmonary fibrosis
+      predominantly in mid and upper lung zones with relative basal sparing. Heterogeneous pattern
+      combining ground-glass opacity, fine intralobular reticulation with architectural distortion,
+      and traction bronchiectasis. Scattered centrilobular ground-glass nodules (2-3 mm) throughout
+      both lungs, most conspicuous in mid zones. Mosaic attenuation on inspiratory sequences.
+      Expiratory images confirm geographic lobular air trapping. Three-density (headcheese) pattern
+      with juxtaposition of normal, ground-glass, and decreased attenuation lobules. Peribronchovascular
+      fibrosis with irregular bronchial wall thickening. Mild subpleural honeycombing in upper lobes.
+
+  - id: 4
+    name: Cryptogenic Organizing Pneumonia (COP)
+    expected_diagnosis: Cryptogenic Organizing Pneumonia (COP)
+    clinical_history: >
+      54-year-old female, non-smoker, office administrator. No significant PMH, no drug exposures
+      or immunosuppression. 6-week history of dry cough, mild dyspnea, and low-grade fever (37.8°C).
+      Treated with two courses of antibiotics (amoxicillin then clarithromycin) with no improvement.
+      Persistent fatigue and mild weight loss (2 kg). Symptoms resemble community-acquired pneumonia
+      failing to resolve. No hemoptysis.
+      Exam: low-grade fever, focal crackles in bilateral lower zones. SpO2 95% at rest. No clubbing.
+      CRP 78 mg/L, ESR 65 mm/hr. Blood and sputum cultures negative.
+      ANA, RF, anti-CCP negative. PFTs: FVC 72% predicted, DLCO 68% predicted.
+    radiology_report: >
+      HRCT chest thin-section: Bilateral multifocal areas of consolidation and ground-glass opacity
+      with predominantly subpleural and peribronchovascular distribution. Consolidation is the dominant
+      finding, seen in right lower lobe posteriorly, right middle lobe, and left lower lobe with
+      band-like configuration along pleural surfaces. Patchy and asymmetric consolidations with air
+      bronchograms. Reversed halo sign (atoll sign) in right lower lobe — focal rounded ground-glass
+      opacity surrounded by a ring of peripheral consolidation. No reticulation or honeycombing.
+      No traction bronchiectasis. Small bilateral pleural effusions.
+
+  - id: 5
+    name: Rheumatoid Arthritis-Associated ILD (RA-ILD)
+    expected_diagnosis: RA-ILD with UIP pattern
+    clinical_history: >
+      63-year-old male, former heavy smoker (40 pack-years, ongoing). Seropositive RA for 12 years,
+      on methotrexate 15 mg/week, folic acid, and hydroxychloroquine. 18-month worsening exertional
+      dyspnea, initially attributed to deconditioning. Persistent dry cough. Joint deformity of
+      MCPs and PIPs, morning stiffness >1 hour. Subcutaneous nodules at elbows.
+      Exam: bilateral basal fine crackles, mild clubbing. SpO2 93% at rest.
+      RF markedly elevated (512 IU/mL), anti-CCP >340 U/mL. ANA positive (1:160).
+      PFTs: FVC 60% predicted, DLCO 45% predicted. CRP 22, ESR 58.
+    radiology_report: >
+      HRCT chest thin-section: Bilateral basal-predominant subpleural reticular opacification with
+      architectural distortion. Honeycombing in posterior basal segments of both lower lobes as
+      clustered subpleural cysts (5-15 mm, 2 layers, more prominent on right). Coarse traction
+      bronchiectasis within areas of reticulation bilaterally. Minor ground-glass opacity within
+      reticulation areas suggesting possible UIP/NSIP overlap. Craniocaudal gradient with basal
+      predominance. Mild bilateral pleural thickening. Pleural-based nodules bilaterally consistent
+      with rheumatoid nodules. No cavitation.
+
+  - id: 6
+    name: Systemic Sclerosis-Associated ILD (SSc-ILD)
+    expected_diagnosis: SSc-ILD with NSIP pattern
+    clinical_history: >
+      52-year-old female, non-smoker. Diffuse cutaneous systemic sclerosis (dcSSc) diagnosed 4 years
+      ago. Raynaud's phenomenon for 8 years. On mycophenolate mofetil 1.5 g/day. Progressive
+      exertional dyspnea over 3 years (NYHA class II-III). Dry cough. Skin thickening of trunk,
+      arms, and face (modified Rodnan skin score 22/51). Digital pitting scars and one active digital
+      ulcer. Dysphagia and heartburn from esophageal dysmotility.
+      Exam: fine bilateral basal crackles, skin thickening, telangiectasias, no clubbing.
+      SpO2 94% at rest, 88% on 6MWT.
+      Anti-Scl-70 strongly positive. ANA positive (1:1280 nucleolar). Anti-centromere negative.
+      PFTs: FVC 58% predicted, DLCO 38% predicted. NT-proBNP borderline elevated.
+    radiology_report: >
+      HRCT chest thin-section: Bilateral symmetric ground-glass opacification with predominant
+      subpleural, posterior, and basilar distribution. GGO is the dominant feature, more extensive
+      posteriorly, associated with fine intralobular reticulation. Relative subpleural sparing
+      bilaterally (most apparent in posterior lower lobes). Peribronchovascular interstitial
+      thickening in lower lobes. Mild traction bronchiectasis within reticulation bilaterally.
+      Lower lobe volume loss with inferior displacement of major fissures. No honeycombing.
+      No consolidation. No centrilobular nodules. Esophagus is markedly dilated with air-fluid
+      levels consistent with esophageal dysmotility.
+
+  - id: 7
+    name: Pulmonary Sarcoidosis
+    expected_diagnosis: Pulmonary Sarcoidosis (Scadding Stage II)
+    clinical_history: >
+      34-year-old African-American female, non-smoker, nurse. No occupational exposures.
+      Incidental finding on pre-employment chest X-ray. Largely asymptomatic. Mild fatigue for
+      several months, occasional dry cough. No fever, weight loss, or night sweats. No ocular
+      symptoms, no skin lesions, no arthralgia.
+      Exam: unremarkable chest exam, no crackles, no lymphadenopathy. SpO2 99%.
+      Serum ACE elevated (98 U/L, ref 8-52). Calcium mildly elevated (10.8 mg/dL).
+      Mild lymphopenia. PFTs: FVC 80% predicted, DLCO mildly reduced.
+      BAL: lymphocytosis with CD4:CD8 ratio >3.5. Transbronchial biopsy: non-caseating granulomas.
+      QuantiFERON negative.
+    radiology_report: >
+      HRCT chest thin-section: Striking bilateral symmetric hilar lymphadenopathy with enlarged
+      bilateral paratracheal lymph nodes (classic lambda sign). All nodes non-necrotic. Numerous
+      bilateral pulmonary micronodules in perilymphatic distribution — along bronchovascular bundles,
+      interlobular septa, and subpleural regions. Nodules predominantly in upper and mid zones (2-4 mm),
+      well-defined. Nodule coalescence forming conglomerate masses in right upper lobe and perihilar
+      regions with galaxy sign (central nodule with satellite micronodules). No ground-glass opacity.
+      No honeycombing. No traction bronchiectasis. No pleural effusion.
+
+  - id: 8
+    name: Anti-Synthetase Syndrome with ILD
+    expected_diagnosis: Anti-Synthetase Syndrome-associated ILD (mixed NSIP/OP pattern)
+    clinical_history: >
+      46-year-old female, non-smoker, laboratory technician. No prior autoimmune disease. 4-month
+      progressive exertional dyspnea and dry cough. Bilateral hand and finger joint pain and swelling
+      (non-erosive polyarthritis). Proximal muscle weakness — difficulty rising from chairs and
+      lifting overhead (onset 3 months). Raynaud's phenomenon. Mechanic's hands — hyperkeratosis,
+      fissuring, and darkening on palmar and lateral aspects of fingers. Low-grade fever.
+      Exam: bilateral basal crackles, proximal weakness (4/5), MCP/PIP synovitis, mechanic's hands.
+      SpO2 94%.
+      Anti-Jo-1 strongly positive. ANA positive (1:640). Anti-Ro/SSA positive.
+      CK markedly elevated (2800 U/L). ESR 75, CRP 42.
+      PFTs: FVC 62% predicted, DLCO 48% predicted.
+    radiology_report: >
+      HRCT chest thin-section: Bilateral ground-glass opacity and fine intralobular reticulation with
+      pronounced lower lobe and basal predominance. Extreme basilar distribution with GGO and fibrotic
+      changes hugging the diaphragm. Inferior displacement of major fissures indicating lower lobe
+      volume loss. Traction bronchiectasis in both lower lobes within areas of reticulation.
+      Peribronchovascular interstitial thickening in lower lobes. Small areas of consolidation in
+      right lower lobe suggesting organizing pneumonia component. No honeycombing. No centrilobular
+      nodules. Upper lobes minimally affected.
+
+  - id: 9
+    name: Sjogren Syndrome with LIP
+    expected_diagnosis: Lymphoid Interstitial Pneumonia (LIP) associated with primary Sjogren's syndrome
+    clinical_history: >
+      44-year-old female, non-smoker, librarian. Known primary Sjogren's syndrome diagnosed 6 years
+      ago. On hydroxychloroquine 400 mg/day. Hypothyroidism on levothyroxine. 12-month progressive
+      dyspnea on moderate exertion. Dry non-productive cough. Longstanding dry eyes
+      (keratoconjunctivitis sicca) and dry mouth (xerostomia). History of dental caries. Bilateral
+      parotid gland swelling (episodic). Fatigue and low-grade fever.
+      Exam: bilateral fine basilar crackles, mildly enlarged parotids, dry mucous membranes.
+      Schirmer's test <5mm/5min. SpO2 96%. No clubbing.
+      Anti-Ro/SSA strongly positive (>240 U/mL). Anti-La/SSB positive. ANA positive (1:640 speckled).
+      RF positive (1:320). Hypergammaglobulinemia (IgG 22 g/L, polyclonal). No M spike on SPEP.
+      PFTs: FVC 74% predicted, DLCO 62% predicted.
+    radiology_report: >
+      HRCT chest thin-section: Bilateral pulmonary changes with predominantly lower lobe and diffuse
+      distribution. Multiple thin-walled pulmonary cysts distributed bilaterally (>20 cysts, 3-25 mm
+      diameter, wall thickness <2 mm), predominantly perivascular in distribution, in both upper and
+      lower lobes without strict zonal predominance. Bilateral ground-glass opacification most
+      prominent in lower lobes. Fine intralobular reticulation accompanies GGO in lower lobes.
+      Scattered ill-defined centrilobular ground-glass nodules. Thickening of bronchovascular bundles
+      in lower lobes. No honeycombing. No consolidation. No pleural effusion. No mediastinal or
+      hilar lymphadenopathy.
+
+  - id: 10
+    name: Drug-Induced ILD (Methotrexate Pneumonitis)
+    expected_diagnosis: Methotrexate-associated hypersensitivity pneumonitis
+    clinical_history: >
+      57-year-old female, non-smoker. Seropositive RA for 9 years. Started methotrexate 17.5 mg/week
+      11 months ago with folic acid supplementation. Mild renal impairment (eGFR 52 mL/min). Baseline
+      HRCT at MTX initiation was normal. 4-week subacute onset of progressive dyspnea, dry cough,
+      and low-grade fever (38.1°C). Malaise, myalgia, reduced appetite. Joints actually improved on
+      MTX (not an RA flare).
+      Exam: fever 38.2°C, diffuse bilateral crackles (mid and lower zones), SpO2 90% on room air,
+      respiratory rate 24/min.
+      RF positive (1:256), anti-CCP positive (225 U/mL). Eosinophilia (8%). CRP 95, ESR 72.
+      eGFR 48. Procalcitonin normal. Blood/sputum cultures negative. No Pneumocystis on BAL.
+      BAL: lymphocytosis with CD4:CD8 ratio 4.5.
+      PFTs: FVC 64% predicted, DLCO 52% predicted.
+    radiology_report: >
+      HRCT chest thin-section: Bilateral diffuse ground-glass opacification throughout both lungs
+      in non-zonal distribution, more confluent in mid and lower zones. Superimposed fine intralobular
+      reticulation creating crazy-paving pattern in lower lobes. Scattered ill-defined centrilobular
+      ground-glass nodules bilaterally. Small foci of peribronchovascular consolidation in right lower
+      lobe compatible with organizing pneumonia component. No honeycombing. No traction bronchiectasis
+      (acute/subacute presentation without established fibrosis). Small bilateral pleural effusions.
+      Comparison with normal baseline HRCT confirms all findings are new.
