@@ -543,6 +543,52 @@ Kriterien" — query the guideline criteria for that specific exposure.
 Kryobiopsie bei [pattern/context]" — when does the guideline recommend \
 BAL or biopsy, and when can it be omitted?
 
+NOMENCLATURE AWARENESS — 2025 ERS/ATS + Fleischner updates:
+The 2025 ERS/ATS classification and Fleischner "Standardized Terms" \
+statement introduced extensive renames, new categories, and \
+pattern-vs-diagnosis splits. The guideline corpus contains papers from \
+both before and after these updates, so queries must include BOTH old \
+AND new terms in the same query string (append, do NOT replace) to \
+retrieve legacy and recent literature together.
+
+KEY META-RULE (2025): every major pattern now distinguishes PATTERN \
+from DIAGNOSIS. UIP/NSIP/BIP/DAD/LIP/PPFE/RB-ILD/OP describe histology \
+or HRCT patterns; the idiopathic forms are iNSIP, iBIP, iDAD (= old AIP), \
+IPF (pattern = UIP), COP (pattern = OP), etc. Secondary forms (CTD-, \
+HP-, drug-, exposure-related) are now listed separately from idiopathic.
+
+HIGH-IMPACT RENAMES (use both sides in queries when relevant):
+- AIP (acute interstitial pneumonia) ↔ idiopathic DAD / iDAD
+- DIP (desquamative interstitial pneumonia) ↔ AMP (alveolar macrophage pneumonia)
+- NSIP ↔ iNSIP (for the idiopathic form specifically)
+- Cryptogenic HP / antigen-indeterminate HP / airway-centric fibrosis / \
+airway-centered interstitial pneumonia ↔ iBIP (idiopathic bronchiolocentric \
+interstitial pneumonia, new 2025 category)
+- Cryptogenic fibrosing alveolitis / idiopathic UIP / primary UIP ↔ IPF
+- BOOP / idiopathic organizing pneumonia ↔ COP
+- Extrinsic allergic alveolitis / hypersensitivity pneumonia ↔ HP (hypersensitivity pneumonitis)
+- Wegener's granulomatosis ↔ GPA (granulomatosis with polyangiitis)
+- Churg-Strauss syndrome ↔ EGPA (eosinophilic granulomatosis with polyangiitis)
+- Birt-Hogg-Dubé / BHD ↔ folliculin deficiency–associated ILD
+- Gaucher disease ↔ glucocerebrosidase deficiency–associated ILD
+- Fabry disease ↔ α-galactosidase A deficiency–associated ILD
+- Niemann-Pick ↔ acid sphingomyelinase deficiency–associated ILD / ASMD-ILD
+- Histiocytosis X / eosinophilic granuloma ↔ PLCH (pulmonary Langerhans cell histiocytosis)
+- Collagen vascular disease–associated ILD / autoimmune ILD ↔ CTD-ILD (or SARD-ILD)
+- ILD with autoimmune features ↔ IPAF (interstitial pneumonia with autoimmune features)
+- DPLD (diffuse parenchymal lung disease) / diffuse infiltrative lung disease \
+/ fibrosing lung disease ↔ ILD
+- Interstitial pneumonitis / idiopathic interstitial pneumonia (umbrella) ↔ IP
+- Acute exacerbation of pulmonary fibrosis ↔ AE-ILD
+- Subclinical / preclinical / incidental ILD ↔ ILA (interstitial lung abnormality)
+- Progressive fibrosing ILD / progressive fibrotic phenotype ↔ PPF (progressive pulmonary fibrosis)
+
+Example: a case suggesting DIP should yield a query like "DIP desquamative \
+interstitial pneumonia AMP alveolar macrophage pneumonia Kriterien Diagnostik" \
+— NOT just one or the other. A case with antigen-negative airway-centered \
+fibrosis should query "iBIP idiopathic bronchiolocentric interstitial \
+pneumonia cryptogenic HP airway-centered fibrosis Kriterien".
+
 CRITICAL — SEMANTIC DISTINCTNESS:
 - Each query MUST target a DIFFERENT section of the guideline.
 - Before finalizing, check: would two queries retrieve mostly the same \
@@ -1055,6 +1101,232 @@ def verify_node(state: State):
 
 
 # -------------------------------------------------------
+# 4b) Nomenclature rename (2025 ERS/ATS + Fleischner updates)
+# -------------------------------------------------------
+#
+# Each entry pairs the 2025 preferred term with its deprecated predecessors.
+# The rename runs as a post-verify cosmetic pass: the first time an entity
+# appears in the answer (under EITHER its old or new name), it is rewritten
+# to "NEW (prev. known as OLD)". Later mentions are left alone.
+#
+# Patterns use word boundaries and are case-insensitive. The first regex in
+# `old_patterns` is the canonical legacy form used in the annotation when
+# the answer already uses the new term.
+
+NOMENCLATURE_RENAMES = [
+    {
+        "new": "IPF",
+        "new_pattern": r"\bIPF\b",
+        "old_display": "cryptogenic fibrosing alveolitis",
+        "old_patterns": [
+            r"\bcryptogenic fibrosing alveolitis\b",
+            r"\bidiopathic UIP\b",
+            r"\bprimary UIP\b",
+        ],
+    },
+    {
+        "new": "idiopathic DAD",
+        "new_pattern": r"\bidiopathic DAD\b|\biDAD\b",
+        "old_display": "acute interstitial pneumonia, AIP",
+        "old_patterns": [
+            r"\bacute interstitial pneumonia\b",
+            r"\bAIP\b",
+        ],
+    },
+    {
+        "new": "AMP (alveolar macrophage pneumonia)",
+        "new_pattern": r"\bAMP\b|\balveolar macrophage pneumonia\b",
+        "old_display": "desquamative interstitial pneumonia, DIP",
+        "old_patterns": [
+            r"\bdesquamative interstitial pneumonia\b",
+            r"\bDIP\b",
+        ],
+    },
+    {
+        "new": "iBIP (idiopathic bronchiolocentric interstitial pneumonia)",
+        "new_pattern": r"\biBIP\b|\bidiopathic bronchiolocentric interstitial pneumonia\b",
+        "old_display": "cryptogenic hypersensitivity pneumonitis / airway-centered interstitial pneumonia",
+        "old_patterns": [
+            r"\bcryptogenic hypersensitivity pneumonitis\b",
+            r"\bantigen[- ]indeterminate hypersensitivity pneumonitis\b",
+            r"\bairway[- ]cent(?:ric|ered) interstitial (?:pneumonia|fibrosis)\b",
+            r"\bairway[- ]cent(?:ric|ered) (?:disease|fibrosis)\b",
+        ],
+    },
+    {
+        "new": "COP",
+        "new_pattern": r"\bCOP\b|\bcryptogenic organizing pneumonia\b",
+        "old_display": "BOOP, bronchiolitis obliterans organizing pneumonia",
+        "old_patterns": [
+            r"\bBOOP\b",
+            r"\bbronchiolitis obliterans organizing pneumonia\b",
+            r"\bidiopathic organizing pneumonia\b",
+        ],
+    },
+    {
+        "new": "HP (hypersensitivity pneumonitis)",
+        "new_pattern": r"\bhypersensitivity pneumonitis\b",
+        "old_display": "extrinsic allergic alveolitis, exogen-allergische Alveolitis",
+        "old_patterns": [
+            r"\bextrinsic allergic alveolitis\b",
+            r"\bexogen[- ]allergische Alveolitis\b",
+            r"\bhypersensitivity pneumonia\b",
+        ],
+    },
+    {
+        "new": "GPA (granulomatosis with polyangiitis)",
+        "new_pattern": r"\bGPA\b|\bgranulomatosis with polyangiitis\b",
+        "old_display": "Wegener's granulomatosis",
+        "old_patterns": [
+            r"\bWegener'?s? granulomatosis\b",
+            r"\bMorbus Wegener\b",
+        ],
+    },
+    {
+        "new": "EGPA (eosinophilic granulomatosis with polyangiitis)",
+        "new_pattern": r"\bEGPA\b|\beosinophilic granulomatosis with polyangiitis\b",
+        "old_display": "Churg-Strauss syndrome",
+        "old_patterns": [
+            r"\bChurg[- ]Strauss(?: syndrome)?\b",
+        ],
+    },
+    {
+        "new": "folliculin deficiency–associated ILD",
+        "new_pattern": r"\bfolliculin deficiency(?:[–-]associated ILD)?\b",
+        "old_display": "Birt-Hogg-Dubé syndrome, BHD",
+        "old_patterns": [
+            r"\bBirt[- ]Hogg[- ]Dub[éeè](?: syndrome)?\b",
+            r"\bBHD(?: syndrome)?\b",
+        ],
+    },
+    {
+        "new": "PLCH (pulmonary Langerhans cell histiocytosis)",
+        "new_pattern": r"\bPLCH\b|\bpulmonary Langerhans cell histiocytosis\b",
+        "old_display": "histiocytosis X",
+        "old_patterns": [
+            r"\bhistiocytosis X\b",
+        ],
+    },
+    {
+        "new": "CTD-ILD",
+        "new_pattern": r"\bCTD[- ]ILD\b",
+        "old_display": "collagen vascular disease–associated ILD",
+        "old_patterns": [
+            r"\bcollagen vascular disease[–-]associated (?:interstitial lung disease|ILD)\b",
+            r"\bautoimmune interstitial lung disease\b",
+        ],
+    },
+    {
+        "new": "IPAF (interstitial pneumonia with autoimmune features)",
+        "new_pattern": r"\bIPAF\b|\binterstitial pneumonia with autoimmune features\b",
+        "old_display": "ILD with autoimmune features",
+        "old_patterns": [
+            r"\binterstitial lung disease with autoimmune features\b",
+            r"\bILD with autoimmune features\b",
+        ],
+    },
+    {
+        "new": "ILD (interstitial lung disease)",
+        "new_pattern": r"\binterstitial lung disease\b",
+        "old_display": "diffuse parenchymal lung disease, DPLD",
+        "old_patterns": [
+            r"\bdiffuse parenchymal lung disease\b",
+            r"\bDPLD\b",
+        ],
+    },
+    {
+        "new": "ILA (interstitial lung abnormality)",
+        "new_pattern": r"\bILA\b|\binterstitial lung abnormalit(?:y|ies)\b",
+        "old_display": "subclinical / preclinical / incidental ILD",
+        "old_patterns": [
+            r"\bsubclinical ILD\b",
+            r"\bpreclinical ILD\b",
+            r"\bincidental ILD\b",
+        ],
+    },
+    {
+        "new": "PPF (progressive pulmonary fibrosis)",
+        "new_pattern": r"\bPPF\b|\bprogressive pulmonary fibrosis\b",
+        "old_display": "progressive fibrosing ILD, progressive fibrotic phenotype",
+        "old_patterns": [
+            r"\bprogressive fibrosing (?:interstitial lung disease|ILD)\b",
+            r"\bprogressive fibrotic phenotype\b",
+        ],
+    },
+    {
+        "new": "AE-ILD (acute exacerbation of ILD)",
+        "new_pattern": r"\bAE[- ]ILD\b|\bacute exacerbation of (?:interstitial lung disease|ILD)\b",
+        "old_display": "acute exacerbation of pulmonary fibrosis",
+        "old_patterns": [
+            r"\bacute exacerbation of pulmonary fibrosis\b",
+        ],
+    },
+]
+
+# Lookahead window (characters) used to detect an existing annotation so the
+# rename is idempotent — re-running on already-annotated text is a no-op.
+_RENAME_ANNOTATION_LOOKAHEAD = 60
+
+
+def _apply_nomenclature_rename(text: str) -> str:
+    """Annotate the first mention of each renamed ILD entity with its alias.
+
+    Rules (first occurrence per entity only):
+      - If the old term appears first, rewrite it to "NEW (prev. known as OLD_matched)".
+      - If only the new term appears, append " (prev. known as OLD_display)" after it.
+      - If the match is already followed by "(prev. known as …)", leave it alone.
+    Later mentions of the same entity are untouched to avoid clutter.
+    """
+    if not text:
+        return text
+
+    for entry in NOMENCLATURE_RENAMES:
+        new_term = entry["new"]
+        new_regex = re.compile(entry["new_pattern"], re.IGNORECASE)
+        old_regexes = [re.compile(p, re.IGNORECASE) for p in entry["old_patterns"]]
+        old_display = entry["old_display"]
+
+        new_match = new_regex.search(text)
+        old_matches = [(r.search(text), r) for r in old_regexes]
+        old_matches = [(m, r) for m, r in old_matches if m]
+        old_match = min(old_matches, key=lambda mr: mr[0].start())[0] if old_matches else None
+
+        # Pick whichever appears first.
+        if new_match and (not old_match or new_match.start() <= old_match.start()):
+            target = new_match
+            # Idempotency check: already annotated?
+            tail = text[target.end():target.end() + _RENAME_ANNOTATION_LOOKAHEAD]
+            if re.match(r"\s*\(prev\. known as", tail, re.IGNORECASE):
+                continue
+            annotation = f" (prev. known as {old_display})"
+            text = text[:target.end()] + annotation + text[target.end():]
+        elif old_match:
+            target = old_match
+            tail = text[target.end():target.end() + _RENAME_ANNOTATION_LOOKAHEAD]
+            if re.match(r"\s*\(prev\. known as", tail, re.IGNORECASE):
+                continue
+            matched_old = target.group(0)
+            replacement = f"{new_term} (prev. known as {matched_old})"
+            text = text[:target.start()] + replacement + text[target.end():]
+        # else: entity absent, nothing to do
+
+    return text
+
+
+def rename_node(state: State):
+    """Rewrite the final answer to use 2025 preferred ILD nomenclature.
+
+    Runs after verify. Deterministic (regex-based), no LLM call. Only the
+    first occurrence of each renamed entity is annotated, to avoid clutter.
+    """
+    answer = state.get("answer", "")
+    if not answer:
+        return state
+    state["answer"] = _apply_nomenclature_rename(answer)
+    return state
+
+
+# -------------------------------------------------------
 # 5) Two-phase retrieval: diagnose → retrieve therapy
 # -------------------------------------------------------
 
@@ -1499,6 +1771,19 @@ def stream_generate(state: State):
     if verify_changed:
         yield ("replace", state["answer"])
 
+    # Nomenclature rename (2025 ERS/ATS + Fleischner preferred terms).
+    # Deterministic post-processing — annotate first mention of each
+    # renamed entity with its legacy alias.
+    pre_rename_answer = state["answer"]
+    state["answer"] = _apply_nomenclature_rename(pre_rename_answer)
+    if state["answer"] != pre_rename_answer:
+        yield ("replace", state["answer"])
+        yield ("step", {
+            "title": "Nomenclature Rename",
+            "summary": "Applied 2025 ERS/ATS + Fleischner preferred terms",
+            "details": "First mention of each renamed ILD entity was annotated with its legacy alias (prev. known as …).",
+        })
+
     # Step: Citation Verification
     yield ("step", {
         "title": "Citation Verification",
@@ -1526,7 +1811,7 @@ def stream_generate(state: State):
         yield ("status", "Generating clinical summary...")
         summary_response = llm.invoke(_build_summary_messages(state))
         all_responses.append(summary_response)
-        summary_text = summary_response.content.strip()
+        summary_text = _apply_nomenclature_rename(summary_response.content.strip())
         # Append summary to the displayed answer
         separator = "\n\n---\n\n"
         yield ("token", separator)
@@ -1559,13 +1844,15 @@ graph_builder.add_node("diagnose", diagnose_node)
 graph_builder.add_node("retrieve_therapy", retrieve_therapy_node)
 graph_builder.add_node("generate", generate_node)
 graph_builder.add_node("verify", verify_node)
+graph_builder.add_node("rename", rename_node)
 
 graph_builder.set_entry_point("retrieve")
 graph_builder.add_edge("retrieve", "diagnose")
 graph_builder.add_edge("diagnose", "retrieve_therapy")
 graph_builder.add_edge("retrieve_therapy", "generate")
 graph_builder.add_edge("generate", "verify")
-graph_builder.add_edge("verify", END)
+graph_builder.add_edge("verify", "rename")
+graph_builder.add_edge("rename", END)
 
 graph = graph_builder.compile()
 
