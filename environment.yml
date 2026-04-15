@@ -217,26 +217,14 @@ dependencies:
       - lightning==2.5.1.post0
       - lightning-utilities==0.14.3
       - linecache2==1.0.0
-      - llama-cloud==0.1.19
-      - llama-cloud-services==0.6.17
-      - llama-index==0.12.22
-      - llama-index-agent-openai==0.4.6
-      - llama-index-cli==0.4.1
+      - llama-cloud
+      - llama-cloud-services
+      - llama-index==0.14.9
       - llama-index-core==0.14.9
-      - llama-index-embeddings-azure-openai==0.4.1
-      - llama-index-embeddings-openai==0.5.1
-      - llama-index-indices-managed-llama-cloud==0.6.11
-      - llama-index-instrumentation==0.4.2
-      - llama-index-llms-azure-openai==0.4.2
-      - llama-index-llms-openai==0.6.10
-      - llama-index-multi-modal-llms-openai==0.4.3
-      - llama-index-postprocessor-colbert-rerank==0.4.1
-      - llama-index-program-openai==0.3.1
-      - llama-index-question-gen-openai==0.3.0
-      - llama-index-readers-file==0.4.7
-      - llama-index-readers-llama-parse==0.4.0
-      - llama-index-workflows==2.11.5
-      - llama-parse==0.6.16
+      - llama-index-embeddings-azure-openai
+      - llama-index-llms-azure-openai
+      - llama-index-postprocessor-colbert-rerank
+      - llama-parse
       - markdown==3.8.2
       - markupsafe==3.0.2
       - marshmallow==3.26.1

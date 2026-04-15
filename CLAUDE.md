@@ -10,7 +10,7 @@ RAG (Retrieval-Augmented Generation) system for answering medical questions abou
 
 ```bash
 # conda must be initialized first (not on PATH by default)
-source /home/homesOnMaster/dgeiger/miniforge3/etc/profile.d/conda.sh
+source /home/dgeiger/miniforge3/etc/profile.d/conda.sh
 conda activate ild
 # Python env: /home/homesOnMaster/dgeiger/miniforge3/envs/ild (Python 3.12.3)
 ```

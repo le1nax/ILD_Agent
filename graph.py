@@ -1,4 +1,5 @@
 import os
+import psutil
 from langgraph.graph import StateGraph, END
 from langchain_core.documents import Document
 from langchain_openai import AzureChatOpenAI
@@ -6,6 +7,12 @@ from langchain_core.messages import SystemMessage, HumanMessage, AIMessage
 import json
 import re
 from dotenv import load_dotenv
+
+
+def _log_mem(label: str):
+    """Log current process RSS memory usage."""
+    mem = psutil.Process().memory_info()
+    print(f"  [MEM] {label}: RSS={mem.rss / 1024**2:.1f} MB")
 
 # LlamaIndex imports for PDF processing and advanced retrieval
 from llama_cloud_services import LlamaParse
@@ -29,6 +36,7 @@ CHUNK_OVERLAP = 256
 TOP_K_CHUNKS = 30
 COLBERT_TOP_N = 20
 COLBERT_MIN_SCORE = 0.3  # minimum relevance score to keep a chunk
+COLBERT_BATCH_SIZE = 5    # nodes per ColBERT batch to limit memory usage
 SUB_QUERY_TOP_K = 15      # per-sub-query retrieval count (multi-query mode)
 THERAPY_TOP_K = 10        # chunks to retrieve in therapy phase
 REWRITE_WORD_THRESHOLD = 30  # legacy fallback (unused — LLM routing replaces this)
@@ -70,6 +78,32 @@ def get_colbert_reranker():
     if _colbert_reranker is None:
         _colbert_reranker = ColbertRerank(model="colbert-ir/colbertv2.0", top_n=COLBERT_TOP_N)
     return _colbert_reranker
+
+
+def _colbert_rerank_batched(nodes, query_str: str, top_n: int = COLBERT_TOP_N,
+                            batch_size: int = COLBERT_BATCH_SIZE):
+    """Rerank nodes with ColBERT in batches to limit peak memory.
+
+    Processes `batch_size` nodes at a time, collects all scored results,
+    then returns the global top_n by score.
+    """
+    import gc
+    import torch
+    colbert = get_colbert_reranker()
+    all_scored = []
+    for i in range(0, len(nodes), batch_size):
+        batch = nodes[i:i + batch_size]
+        with torch.no_grad():
+            scored = colbert.postprocess_nodes(batch, query_str=query_str)
+        all_scored.extend(scored)
+        del batch, scored
+        gc.collect()
+        if torch.cuda.is_available():
+            torch.cuda.empty_cache()
+        _log_mem(f"  ColBERT batch {i // batch_size + 1}/{(len(nodes) + batch_size - 1) // batch_size}")
+    all_scored.sort(key=lambda n: n.score, reverse=True)
+    return all_scored[:top_n]
+
 
 def parse_pdfs_to_json(pdf_dir: str, out_dir: str):
     """Parse PDFs to JSON using LlamaParse."""
@@ -428,6 +462,11 @@ def _build_bm25_index(vs: VectorStoreIndex):
 
 _bm25_index, _bm25_nodes = _build_bm25_index(vectorstore)
 
+# Eagerly load ColBERT reranker at startup to avoid OOM during first query
+print("Loading ColBERT reranker...")
+get_colbert_reranker()
+print("✓ ColBERT reranker loaded")
+
 
 def _bm25_retrieve(query: str, top_k: int) -> list:
     """Retrieve nodes using BM25 keyword matching.
@@ -753,11 +792,10 @@ def retrieve_node(state: State):
     print(f"  Diagnostic queries ({len(diagnostic_queries)}): {diagnostic_queries}")
 
     if len(diagnostic_queries) == 1:
-        # Single-query path: hybrid retrieval + ColBERT reranking
+        # Single-query path: hybrid retrieval + batched ColBERT reranking
         hybrid_nodes, _ = _hybrid_retrieve(diagnostic_queries, TOP_K_CHUNKS, TOP_K_CHUNKS)
 
-        colbert = get_colbert_reranker()
-        reranked_nodes = colbert.postprocess_nodes(hybrid_nodes, query_str=original_question)
+        reranked_nodes = _colbert_rerank_batched(hybrid_nodes, query_str=original_question)
 
         filtered_nodes = [n for n in reranked_nodes if n.score >= COLBERT_MIN_SCORE]
         if not filtered_nodes:
@@ -856,14 +894,18 @@ def stream_retrieve_node(state: State):
     diagnostic_queries = _rewrite_query(original_question, is_complex=is_complex)
     print(f"  Diagnostic queries ({len(diagnostic_queries)}): {diagnostic_queries}")
 
+    _log_mem("before retrieval")
+
     if len(diagnostic_queries) == 1:
         # Single-query path: hybrid retrieval + ColBERT reranking
         yield ("status", "Searching: hybrid retrieval...")
         hybrid_nodes, prov = _hybrid_retrieve(diagnostic_queries, TOP_K_CHUNKS, TOP_K_CHUNKS)
+        _log_mem(f"after hybrid retrieval ({len(hybrid_nodes)} nodes)")
 
         yield ("status", "Reranking with ColBERT...")
-        colbert = get_colbert_reranker()
-        reranked_nodes = colbert.postprocess_nodes(hybrid_nodes, query_str=original_question)
+        _log_mem("before ColBERT reranking")
+        reranked_nodes = _colbert_rerank_batched(hybrid_nodes, query_str=original_question)
+        _log_mem(f"after ColBERT reranking ({len(reranked_nodes)} nodes)")
 
         filtered_nodes = [n for n in reranked_nodes if n.score >= COLBERT_MIN_SCORE]
         if not filtered_nodes:
