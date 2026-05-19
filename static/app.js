@@ -509,10 +509,14 @@ async function renderSourcePage(section, filename, pageNum, highlightText) {
     // Cache the page index + render params on the container as DOM-node
     // properties (not dataset — these hold non-string objects, and DOM
     // properties survive appendChild/removeChild for chat-switch detach).
+    // _viewportHeight MUST be the UNSCALED PDF page height (user-space
+    // points), because item.transform[5] from getTextContent() is in user
+    // space and the overlay y-flip formula is
+    //   top = (viewportHeight - f - itemHeight) * scale.
     container._pageIndex = window.CitationMatcher
       ? window.CitationMatcher.buildPageIndex(textContent, viewport)
       : null;
-    container._viewportHeight = viewport.height;
+    container._viewportHeight = viewport.height / scale;
     container._scale = scale;
     container._highlightLayer = highlightLayer;
 
@@ -971,6 +975,11 @@ async function submitQuestion() {
 
           } else if (eventType === "highlights") {
             streamHighlights = data;
+            console.log("[SSE highlights]", {
+              keys: Object.keys(data || {}),
+              counts: Object.fromEntries(Object.entries(data || {}).map(([k, v]) => [k, Array.isArray(v) ? v.length : 0])),
+              sample: Object.values(data || {})[0],
+            });
             try { localStorage.setItem(`ild-chat-highlights-${streamChatId}`, JSON.stringify(data)); } catch(e) {}
             if (isActive()) {
               pendingHighlights = data;
@@ -1110,67 +1119,102 @@ async function downloadAnswerAsPdf(assistantWrapper, sources) {
     btn.textContent = "Generating PDF…";
   }
 
+  let root = null;
+  let coverOverlay = null;
   try {
     const bubble = assistantWrapper.querySelector(".bubble");
-    if (!bubble) return;
+    if (!bubble) throw new Error("answer bubble not found");
 
     // Clone the answer bubble so we don't mutate the live DOM.
     const answerClone = bubble.cloneNode(true);
-    // The bubble's [Source N] links are clickable in the UI but should be
-    // plain text in the PDF.
+    // Strip the [Source N] hover interaction so links don't appear blue/dotted
+    // in the PDF.
     answerClone.querySelectorAll(".source-ref").forEach((el) => {
       const span = document.createElement("span");
       span.textContent = el.textContent;
+      span.style.fontWeight = "600";
       el.replaceWith(span);
     });
+    answerClone.style.cssText =
+      "background:#fff;padding:0;box-shadow:none;border-radius:0;" +
+      "font-size:11pt;line-height:1.55;color:#1a1a2e;";
 
     const question = _findPrecedingQuestion(assistantWrapper);
     const stamp = new Date().toLocaleString();
 
-    const root = document.createElement("div");
+    root = document.createElement("div");
+    // 180mm content width inside an A4 (210mm) with 15mm side margins.
+    // Sized in mm because html2pdf's default unit is mm and html2canvas
+    // computes element bounds from layout (which works fine with mm).
     root.style.cssText =
-      "padding:18mm;font-family:Arial,Helvetica,sans-serif;color:#1a1a2e;" +
-      "font-size:10.5pt;line-height:1.5;background:#fff;width:210mm;" +
-      "box-sizing:border-box";
+      "width:180mm;padding:0;margin:0;" +
+      "font-family:Arial,Helvetica,sans-serif;color:#1a1a2e;" +
+      "font-size:11pt;line-height:1.55;background:#ffffff;" +
+      "box-sizing:border-box;";
     root.innerHTML =
       '<div style="border-bottom:2px solid #4361ee;padding-bottom:6px;margin-bottom:14px">' +
-        '<h1 style="font-size:16pt;margin:0;color:#1a1a2e">ILD RAG Assistant</h1>' +
+        '<h1 style="font-size:18pt;margin:0;color:#1a1a2e;font-weight:700">ILD RAG Assistant</h1>' +
         `<div style="color:#666;font-size:9pt;margin-top:2px">${escapeHtml(stamp)}</div>` +
       "</div>" +
       (question
-        ? '<h2 style="font-size:13pt;margin:0 0 6px;color:#1a1a2e;border-bottom:1px solid #ccc;padding-bottom:3px">Question</h2>' +
-          `<div style="margin-bottom:14px;white-space:pre-wrap">${escapeHtml(question)}</div>`
+        ? '<h2 style="font-size:13pt;margin:0 0 6px;color:#1a1a2e;border-bottom:1px solid #ccc;padding-bottom:3px;font-weight:700">Question</h2>' +
+          `<div style="margin-bottom:18px;white-space:pre-wrap">${escapeHtml(question)}</div>`
         : "") +
-      '<h2 style="font-size:13pt;margin:0 0 6px;color:#1a1a2e;border-bottom:1px solid #ccc;padding-bottom:3px">Answer</h2>' +
-      '<div id="__pdf_answer__" style="margin-bottom:14px"></div>' +
+      '<h2 style="font-size:13pt;margin:0 0 6px;color:#1a1a2e;border-bottom:1px solid #ccc;padding-bottom:3px;font-weight:700">Answer</h2>' +
+      '<div id="__pdf_answer__" style="margin-bottom:18px"></div>' +
       _renderSourcesForPdf(sources);
     root.querySelector("#__pdf_answer__").appendChild(answerClone);
 
-    // html2pdf renders by rasterizing the element off-screen.
+    // Most reliable approach for html2canvas: attach the element visibly to
+    // the body, then cover it with an opaque overlay. html2canvas reads
+    // computed styles, so the element must be in normal flow with non-zero
+    // dimensions. Tricks like position:fixed + z-index:-99999 are known to
+    // cause blank canvases in some browser/version combos.
     root.style.position = "absolute";
-    root.style.left = "-10000px";
     root.style.top = "0";
+    root.style.left = "0";
     document.body.appendChild(root);
+
+    // Cover the screen so the user doesn't see the briefly-attached element.
+    coverOverlay = document.createElement("div");
+    coverOverlay.style.cssText =
+      "position:fixed;inset:0;background:rgba(245,247,250,0.98);" +
+      "z-index:99999;display:flex;align-items:center;justify-content:center;" +
+      "font-family:Arial,sans-serif;font-size:14px;color:#4361ee;";
+    coverOverlay.textContent = "Generating PDF…";
+    document.body.appendChild(coverOverlay);
+
+    // Wait one paint cycle so layout is computed before html2canvas snapshots.
+    await new Promise((r) => requestAnimationFrame(() => r()));
 
     const dateSlug = new Date().toISOString().slice(0, 10);
     const opt = {
-      margin: 0,
+      margin: [15, 15, 15, 15], // mm
       filename: `ild-response-${dateSlug}.pdf`,
       image: { type: "jpeg", quality: 0.95 },
-      html2canvas: { scale: 2, useCORS: true, backgroundColor: "#ffffff" },
+      html2canvas: {
+        scale: 2,
+        useCORS: true,
+        backgroundColor: "#ffffff",
+        logging: false,
+      },
       jsPDF: { unit: "mm", format: "a4", orientation: "portrait" },
       pagebreak: { mode: ["css", "legacy"] },
     };
 
-    try {
-      await html2pdf().set(opt).from(root).save();
-    } finally {
-      root.remove();
-    }
+    console.log("[downloadAnswerAsPdf] rendering root", {
+      width: root.offsetWidth,
+      height: root.offsetHeight,
+      textPreview: root.innerText.slice(0, 200),
+    });
+
+    await html2pdf().set(opt).from(root).save();
   } catch (e) {
     console.error("[downloadAnswerAsPdf] failed:", e);
     showError("Could not generate PDF: " + e.message);
   } finally {
+    if (root && root.parentNode) root.remove();
+    if (coverOverlay && coverOverlay.parentNode) coverOverlay.remove();
     if (btn) {
       btn.disabled = false;
       btn.textContent = "Download PDF";
