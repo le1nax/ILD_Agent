@@ -6,6 +6,7 @@
   <title>ILD RAG Assistant</title>
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.4.168/pdf.min.mjs" type="module"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
@@ -360,6 +361,25 @@
     .usage-bar .cost { font-weight: 600; color: #4361ee; }
     .usage-bar .usage-label { font-weight: 600; color: #555; }
     .usage-bar .usage-sep { width: 1px; height: 12px; background: #ddd; }
+
+    /* Download PDF button on assistant messages */
+    .download-pdf-btn {
+      display: none;
+      align-self: flex-start;
+      margin-top: 0.4rem;
+      padding: 0.3rem 0.7rem;
+      font-size: 0.75rem;
+      font-family: inherit;
+      color: #4361ee;
+      background: transparent;
+      border: 1px solid #c8d2ff;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background 0.15s, color 0.15s;
+    }
+    .download-pdf-btn.visible { display: inline-block; }
+    .download-pdf-btn:hover { background: #4361ee; color: #fff; }
+    .download-pdf-btn:disabled { opacity: 0.6; cursor: progress; }
 
     /* Input area */
     .input-area {

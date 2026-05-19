@@ -738,10 +738,17 @@ function createAssistantMessage() {
   usageBar.className = "usage-bar";
   wrapper.appendChild(usageBar);
 
+  const downloadBtn = document.createElement("button");
+  downloadBtn.className = "download-pdf-btn";
+  downloadBtn.type = "button";
+  downloadBtn.textContent = "Download PDF";
+  downloadBtn.title = "Download this response as a PDF";
+  wrapper.appendChild(downloadBtn);
+
   chatEl.appendChild(wrapper);
   scrollToBottom();
 
-  return { wrapper, sourcesToggle, sourcesBody, stepsContainer, bubble, usageBar };
+  return { wrapper, sourcesToggle, sourcesBody, stepsContainer, bubble, usageBar, downloadBtn };
 }
 
 // ── Helper: build source list item (no individual listeners) ──
@@ -1009,6 +1016,7 @@ async function submitQuestion() {
               det.classList.remove("open");
               det.parentElement.querySelector(".step-chevron").innerHTML = "&#9656;";
             }
+            if (msg.downloadBtn) msg.downloadBtn.classList.add("visible");
 
             // Hide uncited sources in the PDF viewer and add toggle button
             hlLog(`[done] isActive=${isActive()} answerLen=${answer.length} containers=${sourceContainers.length} citations=${[...answer.matchAll(/\[Source\s+(\d+)\]/g)].map(m=>m[1]).join(",")}`);
@@ -1068,8 +1076,118 @@ async function submitQuestion() {
   }
 }
 
+// ── Download PDF (client-side via html2pdf.js) ──
+function _findPrecedingQuestion(assistantWrapper) {
+  let prev = assistantWrapper.previousElementSibling;
+  while (prev && !prev.classList.contains("user")) {
+    prev = prev.previousElementSibling;
+  }
+  return prev ? (prev.querySelector(".bubble")?.innerText || "").trim() : "";
+}
+
+function _renderSourcesForPdf(sources) {
+  if (!sources || !sources.length) return "";
+  const items = sources.map((src, i) => {
+    const doc = escapeHtml(src.document || "Unknown");
+    const page = escapeHtml(String(src.page || "?"));
+    const section = src.section ? ` — <em>${escapeHtml(src.section)}</em>` : "";
+    return `<li style="margin-bottom:6px"><strong>[Source ${i + 1}]</strong> ${doc} — Page ${page}${section}</li>`;
+  }).join("");
+  return (
+    '<h2 style="font-size:13pt;margin:18px 0 8px;color:#1a1a2e;border-bottom:1px solid #ccc;padding-bottom:3px">Cited Sources</h2>' +
+    `<ol style="padding-left:24px;margin:0;font-size:10pt">${items}</ol>`
+  );
+}
+
+async function downloadAnswerAsPdf(assistantWrapper, sources) {
+  if (typeof html2pdf === "undefined") {
+    showError("PDF library failed to load. Check your network and reload.");
+    return;
+  }
+  const btn = assistantWrapper.querySelector(".download-pdf-btn");
+  if (btn) {
+    btn.disabled = true;
+    btn.textContent = "Generating PDF…";
+  }
+
+  try {
+    const bubble = assistantWrapper.querySelector(".bubble");
+    if (!bubble) return;
+
+    // Clone the answer bubble so we don't mutate the live DOM.
+    const answerClone = bubble.cloneNode(true);
+    // The bubble's [Source N] links are clickable in the UI but should be
+    // plain text in the PDF.
+    answerClone.querySelectorAll(".source-ref").forEach((el) => {
+      const span = document.createElement("span");
+      span.textContent = el.textContent;
+      el.replaceWith(span);
+    });
+
+    const question = _findPrecedingQuestion(assistantWrapper);
+    const stamp = new Date().toLocaleString();
+
+    const root = document.createElement("div");
+    root.style.cssText =
+      "padding:18mm;font-family:Arial,Helvetica,sans-serif;color:#1a1a2e;" +
+      "font-size:10.5pt;line-height:1.5;background:#fff;width:210mm;" +
+      "box-sizing:border-box";
+    root.innerHTML =
+      '<div style="border-bottom:2px solid #4361ee;padding-bottom:6px;margin-bottom:14px">' +
+        '<h1 style="font-size:16pt;margin:0;color:#1a1a2e">ILD RAG Assistant</h1>' +
+        `<div style="color:#666;font-size:9pt;margin-top:2px">${escapeHtml(stamp)}</div>` +
+      "</div>" +
+      (question
+        ? '<h2 style="font-size:13pt;margin:0 0 6px;color:#1a1a2e;border-bottom:1px solid #ccc;padding-bottom:3px">Question</h2>' +
+          `<div style="margin-bottom:14px;white-space:pre-wrap">${escapeHtml(question)}</div>`
+        : "") +
+      '<h2 style="font-size:13pt;margin:0 0 6px;color:#1a1a2e;border-bottom:1px solid #ccc;padding-bottom:3px">Answer</h2>' +
+      '<div id="__pdf_answer__" style="margin-bottom:14px"></div>' +
+      _renderSourcesForPdf(sources);
+    root.querySelector("#__pdf_answer__").appendChild(answerClone);
+
+    // html2pdf renders by rasterizing the element off-screen.
+    root.style.position = "absolute";
+    root.style.left = "-10000px";
+    root.style.top = "0";
+    document.body.appendChild(root);
+
+    const dateSlug = new Date().toISOString().slice(0, 10);
+    const opt = {
+      margin: 0,
+      filename: `ild-response-${dateSlug}.pdf`,
+      image: { type: "jpeg", quality: 0.95 },
+      html2canvas: { scale: 2, useCORS: true, backgroundColor: "#ffffff" },
+      jsPDF: { unit: "mm", format: "a4", orientation: "portrait" },
+      pagebreak: { mode: ["css", "legacy"] },
+    };
+
+    try {
+      await html2pdf().set(opt).from(root).save();
+    } finally {
+      root.remove();
+    }
+  } catch (e) {
+    console.error("[downloadAnswerAsPdf] failed:", e);
+    showError("Could not generate PDF: " + e.message);
+  } finally {
+    if (btn) {
+      btn.disabled = false;
+      btn.textContent = "Download PDF";
+    }
+  }
+}
+
 // ── Event delegation on #chat ──
 chatEl.addEventListener("click", (e) => {
+  // 0. Download PDF button on an assistant message
+  const dlBtn = e.target.closest(".download-pdf-btn");
+  if (dlBtn) {
+    const wrapper = dlBtn.closest(".msg.assistant");
+    if (wrapper) downloadAnswerAsPdf(wrapper, currentSources || []);
+    return;
+  }
+
   // 1. Source reference in answer text (e.g., [Source 1])
   const sourceRef = e.target.closest(".source-ref");
   if (sourceRef) {
