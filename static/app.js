@@ -230,10 +230,15 @@ function switchToChat(chatId) {
   const savedHighlights = localStorage.getItem(`ild-chat-highlights-${chatId}`);
   currentHighlights = savedHighlights ? JSON.parse(savedHighlights) : null;
 
-  // Re-render PDF
+  // Re-render PDF. Set pendingHighlights BEFORE renderAllSources so the
+  // first pages that finish rendering pick them up during their own drain
+  // (renderAllSources internally clears pendingHighlights at the top, then
+  // renderSourcePage reads it again after each page completes).
   if (currentSources.length > 0) {
+    if (currentHighlights) {
+      pendingHighlights = currentHighlights;
+    }
     renderAllSources(currentSources);
-    // Set pendingHighlights so late-rendering pages pick them up
     if (currentHighlights) {
       pendingHighlights = currentHighlights;
     }
@@ -367,9 +372,14 @@ function togglePdfPanel() {
     saveChats();
   }
 
-  // Re-render sources if opening and sources exist (fixes width issues)
+  // Re-render sources if opening and sources exist (fixes width issues).
+  // Set pendingHighlights BEFORE renderAllSources clears it; renderSourcePage
+  // re-reads it after each page renders.
   if (isNowOpen && currentSources.length > 0) {
     setTimeout(() => {
+      if (currentHighlights) {
+        pendingHighlights = currentHighlights;
+      }
       renderAllSources(currentSources);
       if (currentHighlights) {
         pendingHighlights = currentHighlights;
@@ -484,19 +494,29 @@ async function renderSourcePage(section, filename, pageNum, highlightText) {
     const ctx = canvas.getContext("2d");
     await page.render({ canvasContext: ctx, viewport }).promise;
 
-    // Text layer for highlighting
+    // Text layer (transparent — only for text selection)
     const textContent = await page.getTextContent();
     const textLayerDiv = document.createElement("div");
     textLayerDiv.className = "pdf-text-layer";
     container.appendChild(textLayerDiv);
-
     renderTextLayer(textLayerDiv, textContent, viewport);
 
-    section.appendChild(container);
+    // Highlight overlay layer (absolute-positioned divs over the canvas)
+    const highlightLayer = document.createElement("div");
+    highlightLayer.className = "pdf-highlight-layer";
+    container.appendChild(highlightLayer);
 
-    if (highlightText) {
-      highlightChunk(textLayerDiv, highlightText);
-    }
+    // Cache the page index + render params on the container as DOM-node
+    // properties (not dataset — these hold non-string objects, and DOM
+    // properties survive appendChild/removeChild for chat-switch detach).
+    container._pageIndex = window.CitationMatcher
+      ? window.CitationMatcher.buildPageIndex(textContent, viewport)
+      : null;
+    container._viewportHeight = viewport.height;
+    container._scale = scale;
+    container._highlightLayer = highlightLayer;
+
+    section.appendChild(container);
 
     // If exact-quote highlights arrived while this page was still rendering,
     // apply them now
@@ -545,229 +565,47 @@ function renderTextLayer(div, textContent, viewport) {
   }
 }
 
-function highlightChunk(textLayerDiv, chunkText) {
-  // No initial chunk highlighting — only exact quotes are highlighted later
-  // by rehighlightSource. This function is kept as a no-op so callers don't break.
-  hlLog(`[highlightChunk] no-op (exact-quote-only mode), chunkLen=${chunkText.length}`);
-}
-
-// Strip punctuation for fuzzy word matching (keeps letters, digits, spaces)
-function stripPunct(str) {
-  return str.replace(/[^\p{L}\p{N}\s]/gu, " ").replace(/\s+/g, " ").trim();
-}
-
+// Highlight rendering uses the cliniva matcher port in citationMatcher.js.
+// Per-page index + scale are cached on each .pdf-page-container as DOM
+// properties (_pageIndex, _viewportHeight, _scale, _highlightLayer).
 function rehighlightSource(sectionEl, claimTexts) {
   hlLog(`[rehighlightSource] section=${sectionEl.id} claims=${JSON.stringify(claimTexts).slice(0,300)}`);
-  const textLayers = sectionEl.querySelectorAll(".pdf-text-layer");
+  if (!window.CitationMatcher) {
+    hlLog("[rehighlightSource] CitationMatcher not loaded");
+    return;
+  }
+  const containers = sectionEl.querySelectorAll(".pdf-page-container");
+  for (const container of containers) {
+    // Defensive no-op: page hasn't finished rendering yet. The
+    // pendingHighlights drain in renderSourcePage will retry after render.
+    if (!container._pageIndex || !container._highlightLayer) continue;
 
-  for (const textLayerDiv of textLayers) {
-    const spans = textLayerDiv.querySelectorAll("span");
-    const spanTexts = [];
-    for (const span of spans) spanTexts.push(span.textContent);
-    const fullText = spanTexts.join("");
-    const fullTextNorm = normalizeText(fullText);
+    container._highlightLayer.innerHTML = "";
 
-    let highlightRanges = [];
     for (const claim of claimTexts) {
-      const claimNorm = normalizeText(claim);
-      if (claimNorm.length < 10) continue;
-
-      // Strategy 1: exact normalized substring on the full page
-      let found = false;
-      let searchStart = 0;
-      while (true) {
-        const idx = fullTextNorm.indexOf(claimNorm, searchStart);
-        if (idx === -1) break;
-        highlightRanges.push({ start: idx, end: idx + claimNorm.length });
-        hlLog(`[rehighlightSource] EXACT MATCH at pos ${idx}-${idx + claimNorm.length}: "${claimNorm.slice(0, 60)}..."`);
-        found = true;
-        searchStart = idx + 1;
+      if (!claim || typeof claim !== "string") continue;
+      const ranges = window.CitationMatcher.findMatches(claim, container._pageIndex);
+      if (!ranges.length) {
+        hlLog(`[rehighlightSource] NO MATCH for "${claim.slice(0, 60)}..."`);
+        continue;
       }
-      if (found) continue;
-
-      // Strategy 2: fuzzy word-sequence match on the full page.
-      // Strip punctuation so "Patient:innen" matches "patientinnen" etc.
-      const claimStripped = stripPunct(claimNorm);
-      const pageStripped = stripPunct(fullTextNorm);
-      const claimWords = claimStripped.split(/\s+/).filter(w => w.length >= 2);
-      const pageWords = pageStripped.split(/\s+/);
-
-      if (claimWords.length < 3) continue;
-
-      // Sliding window: find the best window of pageWords that matches
-      // the most claimWords in order
-      let bestStart = -1, bestEnd = -1, bestMatched = 0;
-      const windowSize = Math.min(claimWords.length * 3, pageWords.length);
-
-      for (let wStart = 0; wStart <= pageWords.length - Math.max(3, claimWords.length * 0.5); wStart++) {
-        const wEnd = Math.min(wStart + windowSize, pageWords.length);
-        let matched = 0;
-        let pIdx = wStart;
-        let firstMatchIdx = -1, lastMatchIdx = -1;
-
-        for (const cw of claimWords) {
-          for (let pi = pIdx; pi < wEnd; pi++) {
-            // Allow partial match for compound words (German: "Lungenbiopsie" contains "biopsie")
-            if (pageWords[pi] === cw || pageWords[pi].includes(cw) || cw.includes(pageWords[pi])) {
-              if (firstMatchIdx === -1) firstMatchIdx = pi;
-              lastMatchIdx = pi;
-              matched++;
-              pIdx = pi + 1;
-              break;
-            }
-          }
-        }
-
-        if (matched > bestMatched && matched >= claimWords.length * 0.6) {
-          bestMatched = matched;
-          bestStart = firstMatchIdx;
-          bestEnd = lastMatchIdx;
-        }
-      }
-
-      if (bestStart !== -1 && bestEnd !== -1) {
-        // Convert word positions back to char positions in pageStripped,
-        // then map back to fullTextNorm positions.
-        // Use a simpler approach: find the first and last matched words in fullTextNorm
-        const firstWord = pageWords[bestStart];
-        const lastWord = pageWords[bestEnd];
-
-        // Find char position of firstWord occurrence near bestStart
-        let charPos = 0;
-        for (let wi = 0; wi < bestStart; wi++) {
-          const nextPos = pageStripped.indexOf(pageWords[wi], charPos);
-          if (nextPos !== -1) charPos = nextPos + pageWords[wi].length;
-        }
-        const firstCharApprox = pageStripped.indexOf(firstWord, charPos);
-
-        charPos = firstCharApprox + firstWord.length;
-        for (let wi = bestStart + 1; wi < bestEnd; wi++) {
-          const nextPos = pageStripped.indexOf(pageWords[wi], charPos);
-          if (nextPos !== -1) charPos = nextPos + pageWords[wi].length;
-        }
-        const lastCharApprox = pageStripped.indexOf(lastWord, charPos);
-        const lastCharEnd = lastCharApprox + lastWord.length;
-
-        if (firstCharApprox !== -1 && lastCharApprox !== -1) {
-          // Map stripped positions back to fullTextNorm positions (approximate)
-          // Since both are lowercase and similar, positions are close enough
-          highlightRanges.push({
-            start: Math.max(0, firstCharApprox - 5),
-            end: Math.min(fullTextNorm.length, lastCharEnd + 5),
-          });
-          hlLog(`[rehighlightSource] FUZZY MATCH at pos ${firstCharApprox}-${lastCharEnd} (${bestMatched}/${claimWords.length} words): "${claimNorm.slice(0, 60)}..."`);
-        }
-      }
-    }
-
-    if (highlightRanges.length === 0) continue;
-
-    // Clear previous highlights on this page
-    for (const span of textLayerDiv.querySelectorAll(".highlight")) {
-      span.classList.remove("highlight");
-    }
-
-    // Merge overlapping ranges
-    highlightRanges.sort((a, b) => a.start - b.start);
-    const merged = [highlightRanges[0]];
-    for (let i = 1; i < highlightRanges.length; i++) {
-      const last = merged[merged.length - 1];
-      if (highlightRanges[i].start <= last.end + 5) {
-        last.end = Math.max(last.end, highlightRanges[i].end);
-      } else {
-        merged.push(highlightRanges[i]);
-      }
-    }
-
-    // Apply highlights to spans
-    let charIdx = 0;
-    for (const span of spans) {
-      const spanLen = span.textContent.length;
-      const spanStart = charIdx;
-      const spanEnd = charIdx + spanLen;
-      charIdx = spanEnd;
-
-      for (const range of merged) {
-        if (range.start < spanEnd && range.end > spanStart) {
-          span.classList.add("highlight");
-          break;
-        }
+      const overlays = window.CitationMatcher.rangesToOverlays(
+        ranges, container._pageIndex, container._scale, container._viewportHeight
+      );
+      hlLog(`[rehighlightSource] ${overlays.length} overlay(s) for "${claim.slice(0, 60)}..."`);
+      for (const o of overlays) {
+        const div = document.createElement("div");
+        div.className = "citation-highlight";
+        div.style.left = `${o.left}px`;
+        div.style.top = `${o.top}px`;
+        div.style.width = `${o.width}px`;
+        div.style.height = `${o.height}px`;
+        container._highlightLayer.appendChild(div);
       }
     }
   }
 }
 
-function findFragmentRanges(fragments, fullTextNorm, minLen) {
-  const ranges = [];
-  for (const frag of fragments) {
-    const fragNorm = normalizeText(frag);
-    if (fragNorm.length < minLen) continue;
-    let idx = fullTextNorm.indexOf(fragNorm);
-    while (idx !== -1) {
-      hlLog(`MATCH frag="${fragNorm.slice(0,80)}" pos=${idx}-${idx + fragNorm.length} ctx="...${fullTextNorm.slice(Math.max(0,idx-20), idx+fragNorm.length+20).slice(0,120)}..."`);
-      ranges.push({ start: idx, end: idx + fragNorm.length });
-      idx = fullTextNorm.indexOf(fragNorm, idx + 1);
-    }
-  }
-  return ranges;
-}
-
-function buildSlidingWindowFragments(text) {
-  const words = text.split(/\s+/).filter(w => w.length > 0);
-  const fragments = [];
-  const windowSize = 4;
-  for (let i = 0; i <= words.length - windowSize; i += 2) {
-    const phrase = words.slice(i, i + windowSize).join(" ");
-    if (phrase.length >= 12) {
-      fragments.push(phrase);
-    }
-  }
-  // Single-word fragments removed: common medical terms (e.g. "sarcoidosis",
-  // "hypertension") match multiple sections on the same PDF page, causing
-  // false highlights outside the chunk boundary. The 4-word windows above
-  // are sufficient to locate the chunk region.
-  return fragments;
-}
-
-function normalizeText(str) {
-  return str
-    .normalize("NFKD")                          // decompose ligatures/accents
-    .replace(/[\u2010-\u2015\u2212\uFE58\uFE63\uFF0D]/g, "-")  // normalize dashes
-    .replace(/[\u2018\u2019\u201A\uFF07]/g, "'")  // normalize single quotes
-    .replace(/[\u201C\u201D\u201E\uFF02]/g, '"')  // normalize double quotes
-    .replace(/\u2026/g, "...")                    // ellipsis
-    .replace(/\s+/g, " ")
-    .toLowerCase()
-    .trim();
-}
-
-function stripMarkdown(text) {
-  return text
-    .replace(/^\|?\s*[-:]+(\s*\|\s*[-:]+)+\s*\|?\s*$/gm, "")
-    .replace(/^\||\|$/gm, "")
-    .replace(/\|/g, " ")
-    .replace(/^#{1,6}\s+/gm, "")
-    .replace(/\*{1,3}|_{1,3}/g, "")
-    .replace(/\[([^\]]*)\]\([^)]*\)/g, "$1")
-    .replace(/^[-*_]{3,}\s*$/gm, "")
-    .replace(/\s+/g, " ")
-    .trim();
-}
-
-function buildSearchFragments(text) {
-  const cleaned = stripMarkdown(text);
-  const fragments = [];
-  const sentences = cleaned.split(/(?<=[.!?;])\s+/);
-  for (const s of sentences) {
-    const trimmed = s.trim();
-    if (trimmed.length < 40) continue;
-    for (let pos = 0; pos < trimmed.length; pos += 40) {
-      const frag = trimmed.slice(pos, pos + 80);
-      if (frag.length >= 40) fragments.push(frag);
-    }
-  }
-  return fragments;
-}
 
 /**
  * Render additional therapy sources appended after the initial diagnostic sources.

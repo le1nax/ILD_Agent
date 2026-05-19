@@ -1,11 +1,13 @@
 import os
 import psutil
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from langgraph.graph import StateGraph, END
 from langchain_core.documents import Document
 from langchain_openai import AzureChatOpenAI
 from langchain_core.messages import SystemMessage, HumanMessage, AIMessage
 import json
 import re
+from pydantic import BaseModel, Field
 from dotenv import load_dotenv
 
 
@@ -992,14 +994,7 @@ def _build_messages(state: State) -> list:
             "a specific aspect of the question, say so explicitly rather than filling "
             "in from general knowledge.\n"
             "5. At the end of your answer, list all cited sources with their document name "
-            "and page number.\n"
-            "6. After the source list, add a section '## EXACT_QUOTES' with the exact "
-            "verbatim text passages you relied on from each source. Format:\n"
-            "   [Source N]: \"exact quote from the source text\"\n"
-            "   [Source N]: \"another exact quote from the same or different source\"\n"
-            "   Copy the text EXACTLY as it appears in the source — do not paraphrase, "
-            "translate, or reorder. These quotes will be used to highlight the relevant "
-            "passages in the PDF.\n\n"
+            "and page number.\n\n"
             f"Context:\n{docs_text}"
         )
     else:
@@ -1015,12 +1010,7 @@ def _build_messages(state: State) -> list:
             "Do NOT state medical facts not supported by the provided context.\n"
             "4. If the context does not contain enough information, say so explicitly "
             "rather than filling in from general knowledge.\n"
-            "5. At the end, list cited sources with document name and page number.\n"
-            "6. After the source list, add a section '## EXACT_QUOTES' with the exact "
-            "verbatim text passages you relied on. Format:\n"
-            "   [Source N]: \"exact quote from the source text\"\n"
-            "   Copy the text EXACTLY as it appears — do not paraphrase, translate, "
-            "or reorder.\n\n"
+            "5. At the end, list cited sources with document name and page number.\n\n"
             f"Context:\n{docs_text}"
         )
 
@@ -1075,6 +1065,145 @@ def _make_llm(streaming=False):
         temperature=1,
         streaming=streaming,
     )
+
+
+# -------------------------------------------------------
+# Post-hoc cited-text extraction (for PDF highlighting)
+# -------------------------------------------------------
+
+class CitedTextEntry(BaseModel):
+    """Verbatim substrings of a chunk that support claims in the answer."""
+    cited_text: list[str] = Field(min_length=1, max_length=5)
+
+
+_CITED_TEXT_SYSTEM_PROMPT = """\
+You extract verbatim substrings from a source chunk that support claims made \
+in an answer.
+
+RULES:
+- Return 1 to 5 substrings.
+- Each substring MUST appear character-for-character in the chunk text \
+provided. Do NOT paraphrase, translate, summarize, or reorder.
+- Prefer short, focused passages (one sentence or clause) over long blocks.
+- Only include substrings that actually back a claim in the answer that cites \
+this source.
+- If nothing in the chunk supports any claim in the answer, return a single \
+short substring that best represents the chunk's main topic.
+"""
+
+
+def _normalize_for_substring(s: str) -> str:
+    """Lowercase + collapse whitespace for forgiving substring containment."""
+    return re.sub(r"\s+", " ", s.lower()).strip()
+
+
+def _fuzzy_contains(quote: str, chunk_text: str) -> bool:
+    """True if quote appears in chunk_text after whitespace+case normalization."""
+    q = _normalize_for_substring(quote)
+    if len(q) < 5:
+        return False
+    return q in _normalize_for_substring(chunk_text)
+
+
+def _extract_one_cited_text(structured_llm, chunk_idx: int, chunk_text: str,
+                            answer: str):
+    """Run one structured LLM call to extract verbatim quotes from one chunk.
+
+    Returns (chunk_idx, list_of_validated_quotes, raw_AIMessage) on success,
+    or (chunk_idx, [], None) on failure / empty result.
+    """
+    try:
+        result = structured_llm.invoke([
+            SystemMessage(content=_CITED_TEXT_SYSTEM_PROMPT),
+            HumanMessage(content=(
+                f"## Source chunk\n{chunk_text}\n\n"
+                f"## Answer (which cites this source)\n{answer}"
+            )),
+        ])
+    except Exception as e:
+        print(f"  [cited_text] chunk {chunk_idx + 1} failed: {e}")
+        return chunk_idx, [], None
+
+    parsed: CitedTextEntry = result["parsed"]
+    raw = result["raw"]
+    if parsed is None:
+        return chunk_idx, [], raw
+
+    validated = []
+    for q in parsed.cited_text:
+        q = q.strip().strip('"“”‘’')
+        if len(q) < 5:
+            continue
+        if not _fuzzy_contains(q, chunk_text):
+            continue
+        if q not in validated:
+            validated.append(q)
+
+    return chunk_idx, validated, raw
+
+
+def _extract_cited_texts_post_hoc(answer: str, docs: list,
+                                  all_responses: list) -> dict[int, list[str]]:
+    """Post-hoc per-chunk LLM extraction of verbatim quotes for PDF highlighting.
+
+    For each [Source N] cited in `answer`, fires a structured-output LLM call
+    that returns 1-5 verbatim substrings of the chunk text. Quotes are
+    post-validated against the chunk (lowercased whitespace-collapsed
+    substring check) — anything that doesn't actually appear is dropped.
+
+    Indices in the returned dict are 0-based into the FINAL state["docs"],
+    which after retrieve_therapy_node includes therapy chunks at the tail.
+    Frontend assumes this same indexing.
+
+    Returns {chunk_idx: [quote, ...]} for chunks where at least one quote
+    survived validation. Empty dict if no cited chunks or all calls failed.
+    """
+    cited_idxs = sorted({
+        int(m.group(1)) - 1
+        for m in re.finditer(r"\[Source\s+(\d+)\]", answer)
+    })
+    cited_idxs = [i for i in cited_idxs if 0 <= i < len(docs)]
+    if not cited_idxs:
+        return {}
+
+    extractor_llm = AzureChatOpenAI(
+        api_key=os.getenv("AZURE_OPENAI_API_KEY"),
+        azure_endpoint=os.getenv("AZURE_OPENAI_ENDPOINT"),
+        deployment_name="gpt-5",
+        api_version="2025-03-01-preview",
+        temperature=1,  # gpt-5 deployments may require temperature=1
+        streaming=False,
+        request_timeout=30,
+    )
+    structured_llm = extractor_llm.with_structured_output(
+        CitedTextEntry, include_raw=True
+    )
+
+    quotes_by_idx: dict[int, list[str]] = {}
+    max_workers = min(8, len(cited_idxs))
+
+    with ThreadPoolExecutor(max_workers=max_workers) as executor:
+        futures = {
+            executor.submit(
+                _extract_one_cited_text,
+                structured_llm, idx, docs[idx].page_content, answer,
+            ): idx
+            for idx in cited_idxs
+        }
+        for fut in as_completed(futures):
+            try:
+                idx, validated, raw = fut.result(timeout=35)
+            except Exception as e:
+                print(f"  [cited_text] future failed: {e}")
+                continue
+            if raw is not None:
+                all_responses.append(raw)
+            if validated:
+                quotes_by_idx[idx] = validated
+
+    print(f"✓ Cited-text extraction: {len(quotes_by_idx)}/{len(cited_idxs)} "
+          f"chunks produced verbatim quotes")
+    return quotes_by_idx
 
 
 def generate_node(state: State):
@@ -1136,9 +1265,7 @@ def _build_verify_messages(state: State) -> list:
 def verify_node(state: State):
     """Verify citations via LLM two-directional check."""
     llm = _make_llm(streaming=False)
-    verified = llm.invoke(_build_verify_messages(state)).content
-    clean_answer, _ = _extract_exact_quotes(verified)
-    state["answer"] = clean_answer
+    state["answer"] = llm.invoke(_build_verify_messages(state)).content
     return state
 
 
@@ -1580,44 +1707,6 @@ def retrieve_therapy_node(state: State):
     return state
 
 
-def _extract_exact_quotes(answer: str) -> tuple[str, dict[int, list[str]]]:
-    """Extract the EXACT_QUOTES section from the answer.
-
-    Returns (answer_without_quotes, {source_index (0-based): [verbatim quotes]}).
-    The quotes section is stripped from the displayed answer.
-    """
-    quotes: dict[int, list[str]] = {}
-
-    # Split off the EXACT_QUOTES section
-    parts = re.split(r'##\s*EXACT_QUOTES\s*\n?', answer, maxsplit=1)
-    clean_answer = parts[0].rstrip()
-
-    if len(parts) < 2:
-        return clean_answer, quotes
-
-    quotes_section = parts[1]
-    # Parse lines like: [Source 3]: "exact quote text here"
-    for match in re.finditer(
-        r'\[Source\s+(\d+)\]\s*:\s*"([^"]+)"', quotes_section
-    ):
-        idx = int(match.group(1)) - 1  # 0-based
-        quote = match.group(2).strip()
-        if len(quote) < 5:
-            continue
-        if idx not in quotes:
-            quotes[idx] = []
-        if quote not in quotes[idx]:
-            quotes[idx].append(quote)
-
-    # # Only keep quotes for sources actually cited in the answer text
-    # cited_sources = {int(m.group(1)) - 1 for m in re.finditer(r'\[Source\s+(\d+)\]', clean_answer)}
-    # quotes = {idx: qs for idx, qs in quotes.items() if idx in cited_sources}
-
-    return clean_answer, quotes
-
-
-
-
 def stream_generate(state: State):
     """Generator that yields (event_type, content) tuples.
 
@@ -1785,10 +1874,7 @@ def stream_generate(state: State):
     if is_complex:
         yield ("status", "Generating answer...")
     gen_response = llm.invoke(_build_messages(state))
-
-    # Extract exact quotes and strip them from the displayed answer
-    clean_answer, exact_quotes = _extract_exact_quotes(gen_response.content)
-    state["answer"] = clean_answer
+    state["answer"] = gen_response.content
     all_responses.append(gen_response)
 
     for word in state["answer"].split(" "):
@@ -1798,16 +1884,8 @@ def stream_generate(state: State):
     yield ("status", "Verifying citations...")
     generated_answer = state["answer"]
     verify_response = llm.invoke(_build_verify_messages(state))
-
-    # Strip any EXACT_QUOTES the verify node might echo back
-    verified_answer, verify_quotes = _extract_exact_quotes(verify_response.content)
-    state["answer"] = verified_answer
+    state["answer"] = verify_response.content
     all_responses.append(verify_response)
-
-    # Merge quotes from both generate and verify (generate takes priority)
-    for idx, quotes in verify_quotes.items():
-        if idx not in exact_quotes:
-            exact_quotes[idx] = quotes
 
     verify_changed = state["answer"] != generated_answer
     if verify_changed:
@@ -1833,20 +1911,26 @@ def stream_generate(state: State):
         "details": "The LLM verify step corrected citation issues in the answer." if verify_changed else "All citations passed LLM verification — no changes needed.",
     })
 
-    # Step: Exact Quotes (debug visibility)
-    if exact_quotes:
+    # Post-hoc verbatim quote extraction (for PDF highlighting).
+    # Runs on the final post-rename answer so cited indices and answer text
+    # are stable. Per-chunk parallel structured-output LLM calls; quotes are
+    # validated against chunk text via fuzzy substring. Failures are non-fatal
+    # — a missing highlights event just means no overlays for that chunk.
+    yield ("status", "Extracting citation quotes...")
+    cited_quotes = _extract_cited_texts_post_hoc(
+        state["answer"], state["docs"], all_responses,
+    )
+    if cited_quotes:
         quote_lines = []
-        for src_idx in sorted(exact_quotes):
-            for q in exact_quotes[src_idx]:
+        for src_idx in sorted(cited_quotes):
+            for q in cited_quotes[src_idx]:
                 quote_lines.append(f"- **[Source {src_idx + 1}]**: \"{q}\"")
         yield ("step", {
-            "title": "Exact Quotes",
-            "summary": f"{sum(len(qs) for qs in exact_quotes.values())} quotes from {len(exact_quotes)} sources",
+            "title": "Citation Quotes",
+            "summary": f"{sum(len(qs) for qs in cited_quotes.values())} quotes from {len(cited_quotes)} sources",
             "details": "\n".join(quote_lines),
         })
-
-        # Send exact quotes for precise PDF highlighting
-        yield ("highlights", exact_quotes)
+        yield ("highlights", cited_quotes)
 
     # Phase 5 (complex only): Structured clinical summary
     if is_complex:

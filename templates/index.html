@@ -475,7 +475,7 @@
     .pdf-page-container canvas {
       display: block;
     }
-    /* Text layer for highlighting */
+    /* Text layer — invisible; exists only to enable text selection. */
     .pdf-text-layer {
       position: absolute;
       top: 0;
@@ -483,7 +483,7 @@
       right: 0;
       bottom: 0;
       overflow: hidden;
-      opacity: 0.3;
+      opacity: 0;
       line-height: 1.0;
     }
     .pdf-text-layer span {
@@ -492,10 +492,20 @@
       white-space: pre;
       transform-origin: 0% 0%;
     }
-    .pdf-text-layer .highlight {
-      background: #ffe033;
-      opacity: 1;
+
+    /* Citation highlight overlay — absolutely-positioned divs over the canvas. */
+    .pdf-highlight-layer {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+    }
+    .citation-highlight {
+      position: absolute;
+      background: rgba(255, 224, 51, 0.4);
       border-radius: 2px;
+    }
+    .citation-highlight.active {
+      background: rgba(255, 224, 51, 0.65);
     }
 
     /* Source section labels in PDF viewer */
@@ -653,6 +663,7 @@
     </div>
   </div>
 
+  <script src="{{ url_for('static', filename='citationMatcher.js') }}?t={{ range(1, 999999) | random }}"></script>
   <script src="{{ url_for('static', filename='app.js') }}?t={{ range(1, 999999) | random }}" type="module"></script>
 </body>
 </html>
